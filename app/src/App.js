@@ -1,13 +1,13 @@
 import React from 'react';
+import SplitPane from './components/SplitPane.js'
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <p>
-        George Giovanis' Personal Website V2
-      </p>
-    </div>
+    <SplitPane 
+      left={<p class="text-indigo-500">LeftPane</p>}
+      right={<p class="text-orange-500">RightPane</p>}
+    />
   );
 }
 
