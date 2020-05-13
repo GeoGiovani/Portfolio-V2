@@ -2,6 +2,30 @@
 
 @tailwind components;
 
+.paneWrapper {
+  @apply flex items-stretch h-128 w-screen;
+}
+
+.paneLeft {
+  @apply flex-1 flex items-center justify-end p-8;
+}
+
+.paneRight {
+  @apply flex-1 flex items-center p-8;
+}
+
+.cardWrapper {
+  @apply box-border flex items-center;
+}
+
+.cardTitle {
+  @apply box-border font-semibold;
+}
+
+.cardContent {
+  @apply box-border font-thin;
+}
+
 @tailwind utilities;
 
 /* Your custom CSS here */
