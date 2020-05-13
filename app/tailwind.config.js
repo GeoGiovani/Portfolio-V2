@@ -20,9 +20,15 @@ module.exports = {
       '48': '12rem',
       '56': '14rem',
       '64': '16rem',
+      '96': '22rem',
       '128': '32rem'
     },
-    extend: {},
+    extend: {
+      colors: {
+        'customGrey-900': '#343233',
+        'customBeige-200': '#efdbb9'
+      }
+    },
   },
   variants: {},
   plugins: [],
