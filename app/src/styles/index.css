@@ -2,6 +2,34 @@
 
 @tailwind components;
 
+.btn {
+  @apply py-3 px-4 rounded
+}
+
+.btn-teal {
+  @apply bg-customTeal-300 text-customGrey-900 font-semibold 
+}
+
+.btn-teal:hover{
+  @apply bg-customTeal-400
+}
+
+.cardWrapper {
+  @apply box-border w-96 h-128 flex items-center;
+}
+
+.cardTitle {
+  @apply box-border w-96 h-16 font-semibold text-3xl;
+}
+
+.cardContent {
+  @apply box-border w-96 h-64 font-thin;
+}
+
+.cardSpacer {
+  @apply box-border w-96 h-16;
+}
+
 .paneWrapper {
   @apply flex items-stretch h-128 w-screen;
 }
@@ -12,18 +40,6 @@
 
 .paneRight {
   @apply flex-1 flex items-center p-8;
-}
-
-.cardWrapper {
-  @apply box-border flex items-center;
-}
-
-.cardTitle {
-  @apply box-border font-semibold;
-}
-
-.cardContent {
-  @apply box-border font-thin;
 }
 
 @tailwind utilities;

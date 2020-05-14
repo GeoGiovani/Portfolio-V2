@@ -25,11 +25,18 @@ module.exports = {
     },
     extend: {
       colors: {
-        'customGrey-900': '#343233',
-        'customBeige-200': '#efdbb9'
-      }
+        'customGrey-800': '#343233',
+        'customGrey-900': '#262425',
+        'customBeige-200': '#efdbb9',
+        'customTeal-300': '#62f4eb',
+        'customTeal-400': '#3ae7e1',
+      },
     },
   },
-  variants: {},
+  variants: {
+    variants: {
+      backgroundColor: ['responsive', 'hover', 'focus'],
+    },
+  },
   plugins: [],
 }
