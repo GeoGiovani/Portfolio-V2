@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   purge: [],
   theme: {
@@ -15,6 +17,7 @@ module.exports = {
       '16': '4rem',
       '20': '5rem',
       '24': '6rem',
+      '28': '6.5rem',
       '32': '8rem',
       '40': '10rem',
       '48': '12rem',
@@ -38,5 +41,27 @@ module.exports = {
       backgroundColor: ['responsive', 'hover', 'focus'],
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(require("tailwind-heropatterns")({
+      // as per tailwind docs you can pass variants
+      variants: [],
+    
+      // the list of patterns you want to generate a class for
+      // the names must be in kebab-case
+      // an empty array will generate all 87 patterns
+      patterns: ["church-on-sunday"],
+    
+      // The foreground colors of the pattern
+      colors: {
+        default: "#9C92AC",
+        "custom-grey-900": "#262425" //also works with rgb(0,0,205)
+      },
+    
+      // The foreground opacity
+      opacity: {
+        default: "0.5",
+        "100": "1.0"
+      }
+    }))
+  ],
 }

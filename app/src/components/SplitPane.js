@@ -2,11 +2,11 @@ import React from 'react';
 
 function SplitPane(props) {
   return (
-    <div className={props.paneWrapper}>
-      <div className={props.paneLeft}>
+    <div className={props.paneStyle}>
+      <div className={props.leftPaneStyle}>
         {props.left}
       </div>
-      <div className={props.paneRight}>
+      <div className={props.rightPaneStyle}>
         {props.right}
       </div>
     </div>

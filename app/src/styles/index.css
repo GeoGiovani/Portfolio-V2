@@ -19,7 +19,7 @@
 }
 
 .card-title {
-  @apply box-border w-96 h-16 font-semibold text-3xl;
+  @apply box-border w-96 h-16 font-semibold text-2xl;
 }
 
 .card-content {
@@ -40,6 +40,18 @@
 
 .pane-right {
   @apply flex-1 flex items-center p-8;
+}
+
+.hero {
+  @apply flex items-center justify-center h-screen w-screen font-serif
+}
+
+.hero-title {
+  @apply box-border h-28 w-128 text-6xl tracking-wide text-center border-b
+}
+
+.hero-footer {
+  @apply my-4 box-border text-3xl font-light h-24 text-center
 }
 
 @tailwind utilities;
