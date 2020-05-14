@@ -25,11 +25,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        'customGrey-800': '#343233',
-        'customGrey-900': '#262425',
-        'customBeige-200': '#efdbb9',
-        'customTeal-300': '#62f4eb',
-        'customTeal-400': '#3ae7e1',
+        'custom-grey-800': '#343233',
+        'custom-grey-900': '#262425',
+        'custom-beige-200': '#efdbb9',
+        'custom-teal-300': '#62f4eb',
+        'custom-teal-400': '#3ae7e1',
       },
     },
   },

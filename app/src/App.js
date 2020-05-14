@@ -16,7 +16,7 @@ function App() {
           content={
             <div>
               <p>{lorem}</p>
-              <div className="cardSpacer"></div>
+              <div className="card-spacer"></div>
               <LinkButton
                 content="Left Button"
                 buttonStyle="btn btn-teal btn-teal:hover"
@@ -24,9 +24,9 @@ function App() {
               /> 
             </div> 
           }
-          outerCardStyle="cardWrapper text-customBeige-200"
-          titleStyle="cardTitle"
-          contentStyle="cardContent"
+          outerCardStyle="card text-custom-beige-200"
+          titleStyle="card-title"
+          contentStyle="card-content"
         />
       }
       right={
@@ -35,7 +35,7 @@ function App() {
           content={            
             <div>
               <p>{lorem}</p>
-              <div className="cardSpacer"></div>
+              <div className="card-spacer"></div>
               <LinkButton
                 content="Right Button"
                 buttonStyle="btn btn-teal btn-teal:hover"
@@ -43,15 +43,15 @@ function App() {
               /> 
             </div> 
           }
-          outerCardStyle="cardWrapper text-right text-customBeige-200"
-          titleStyle="cardTitle"
-          contentStyle="cardContent"
+          outerCardStyle="card text-right text-custom-beige-200"
+          titleStyle="card-title"
+          contentStyle="card-content"
         />
       }
 
-      paneWrapper="paneWrapper bg-customGrey-800"
-      paneLeft="paneLeft"
-      paneRight="paneRight"
+      paneWrapper="pane bg-custom-grey-800"
+      paneLeft="pane-left"
+      paneRight="pane-right"
     />
   );
 }
