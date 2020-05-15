@@ -19,15 +19,15 @@
 }
 
 .card-title {
-  @apply box-border h-16 font-semibold text-2xl;
+  @apply box-border w-p90 h-16 font-semibold text-2xl ml-p5;
 }
 
 .card-content {
-  @apply box-border h-64 font-thin;
+  @apply box-border w-p90 h-64 font-thin ml-p5;
 }
 
 .card-spacer {
-  @apply box-border h-10;
+  @apply box-border w-p90 h-10;
 }
 
 @screen sm {
@@ -44,7 +44,7 @@
     @apply w-128
   }
   .card-spacer {
-    @apply h-16
+    @apply h-12
   }
 }
 
@@ -98,7 +98,7 @@
   }
 
   .pane-right {
-    @apply flex-1 justify-start text-right p-8
+    @apply flex-1 justify-start text-right p-8 
   }
 }
 
