@@ -27,6 +27,8 @@ module.exports = {
       '96': '22rem',
       '128': '32rem',
       '256': '52rem',
+      '300': '56rem',
+      'tight': '95%',
     },
     screens: {
       'sm': '640px',

@@ -15,19 +15,37 @@
 }
 
 .card {
-  @apply box-border w-128 h-96 flex items-center;
+  @apply box-border h-96 flex items-center justify-center;
 }
 
 .card-title {
-  @apply box-border w-128 h-16 font-semibold text-2xl;
+  @apply box-border h-16 font-semibold text-2xl;
 }
 
 .card-content {
-  @apply box-border w-128 h-64 font-thin;
+  @apply box-border h-64 font-thin;
 }
 
 .card-spacer {
-  @apply box-border w-96 h-16;
+  @apply box-border h-10;
+}
+
+@screen sm {
+  .card {
+    @apply w-128 h-96
+  }
+  .card-title {
+    @apply w-128
+  }
+  .card-style {
+    @apply w-128
+  }
+  .card-content {
+    @apply w-128
+  }
+  .card-spacer {
+    @apply h-16
+  }
 }
 
 @screen md {
@@ -50,11 +68,24 @@
 }
 
 .pane-right {
-  @apply flex items-center justify-center text-center pt-6;
+  @apply flex items-center justify-center text-center pt-16 pb-6;
 }
 
 .pane {
-  @apply h-256 w-screen;
+  @apply h-300 w-full;
+}
+
+@screen sm {
+  .pane {
+    @apply h-256
+  }
+  .pane-left {
+    @apply pt-12
+  }
+
+  .pane-right {
+    @apply pt-6
+  }
 }
 
 @screen md {
@@ -76,12 +107,24 @@
 }
  
 .hero-title {
-  @apply box-border h-28 w-128 text-6xl tracking-wide text-center border-b
+  @apply box-border h-16 w-80 text-4xl tracking-wide text-center border-b
 }
 
 .hero-footer {
-  @apply my-4 box-border text-3xl font-light h-24 text-center
+  @apply my-4 box-border text-2xl font-light h-24 text-center
 }
+
+@screen sm {
+  .hero-title {
+    @apply h-28 w-128 text-6xl tracking-wide
+  }
+  
+  .hero-footer {
+    @apply my-4 box-border text-3xl font-light h-24 text-center
+  }
+}
+
+
 
 @tailwind utilities;
 
