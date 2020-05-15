@@ -35,13 +35,13 @@
     @apply w-128 h-96
   }
   .card-title {
-    @apply w-128
+    @apply w-128 ml-0
   }
   .card-style {
     @apply w-128
   }
   .card-content {
-    @apply w-128
+    @apply w-128 ml-0
   }
   .card-spacer {
     @apply h-12
@@ -75,8 +75,15 @@
   @apply h-300 w-full;
 }
 
+.pane-lg {
+  @apply h-350 w-full;
+}
+
 @screen sm {
   .pane {
+    @apply h-256
+  }
+  .pane-lg {
     @apply h-256
   }
   .pane-left {
@@ -91,6 +98,9 @@
 @screen md {
   .pane {
     @apply flex items-stretch h-128
+  }
+  .pane-lg {
+    @apply flex items-stretch h-156
   }
 
   .pane-left {
@@ -124,6 +134,13 @@
   }
 }
 
+.banner {
+  @apply flex content-center justify-center h-40 w-screen
+}
+
+.banner-header {
+  @apply box-border pt-16 h-40 w-80 text-6xl tracking-wide text-center font-serif border-b 
+}
 
 
 @tailwind utilities;
