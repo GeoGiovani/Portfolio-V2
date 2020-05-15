@@ -19,7 +19,6 @@ function App() {
         headerStyle="hero-title text-custom-beige-200 border-custom-beige-200 border-opacity-50"
         footerStyle="hero-footer text-custom-beige-200"
       />
-
       <SplitPane 
         left={
           <SplitPaneCard
@@ -35,7 +34,7 @@ function App() {
                 /> 
               </div> 
             }
-            outerCardStyle="card text-custom-beige-200"
+            outerCardStyle="card text-custom-beige-200 "
             titleStyle="card-title"
             contentStyle="card-content"
           />
@@ -54,19 +53,16 @@ function App() {
                 /> 
               </div> 
             }
-            outerCardStyle="card text-right text-custom-beige-200"
+            outerCardStyle="card text-custom-beige-200"
             titleStyle="card-title"
             contentStyle="card-content"
           />
         }
-
-        paneStyle="pane bg-custom-grey-800"
+        paneStyle="pane bg-custom-grey-800 border-t border-b border-custom-beige-200"
         leftPaneStyle="pane-left"
         rightPaneStyle="pane-right"
       />
     </div>
-
-
   );
 }
 

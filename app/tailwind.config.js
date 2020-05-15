@@ -23,8 +23,16 @@ module.exports = {
       '48': '12rem',
       '56': '14rem',
       '64': '16rem',
+      '80': '19rem',
       '96': '22rem',
-      '128': '32rem'
+      '128': '32rem',
+      '256': '52rem',
+    },
+    screens: {
+      'sm': '640px',
+      'md': '850px',
+      'lg': '1024px',
+      'xl': '1280px',
     },
     extend: {
       colors: {

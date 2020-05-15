@@ -15,37 +15,66 @@
 }
 
 .card {
-  @apply box-border w-96 h-128 flex items-center;
+  @apply box-border w-128 h-96 flex items-center;
 }
 
 .card-title {
-  @apply box-border w-96 h-16 font-semibold text-2xl;
+  @apply box-border w-128 h-16 font-semibold text-2xl;
 }
 
 .card-content {
-  @apply box-border w-96 h-64 font-thin;
+  @apply box-border w-128 h-64 font-thin;
 }
 
 .card-spacer {
   @apply box-border w-96 h-16;
 }
 
-.pane {
-  @apply flex items-stretch h-128 w-screen;
+@screen md {
+  .card {
+    @apply w-96 h-128
+  }
+  .card-title {
+    @apply w-96
+  }
+  .card-style {
+    @apply w-96
+  }
+  .card-content {
+    @apply w-96
+  }
 }
 
 .pane-left {
-  @apply flex-1 flex items-center justify-end p-8;
+  @apply flex items-center justify-center text-center pt-12;
 }
 
 .pane-right {
-  @apply flex-1 flex items-center p-8;
+  @apply flex items-center justify-center text-center pt-6;
+}
+
+.pane {
+  @apply h-256 w-screen;
+}
+
+@screen md {
+  .pane {
+    @apply flex items-stretch h-128
+  }
+
+  .pane-left {
+    @apply flex-1 justify-end text-left p-8
+  }
+
+  .pane-right {
+    @apply flex-1 justify-start text-right p-8
+  }
 }
 
 .hero {
   @apply flex items-center justify-center h-screen w-screen font-serif
 }
-
+ 
 .hero-title {
   @apply box-border h-28 w-128 text-6xl tracking-wide text-center border-b
 }
