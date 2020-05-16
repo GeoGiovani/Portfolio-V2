@@ -11,7 +11,7 @@ function AboutMePanel() {
     <div>
       <Banner 
         header="Profile"
-        bannerStyle="banner bg-grey-100"
+        bannerStyle="banner bg-white"
         headerStyle="banner-header text-custom-grey-900 border-custom-grey-900 border-opacity-50"
       />
       <SplitPane 
@@ -54,7 +54,7 @@ function AboutMePanel() {
             imageStyle="h-96 border border-custom-grey-800 border-opacity-50"
           />
         }
-        paneStyle="pane bg-grey-100 pb-12"
+        paneStyle="pane bg-white pb-12"
         paneTitleStyle="flex justify-center font-serif"
         leftPaneStyle="pane-left"
         rightPaneStyle="pane-right"

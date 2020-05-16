@@ -751,11 +751,6 @@ video {
   width: 100%;
 }
 
-.pane-lg {
-  height: 62rem;
-  width: 100%;
-}
-
 @media (min-width: 360px) {
   .pane {
     height: 56rem;
@@ -765,10 +760,6 @@ video {
 
 @media (min-width: 640px) {
   .pane {
-    height: 52rem
-  }
-
-  .pane-lg {
     height: 52rem
   }
 
@@ -786,12 +777,6 @@ video {
     display: flex;
     align-items: stretch;
     height: 32rem
-  }
-
-  .pane-lg {
-    display: flex;
-    align-items: stretch;
-    height: 38rem
   }
 
   .pane-left {

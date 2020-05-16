@@ -91,10 +91,6 @@
   @apply h-350 w-full;
 }
 
-.pane-lg {
-  @apply h-350 w-full;
-}
-
 @screen xsm {
   .pane {
     @apply h-300 w-full;
@@ -103,9 +99,6 @@
 
 @screen sm {
   .pane {
-    @apply h-256
-  }
-  .pane-lg {
     @apply h-256
   }
   .pane-left {
@@ -121,10 +114,6 @@
   .pane {
     @apply flex items-stretch h-128
   }
-  .pane-lg {
-    @apply flex items-stretch h-156
-  }
-
   .pane-left {
     @apply flex-1 justify-end text-left p-8
   }
