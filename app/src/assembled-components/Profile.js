@@ -6,9 +6,9 @@ import Banner from '../components/Banner.js'
 import '../styles/index.css';
 
 
-function AboutMePanel() {
+function Profile() {
   return (
-    <div>
+    <div id="Profile">
       <Banner 
         header="Profile"
         bannerStyle="banner bg-white"
@@ -63,4 +63,4 @@ function AboutMePanel() {
   );
 }
 
-export default AboutMePanel;
+export default Profile;

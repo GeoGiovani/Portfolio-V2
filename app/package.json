@@ -36,6 +36,7 @@
   "devDependencies": {
     "autoprefixer": "^9.7.6",
     "postcss-cli": "^7.1.1",
+    "react-scroll": "^1.7.16",
     "stylelint-config-recommended": "^3.0.0",
     "tailwind-heropatterns": "0.0.8",
     "tailwindcss": "^1.4.6"

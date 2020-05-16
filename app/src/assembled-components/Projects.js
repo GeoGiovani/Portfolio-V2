@@ -5,9 +5,9 @@ import SplitPane from '../components/SplitPane.js'
 import Banner from '../components/Banner.js'
 import '../styles/index.css';
 
-function ExperiencesSection(props) {
+function Projects() {
   return (
-    <div>
+    <div id="Projects">
       <Banner 
         header="Projects"
         bannerStyle="banner bg-white"
@@ -29,4 +29,4 @@ function ExperiencesSection(props) {
   );
 }
 
-export default ExperiencesSection;
+export default Projects;

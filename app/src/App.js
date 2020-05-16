@@ -1,14 +1,16 @@
 import React from 'react';
 import MinimalistHero from './assembled-components/MinimalistHero.js'
-import AboutMePanel from './assembled-components/AboutMePanel.js'
-import ExperiencesSection from './assembled-components/ExperiencesSection.js'
+import Profile from './assembled-components/Profile.js'
+import Projects from './assembled-components/Projects.js'
+import NavBar from './assembled-components/NavBar.js'
 
 function App() {
   return (
     <div>
       <MinimalistHero />
-      <AboutMePanel />
-      <ExperiencesSection />
+      <NavBar />
+      <Profile />
+      <Projects />
     </div>
   );
 }
