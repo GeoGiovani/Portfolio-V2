@@ -12,7 +12,7 @@ function AboutMePanel() {
       <Banner 
         header="Profile"
         bannerStyle="banner bg-grey-100"
-        headerStyle="banner-header border-custom-grey-800 border-opacity-50"
+        headerStyle="banner-header text-custom-grey-900 border-custom-grey-900 border-opacity-50"
       />
       <SplitPane 
         left = {
@@ -50,8 +50,8 @@ function AboutMePanel() {
           <SplitPaneImage 
             src={require("../media/me.jpg")}
             alt="Hey it's me!"
-            outerCardStyle="box-border h-96 pt-6 pl-12"
-            imageStyle="h-96 border"
+            outerCardStyle="profile"
+            imageStyle="h-96 border border-custom-grey-800 border-opacity-50"
           />
         }
         paneStyle="pane bg-grey-100 pb-12"

@@ -19,7 +19,7 @@
 }
 
 .card-title {
-  @apply box-border w-p90 h-16 font-semibold text-2xl ml-p5;
+  @apply box-border w-p90 h-14 font-semibold text-2xl ml-p5;
 }
 
 .card-content {
@@ -63,8 +63,24 @@
   }
 }
 
+.profile {
+  @apply box-border h-96 pt-24
+}
+
+@screen xsm {
+  .profile {
+    @apply pt-0
+  }
+}
+
+@screen md {
+  .profile {
+    @apply pt-6 pl-12
+  }
+}
+
 .pane-left {
-  @apply flex items-center justify-center text-center pt-12;
+  @apply flex items-center justify-center text-center pt-6;
 }
 
 .pane-right {
@@ -72,11 +88,17 @@
 }
 
 .pane {
-  @apply h-300 w-full;
+  @apply h-350 w-full;
 }
 
 .pane-lg {
   @apply h-350 w-full;
+}
+
+@screen xsm {
+  .pane {
+    @apply h-300 w-full;
+  }
 }
 
 @screen sm {
@@ -91,7 +113,7 @@
   }
 
   .pane-right {
-    @apply pt-6
+    @apply pt-0
   }
 }
 
@@ -139,7 +161,13 @@
 }
 
 .banner-header {
-  @apply box-border pt-16 h-40 w-80 text-6xl tracking-wide text-center font-serif border-b 
+  @apply box-border pt-16 h-32 w-80 text-4xl tracking-wide text-center font-serif border-b 
+}
+
+@screen sm {
+  .banner-header {
+    @apply text-6xl h-40 w-128
+  }
 }
 
 
