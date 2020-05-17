@@ -1,34 +1,41 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
 import Navigation from '../components/Navigation.js'
+import NavButton from '../components/NavButton.js'
 
-class NavBar extends React.Component {
-  render() {
+
+function NavBar() {
     return (
-      <Navigation 
+      <Navigation
         navItems={
-          <ul>
+          <ul className="box-border flex justify-end">
 
+            <NavButton
+              buttonStyle="nav-item"
+              linkStyle="nav-button"
+              activeStyle="active-hero"
+              to="Hero"
+            />
 
-
-            
-            <Link 
-              activeClass="active"
+            <NavButton
+              buttonStyle="nav-item"
+              linkStyle="nav-button"
+              activeStyle="active-profile"
               to="Profile"
-              spy={true}
-              offset={0}
-              duration={500}
-              smooth={true}
-            >
-              Profile
-            </Link>
+            />
+
+            <NavButton
+              buttonStyle="nav-item"
+              linkStyle="nav-button"
+              activeStyle="active-projects"
+              to="Projects"
+            />
+            
           </ul>
         }
-        navStyle="TBD"
-        navItemsStyle="TBD"
+        navStyle="navbar"
+        navItemsStyle="box-border fixed nav-spacing-right"
       />
     );
-  }
 }
 
 export default NavBar;

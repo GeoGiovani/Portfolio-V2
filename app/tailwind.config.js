@@ -33,6 +33,7 @@ module.exports = {
       '300': '56rem',
       '350': '62rem',
       'p5': '5%',
+      'p50': '50%',
       'p90': '90%',
     },
     screens: {
@@ -47,8 +48,12 @@ module.exports = {
         'custom-grey-800': '#343233',
         'custom-grey-900': '#262425',
         'custom-beige-200': '#efdbb9',
+        'custom-beige-300': '#e7ca97',
         'custom-teal-300': '#62f4eb',
         'custom-teal-400': '#3ae7e1',
+      },
+      borderRadius: {
+        'circle': '50%',
       },
     },
   },

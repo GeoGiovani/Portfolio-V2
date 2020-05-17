@@ -1,15 +1,13 @@
 import React from 'react';
 
-class Navigation extends React.Component {
-  render() {
+function Navigation(props) {
     return(
-      <nav className={this.props.navStyle}>
-        <div className={this.props.navItemstStyle}>
-          {this.props.navItems}
+      <nav className={props.navStyle}>
+        <div className={props.navItemsStyle}>
+          {props.navItems}
         </div>
       </nav>
     )
-  }
 }
 
 export default Navigation;

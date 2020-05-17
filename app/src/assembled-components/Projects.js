@@ -1,7 +1,5 @@
 import React from 'react';
 import SplitPane from '../components/SplitPane.js'
-// import SplitPaneCard from '../components/SplitPaneCard.js'
-// import SplitPaneImage from '../components/SplitPaneImage.js'
 import Banner from '../components/Banner.js'
 import '../styles/index.css';
 
@@ -20,7 +18,7 @@ function Projects() {
         right={
           <div></div>
         }
-        paneStyle="pane bg-white pb-12"
+        paneStyle="pane h-screen bg-white pb-12"
         paneTitleStyle="flex justify-center font-serif"
         leftPaneStyle="pane-left"
         rightPaneStyle="pane-right"
