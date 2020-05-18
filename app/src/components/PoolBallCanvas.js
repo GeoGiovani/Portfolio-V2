@@ -21,7 +21,8 @@ class PoolBalls extends PtsCanvas {
 
   animate (time, ftime, space) { 
     this.world.drawParticles( (p, i) => {
-      let color = (i===0) ? "#343233" : ["#ff2d5d", "#42dc8e", "#2e43eb", "#ffe359"][i%4];
+      // let color = (i===0) ? "#343233" : ["#ff2d5d", "#42dc8e", "#2e43eb", "#ffe359"][i%4];
+      let color = (i===0) ? "#343233" : ["#fff","#fff","#fff","#fff"][i%4];
       this.form.fillOnly( color ).point( p, p.radius, "circle" ) 
     });
 
