@@ -51,6 +51,8 @@ module.exports = {
         'custom-beige-300': '#e7ca97',
         'custom-teal-300': '#62f4eb',
         'custom-teal-400': '#3ae7e1',
+        'custom-red-400': '#fe2c5d',
+        'custom-red-600': '#980124',
       },
       borderRadius: {
         'circle': '50%',

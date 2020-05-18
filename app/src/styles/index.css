@@ -11,8 +11,17 @@
   right: 2rem;
 }
 
+.pool-hero {
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  left: 0;
+  width: 40%;
+  height: 40%;
+}
+
 .nav-button {
-  @apply h-5 w-5 bg-gray-600 bg-opacity-25 rounded-full flex mx-3
+  @apply h-5 w-5 bg-white bg-opacity-75 rounded-full flex mx-3
 }
 
 .nav-link {
@@ -24,7 +33,7 @@
 }
 
 .active-hero {
-  @apply bg-custom-beige-300 h-6 w-6
+  @apply bg-custom-red-400 h-6 w-6
 }
 
 .active-projects {
