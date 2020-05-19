@@ -52,11 +52,21 @@ module.exports = {
         'custom-teal-300': '#62f4eb',
         'custom-teal-400': '#3ae7e1',
         'custom-red-400': '#fe2c5d',
+        'custom-red-500': '#ff3f83',
         'custom-red-600': '#980124',
+        'custom-purple-400': '#2E55C1',
+        'custom-yellow-400': '#ffeb3b',
       },
       borderRadius: {
         'circle': '50%',
       },
+      fontSize: {
+        'large-100': '10rem'
+      },
+      fontFamily: {
+        'roboto': ['Roboto'],
+        'open-sans': ['Open Sans'],
+      }
     },
   },
   variants: {

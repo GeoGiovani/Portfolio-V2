@@ -10,8 +10,8 @@ function PoolBallHero() {
           style={{height: '100%', width: '100%', position: 'absolute'}}/
         >
       </div>
-      <div className="pool-hero pointer-events-none flex items-end justify-start">
-        <div className="text-6xl text-gray-200 tracking-wide pointer-events-none">
+      <div className="canvas-hero pointer-events-none flex items-end justify-start">
+        <div className="text-6xl text-gray-200 text-center tracking-wide pointer-events-none">
           George Giovanis
         </div>
       </div>

@@ -18,7 +18,7 @@ class ShootingStars extends PtsCanvas {
     // Generate a Line object along bottom axis
     let perpends = new Group( this.sw, this.se ).op( Line.perpendicularFromPt );
     // Rotate all points
-    this.pts.rotate2D( 0.0003, space.center );
+    this.pts.rotate2D( 0.0004, space.center );
     // Draw perpendicular lines to each point
     this.pts.forEach( (p, i) => {
       let lp = perpends( p );
@@ -32,7 +32,7 @@ class ShootingStars extends PtsCanvas {
 
 function SpaceCanvas(props) {
   return (
-    <ShootingStars background="#000" style={{height: '100%', width: '100%', position: 'absolute', top: 0, left: 0}}/>
+    <ShootingStars background={props.bgColor} style={props.style}/>
   );
 }
 
