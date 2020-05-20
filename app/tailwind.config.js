@@ -40,6 +40,7 @@ module.exports = {
     screens: {
       'xsm': '360px',
       'sm': '640px',
+      'smmd': '720px',
       'md': '850px',
       'lg': '1024px',
       'lglg': '1100px',
@@ -64,6 +65,10 @@ module.exports = {
         'circle': '50%',
       },
       fontSize: {
+        'hero-xxsm': '24pt',
+        'hero-xsm': '2.5rem',
+        'hero-sm': '4.5rem',
+        'hero-smmd': '5rem',
         'hero-md': '6rem',
         'hero-lg': '7rem',
         'hero-lglg': '8rem',

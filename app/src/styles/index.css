@@ -16,12 +16,36 @@
 }
 
 .space-hero-name-wrapper {
-  @apply box-border w-screen h-auto absolute top-p20 left-0 z-10
+  @apply box-border w-screen h-auto absolute top-p30 left-0 z-10
 }
 
 .space-hero-name {
-  @apply text-hero-md box-border font-bold flex justify-center w-screen 
+  @apply text-hero-xxsm box-border font-bold flex justify-center w-screen 
   font-roboto text-gray-400 text-opacity-75 tracking-wide pointer-events-none
+}
+
+@screen xsm {
+  .space-hero-name {
+    @apply text-hero-xsm
+  }
+}
+
+@screen sm {
+  .space-hero-name {
+    @apply text-hero-sm
+  }
+}
+
+@screen smmd {
+  .space-hero-name {
+    @apply text-hero-smmd
+  }
+}
+
+@screen md {
+  .space-hero-name {
+    @apply text-hero-md
+  }
 }
 
 @screen lg {
@@ -32,7 +56,7 @@
 
 @screen lglg {
   .space-hero-name {
-    @apply text-hero-lglg
+    @apply text-hero-lglg top-p20
   }
 }
 
