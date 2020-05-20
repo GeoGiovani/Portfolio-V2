@@ -11,25 +11,44 @@
   right: 2rem;
 }
 
-.canvas-hero {
-  position: absolute;
-  z-index: 1;
-  top: 15%;
-  left: 0%;
-}
-
 .space-hero {
   @apply box-border w-screen h-screen
 }
 
 .space-hero-name-wrapper {
-  @apply canvas-hero box-border w-screen h-screen
+  @apply box-border w-screen h-auto absolute top-p20 left-0 z-10
 }
 
 .space-hero-name {
-  @apply text-large-100 box-border font-bold flex justify-center w-screen 
+  @apply text-hero-md box-border font-bold flex justify-center w-screen 
   font-roboto text-gray-400 text-opacity-75 tracking-wide pointer-events-none
 }
+
+@screen lg {
+  .space-hero-name {
+    @apply text-hero-lg
+  }
+}
+
+@screen lglg {
+  .space-hero-name {
+    @apply text-hero-lglg
+  }
+}
+
+@screen lgxl {
+  .space-hero-name {
+    @apply text-hero-lgxl
+  }
+}
+
+@screen xl {
+  .space-hero-name {
+    @apply text-hero-xl
+  }
+
+}
+
 
 .nav-button {
   @apply h-5 w-5 bg-gray-400 bg-opacity-75 rounded-full flex mx-3

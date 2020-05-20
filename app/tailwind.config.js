@@ -34,6 +34,7 @@ module.exports = {
       '350': '62rem',
       'p5': '5%',
       'p50': '50%',
+      'p80': '80%',
       'p90': '90%',
     },
     screens: {
@@ -41,7 +42,9 @@ module.exports = {
       'sm': '640px',
       'md': '850px',
       'lg': '1024px',
-      'xl': '1280px',
+      'lglg': '1100px',
+      'lgxl': '1275px',
+      'xl': '1400px',
     },
     extend: {
       colors: {
@@ -61,11 +64,24 @@ module.exports = {
         'circle': '50%',
       },
       fontSize: {
-        'large-100': '10rem'
+        'hero-md': '6rem',
+        'hero-lg': '7rem',
+        'hero-lglg': '8rem',
+        'hero-lgxl': '9rem',
+        'hero-xl': '10rem',
       },
       fontFamily: {
         'roboto': ['Roboto'],
         'open-sans': ['Open Sans'],
+      },
+      inset: {
+        'p10': '10%',
+        'p15': '15%',
+        'p20': '20%',
+        'p25': '25%',
+        'p30': '30%',
+        'p40': '40%',
+        'p50': '50%',
       }
     },
   },
