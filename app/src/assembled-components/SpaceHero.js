@@ -1,5 +1,6 @@
 import React from 'react'
 import SpaceCanvas from '../components/SpaceCanvas.js'
+import NavButton from '../components/NavButton.js'
 import '../styles/index.css';
 
 function SpaceHero() {
@@ -16,8 +17,19 @@ function SpaceHero() {
     <div className="space-hero-name-wrapper">
       <div className="space-hero-name">
         George Giovanis
-        <span className="text-custom-red-500"> . </span>
+        <span className="text-gray-100 text-opacity-75"> . </span>
       </div>
+
+      <div className="mt-80">
+        <NavButton 
+          buttonStyle="flex justify-center"
+          linkStyle="btn-space"
+          activeStyle=""
+          to="Profile"
+          linkContents={<p className="pointer-events-none">View my work</p>}
+        />
+      </div>
+
     </div>
 
   </div>
