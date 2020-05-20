@@ -24,12 +24,16 @@
   font-roboto text-gray-100 text-opacity-75 tracking-wide pointer-events-none
 }
 
+.space-hero-button-wrapper {
+  @apply z-20 box-border w-screen absolute bottom-p7-5
+}
+
 .btn-space {
   @apply flex justify-center text-gray-100 text-opacity-75 font-roboto text-xl py-2 px-0 border-2 border-gray-100 border-opacity-75 bg-gray-400 bg-opacity-25 w-48 transition ease-in duration-300
 }
 
 .btn-space:hover {
-  @apply bg-custom-purple-400 border-custom-purple-400 text-gray-100
+  @apply bg-custom-purple-400 border-custom-purple-400 bg-opacity-75 text-gray-100
 }
 
 @screen xsm {
@@ -66,6 +70,9 @@
   .space-hero-name {
     @apply text-hero-lglg top-p20
   }
+  .space-hero-name-wrapper {
+    @apply top-p20
+  }
 }
 
 @screen lgxl {
@@ -78,7 +85,7 @@
   .space-hero-name {
     @apply text-hero-xl
   }
-
+  
 }
 
 .nav-button {

@@ -6,7 +6,7 @@ function NavButton(props) {
     <li className={props.buttonStyle}>
         <Link 
           className={props.linkStyle} 
-          activeClass={props.activeStyle} 
+          activeClass={props.activeStyle || ""} 
           to={props.to || ""} 
           spy={props.spy || true} 
           duration={props.duration || 500} 
