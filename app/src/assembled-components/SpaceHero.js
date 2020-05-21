@@ -9,7 +9,7 @@ function SpaceHero() {
     
     <div className="space-hero">
       <SpaceCanvas 
-        bgColor="#101010"
+        bgColor="#0c0c0c"
         style={{
           height: '100%',
           width: '100%', 
@@ -23,7 +23,7 @@ function SpaceHero() {
     <div className="space-hero-name-wrapper">
       <div className="space-hero-name">
         George Giovanis
-        <span className="text-gray-100 text-opacity-75"> . </span> 
+        <span className="text-gray-300 text-opacity-75"> . </span> 
       </div>
     </div>
 

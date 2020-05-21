@@ -54,7 +54,7 @@ function Profile() {
             imageStyle="h-96 border border-custom-grey-800 border-opacity-50"
           />
         }
-        paneStyle="pane bg-custom-black-900 pb-12"
+        paneStyle="pane bg-custom-black-900"
         paneTitleStyle="flex justify-center font-serif"
         leftPaneStyle="pane-left"
         rightPaneStyle="pane-right"

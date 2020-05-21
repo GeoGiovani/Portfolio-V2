@@ -21,7 +21,7 @@
 
 .space-hero-name {
   @apply text-hero-xxsm box-border font-bold flex justify-center w-screen 
-  font-roboto text-gray-100 text-opacity-75 tracking-wide pointer-events-none
+  font-roboto text-gray-300 text-opacity-75 tracking-wide pointer-events-none
 }
 
 .space-hero-button-wrapper {
@@ -92,7 +92,7 @@
 }
 
 .nav-button {
-  @apply h-5 w-5 bg-gray-400 bg-opacity-75 rounded-full flex mx-3
+  @apply h-5 w-5 bg-gray-300 bg-opacity-75 rounded-full flex mx-3
 }
 
 .nav-link {
@@ -110,7 +110,6 @@
 .active-projects {
   @apply bg-green-800 h-6 w-6
 }
-
 
 .btn {
   @apply py-3 px-4 rounded
@@ -218,7 +217,7 @@
 
 @screen md {
   .pane {
-    @apply flex items-stretch h-128
+    @apply flex items-stretch h-full
   }
   .pane-left {
     @apply flex-1 justify-end text-left p-8
