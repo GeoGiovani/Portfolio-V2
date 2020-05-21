@@ -29,11 +29,14 @@
 }
 
 .btn-space {
-  @apply flex justify-center text-gray-100 text-opacity-75 font-roboto text-xl py-2 px-0 border-2 border-gray-100 border-opacity-75 bg-gray-400 bg-opacity-25 w-48 transition ease-in duration-300
+  @apply flex justify-center text-gray-100 text-opacity-75 font-roboto text-xl
+         py-2 px-0 border-2 border-gray-100 border-opacity-75 bg-gray-400 
+         bg-opacity-25 w-48 transition ease-in duration-300
 }
 
 .btn-space:hover {
-  @apply bg-custom-purple-400 border-custom-purple-400 bg-opacity-75 text-gray-100
+  @apply bg-custom-purple-400 border-custom-purple-400 bg-opacity-75 
+         text-gray-100
 }
 
 @screen xsm {
@@ -68,7 +71,7 @@
 
 @screen lglg {
   .space-hero-name {
-    @apply text-hero-lglg top-p20
+    @apply text-hero-lglg
   }
   .space-hero-name-wrapper {
     @apply top-p20
@@ -97,7 +100,7 @@
 }
 
 .active-profile {
-  @apply bg-custom-grey-800 h-6 w-6
+  @apply bg-custom-purple-400 h-6 w-6
 }
 
 .active-hero {
@@ -168,10 +171,6 @@
   .card-content {
     @apply w-96
   }
-}
-
-.profile {
-  @apply box-border h-96 pt-24
 }
 
 @screen xsm {
@@ -253,11 +252,11 @@
 }
 
 .banner {
-  @apply flex content-center justify-center h-40 w-screen
+  @apply flex items-end justify-center h-p20 w-screen
 }
 
 .banner-header {
-  @apply box-border pt-16 h-32 w-80 text-4xl tracking-wide text-center font-serif border-b 
+  @apply box-border h-auto w-p40 tracking-wide text-center font-roboto
 }
 
 @screen sm {

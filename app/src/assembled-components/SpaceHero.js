@@ -9,7 +9,7 @@ function SpaceHero() {
     
     <div className="space-hero">
       <SpaceCanvas 
-        bgColor="#000"
+        bgColor="#101010"
         style={{
           height: '100%',
           width: '100%', 

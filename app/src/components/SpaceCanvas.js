@@ -22,7 +22,7 @@ class ShootingStars extends PtsCanvas {
     // Draw perpendicular lines to each point
     this.pts.forEach( (p, i) => {
       let lp = perpends( p );
-      var ratio = Math.min( .5, 1 - lp.$subtract(p).magnitude()/(space.size.x/(space.size.x/space.size.y*1.3)));
+      var ratio = Math.min( .6, 1 - lp.$subtract(p).magnitude()/(space.size.x/(space.size.x/space.size.y*1.3)));
       let fadeColors = ['rgba(255,63,142', 'rgba(4,194,201', 'rgba(46,85,193'];
       this.form.stroke(`${fadeColors[i%3]},${ratio})`, ratio*2).line( [ p, lp ] );
       this.form.fillOnly( this.colors[i%3] ).point( p, 1 );

@@ -8,11 +8,11 @@ import '../styles/index.css';
 
 function Profile() {
   return (
-    <div id="Profile">
+    <div id="Profile" className="h-screen">
       <Banner 
         header="Profile"
-        bannerStyle="banner bg-white"
-        headerStyle="banner-header text-custom-grey-900 border-custom-grey-900 border-opacity-50"
+        bannerStyle="banner bg-custom-black-900"
+        headerStyle="banner-header text-gray-100 text-opacity-75 text-hero-lglg font-bold border-b border-gray-100 border-opacity-50"
       />
       <SplitPane 
         left = {
@@ -54,7 +54,7 @@ function Profile() {
             imageStyle="h-96 border border-custom-grey-800 border-opacity-50"
           />
         }
-        paneStyle="pane bg-white pb-12"
+        paneStyle="pane bg-custom-black-900 pb-12"
         paneTitleStyle="flex justify-center font-serif"
         leftPaneStyle="pane-left"
         rightPaneStyle="pane-right"
