@@ -2,15 +2,6 @@
 
 @tailwind components;
 
-.navbar {
-  @apply box-border flex justify-end
-}
-
-.nav-spacing-right {
-  top: 2rem;
-  right: 2rem;
-}
-
 .space-hero {
   @apply box-border w-screen h-screen
 }
@@ -25,7 +16,7 @@
 }
 
 .space-hero-button-wrapper {
-  @apply z-20 box-border w-screen absolute bottom-p7-5
+  @apply z-10 box-border w-screen absolute bottom-p7-5
 }
 
 .btn-space {
@@ -88,7 +79,19 @@
   .space-hero-name {
     @apply text-hero-xl
   }
-  
+}
+
+.night-sky-canvas {
+  @apply box-border w-screen h-screen
+}
+
+.navbar {
+  @apply box-border flex justify-end
+}
+
+.nav-spacing-right {
+  top: 2rem;
+  right: 2rem;
 }
 
 .nav-button {
