@@ -10,7 +10,7 @@ function Profile() {
 
       <div className="night-sky-canvas">
         <NightSkyCanvas 
-          bgColor="#0c0c0c" 
+          bgColor="#121212" 
           style={{
             height: '100%',
             width: '100%', 

@@ -261,9 +261,71 @@
   @apply box-border h-auto w-p40 tracking-wide text-center font-roboto
 }
 
-@screen sm {
-  .banner-header {
-    @apply text-6xl h-40 w-128
+.profile-banner {
+  @apply flex-col justify-end h-p30 w-screen bg-custom-black-800 pointer-events-none
+}
+
+.profile-banner-header {
+  @apply flex justify-center items-center h-56
+}
+
+.banner-content {
+  @apply pt-p1 tracking-wide text-center font-roboto text-gray-300 
+         text-opacity-75 text-hero-lgxl font-bold pointer-events-none
+}
+
+.underline-small {
+  display: inline-block;
+  position: relative;
+}
+
+.underline-small::after {
+  content: '';
+  height: 1px;
+  width: 50%;
+  position: absolute;
+  background: rgba(226, 232, 240, .75);
+  left: 25%;
+  bottom: 10%;
+}
+
+.profile-content {
+  @apply flex items-center text-white w-screen h-142
+}
+
+.profile-pane-left {
+  @apply flex justify-center items-center h-128 w-p60
+}
+
+.profile-text {
+  @apply flex-col w-p70 ml-p17-5 h-auto text-left text-gray-300 font-roboto font-thin text-2xl
+}
+
+.profile-text-link {
+  @apply font-bold text-custom-purple-400
+}
+
+.profile-image-wrapper {
+  @apply flex pl-p2-5 content-center h-128 w-p40
+}
+
+.profile-image-outer {
+  @apply box-border flex items-center h-full
+}
+
+profile-image {
+  @apply h-96 border-8 border-custom-grey-900 rounded-circle
+}
+
+@screen lgxl {
+  .profile-text {
+    @apply text-3xl
+  }
+}
+
+@screen xl {
+  .profile-text {
+    @apply text-4xl
   }
 }
 

@@ -6,7 +6,7 @@ function Banner(props) {
       <div className={props.headerStyle}>
         {props.header}
       </div>
-      <div className={props.foorerStyle}>
+      <div className={props.footerStyle}>
         {props.footer}
       </div>
     </div>

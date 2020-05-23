@@ -1,64 +1,59 @@
 import React from 'react';
-import SplitPane from '../components/SplitPane.js'
-import SplitPaneCard from '../components/SplitPaneCard.js'
-import SplitPaneImage from '../components/SplitPaneImage.js'
 import Banner from '../components/Banner.js'
+import SplitPaneImage from '../components/SplitPaneImage.js'
 import '../styles/index.css';
 
 
 function Profile() {
   return (
-    <div id="Profile" className="h-screen">
+    <div id="Profile" className="h-screen w-screen bg-custom-black-800">
+
       <Banner 
-        header="Profile"
-        bannerStyle="banner bg-custom-black-900"
-        headerStyle="banner-header text-gray-100 text-opacity-75 text-hero-lglg font-bold border-b border-gray-100 border-opacity-50"
+        header={
+          <div className="banner-content">
+            <p className="underline-small">
+              Profile
+            </p>
+          </div>}
+        bannerStyle="profile-banner"
+        headerStyle="profile-banner-header"
       />
-      <SplitPane 
-        left = {
-          <SplitPaneCard
-            title="About Me"
-            content={
-              <div>
-                <p className="mb-4">
-                  Hello! I am a Computer Science student based in Vancouver,
-                  BC, who enjoys creating intuitive web and mobile 
-                  applications.
-                </p>
-                <p className="mb-4">
-                  I believe that user experience is the most important aspect
-                  of an application. My goal is to provide my users with a 
-                  great experience by creating robust, well-written application 
-                  back-ends with pixel-perfect front-ends. 
-                </p>
-                <p>
-                  I currently study at <a className="font-normal" 
-                  href="https://www.sfu.ca/"> Simon Fraser University
-                  </a> and volunteer in the <a className="font-normal" 
-                  href="https://sfumars.com/people/george-giovanis/"> 
-                  Multi-Agent Robotic Systems Laboratory </a>
-                  as an Undergraduate Researcher. 
-                </p>
-              </div> 
-            }
-            outerCardStyle="card text-custom-grey-900"
-            titleStyle="card-title"
-            contentStyle="card-content"
-          />
-        }
-        right = {
-          <SplitPaneImage 
-            src={require("../media/me.jpg")}
-            alt="Hey it's me!"
-            outerCardStyle="profile"
-            imageStyle="h-96 border border-custom-grey-800 border-opacity-50"
-          />
-        }
-        paneStyle="pane bg-custom-black-900"
-        paneTitleStyle="flex justify-center font-serif"
-        leftPaneStyle="pane-left"
-        rightPaneStyle="pane-right"
-      />
+
+      <div className="profile-content">
+          <div className="profile-pane-left">
+
+            {/* Text */}
+            <div className="profile-text">
+              <p className="mb-4">
+                Hello! I'm a Computer Science student based in Vancouver,
+                BC.
+              </p>
+              <p className="mb-4">
+                I love creating intuitive web and mobile applications. My 
+                goal is to provide users with fast, enjoyable, and reliable
+                applications.
+              </p>
+              <p>
+                I currently study at <a className="profile-text-link" 
+                href="https://www.sfu.ca/"> Simon Fraser University
+                </a> and volunteer in the <a className="profile-text-link" 
+                href="https://sfumars.com/people/george-giovanis/"> 
+                MARS Laboratory</a> as an undergraduate researcher.
+              </p>
+            </div>
+          </div>
+
+          {/* Image */}
+          <div className="profile-image-wrapper">
+            <SplitPaneImage 
+              src={require("../media/me.jpg")}
+              alt="Catch you next time!"
+              outerCardStyle="profile-image-outer"
+              imageStyle="h-96 border-8 border-custom-grey-900 rounded-circle"
+            />
+          </div>
+      </div>
+      
     </div>
   );
 }
