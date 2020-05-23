@@ -3,7 +3,7 @@
 @tailwind components;
 
 .space-hero {
-  @apply box-border w-screen h-screen
+  @apply box-border w-screen h-screen bg-custom-black-900
 }
 
 .space-hero-name-wrapper {
@@ -103,7 +103,7 @@
 }
 
 .active-profile {
-  @apply bg-custom-purple-400 h-6 w-6
+  @apply bg-teal-300 h-6 w-6
 }
 
 .active-hero {
@@ -302,7 +302,7 @@
 }
 
 .profile-text-link {
-  @apply font-bold text-custom-purple-400
+  @apply font-bold text-teal-300
 }
 
 .profile-image-wrapper {

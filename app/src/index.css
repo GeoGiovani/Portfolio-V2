@@ -633,7 +633,10 @@ video {
 .space-hero {
   box-sizing: border-box;
   width: 100vw;
-  height: 100vh
+  height: 100vh;
+  --bg-opacity: 1;
+  background-color: #0c0c0c;
+  background-color: rgba(12, 12, 12, var(--bg-opacity))
 }
 
 .space-hero-name-wrapper {
@@ -801,8 +804,8 @@ video {
 
 .active-profile {
   --bg-opacity: 1;
-  background-color: #2E55C1;
-  background-color: rgba(46, 85, 193, var(--bg-opacity));
+  background-color: #81e6d9;
+  background-color: rgba(129, 230, 217, var(--bg-opacity));
   height: 1.5rem;
   width: 1.5rem
 }
@@ -1146,8 +1149,8 @@ video {
 .profile-text-link {
   font-weight: 700;
   --text-opacity: 1;
-  color: #2E55C1;
-  color: rgba(46, 85, 193, var(--text-opacity))
+  color: #81e6d9;
+  color: rgba(129, 230, 217, var(--text-opacity))
 }
 
 .profile-image-wrapper {
