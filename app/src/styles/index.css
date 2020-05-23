@@ -103,7 +103,7 @@
 }
 
 .active-profile {
-  @apply bg-teal-300 h-6 w-6
+  @apply bg-custom-purple-400 h-6 w-6
 }
 
 .active-hero {
@@ -262,7 +262,7 @@
 }
 
 .profile-banner {
-  @apply flex-col justify-end h-p30 w-screen bg-custom-black-800 pointer-events-none
+  @apply flex-col justify-end h-p30 w-screen bg-gray-100 pointer-events-none
 }
 
 .profile-banner-header {
@@ -270,8 +270,8 @@
 }
 
 .banner-content {
-  @apply pt-p1 tracking-wide text-center font-roboto text-gray-300 
-         text-opacity-75 text-hero-lgxl font-bold pointer-events-none
+  @apply pt-p1 tracking-wide text-center font-roboto text-gray-900 
+         text-hero-lgxl font-bold pointer-events-none
 }
 
 .underline-small {
@@ -281,12 +281,12 @@
 
 .underline-small::after {
   content: '';
-  height: 1px;
+  height: 12px;
   width: 50%;
   position: absolute;
-  background: rgba(226, 232, 240, .75);
+  background: #1A202C;
   left: 25%;
-  bottom: 10%;
+  bottom: 15%;
 }
 
 .profile-content {
@@ -294,19 +294,24 @@
 }
 
 .profile-pane-left {
-  @apply flex justify-center items-center h-128 w-p60
+  @apply flex justify-center items-center h-128 w-p70
 }
 
 .profile-text {
-  @apply flex-col w-p70 ml-p17-5 h-auto text-left text-gray-300 font-roboto font-thin text-2xl
+  @apply flex-col w-p90 ml-p10 h-auto text-left text-custom-black-900 font-roboto font-thin text-3xl
+}
+
+.profile-tech {
+  @apply box-border py-1 px-2 mr-2 rounded-lg border-2 border-custom-purple-400 
+  text-gray-900
 }
 
 .profile-text-link {
-  @apply font-bold text-teal-300
+  @apply font-bold text-custom-purple-400
 }
 
 .profile-image-wrapper {
-  @apply flex pl-p2-5 content-center h-128 w-p40
+  @apply flex pl-p2-5 content-center h-128 w-p30
 }
 
 .profile-image-outer {
@@ -317,16 +322,18 @@ profile-image {
   @apply h-96 border-8 border-custom-grey-900 rounded-circle
 }
 
+
+
 @screen lgxl {
-  .profile-text {
+  /* .profile-text {
     @apply text-3xl
-  }
+  } */
 }
 
 @screen xl {
-  .profile-text {
+  /* .profile-text {
     @apply text-4xl
-  }
+  } */
 }
 
 @tailwind utilities;

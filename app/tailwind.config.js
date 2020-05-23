@@ -114,7 +114,10 @@ module.exports = {
         'p100': '100%',
         'p110': '110%',
         'p120': '120%',
-      }
+      },
+      borderWidth: {
+        '6': '6px',
+      },
     },
   },
   variants: {
