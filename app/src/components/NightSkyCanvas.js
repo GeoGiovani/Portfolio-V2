@@ -5,8 +5,8 @@ import {Create} from 'pts/dist/es5'
 class NightSky extends PtsCanvas {
 
   start (bound, space) {
-    this.pts = Create.distributeRandom( space.innerBound, (10*space.size.x/space.size.y)  );
-    this.colors = ["#121212", "#121212", "#121212"];
+    this.pts = Create.distributeRandom( space.innerBound, (25*space.size.x/space.size.y)  );
+    this.colors = ["#FF3F8E", "#04C2C9", "#2E55C1"];
   }
 
   animate (time, ftime, space) {

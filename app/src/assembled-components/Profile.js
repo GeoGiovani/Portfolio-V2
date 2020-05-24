@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from '../components/Banner.js'
 import SplitPaneImage from '../components/SplitPaneImage.js'
+import NightSkyCanvas from '../components/NightSkyCanvas.js'
 import '../styles/index.css';
 
 
@@ -57,9 +58,6 @@ function Profile() {
                 <span className="profile-tech">Java</span>
                 <span className="profile-tech">Julia</span>
               </div>
-              <div className="text-xl">
-
-              </div>
             </div>
           </div>
 
@@ -69,11 +67,10 @@ function Profile() {
               src={require("../media/me.jpg")}
               alt="Catch you next time!"
               outerCardStyle="profile-image-outer"
-              imageStyle="h-96 border-6 border-gray-900 rounded-circle shadow-inner"
+              imageStyle="profile-image"
             />
           </div>
       </div>
-      
     </div>
   );
 }

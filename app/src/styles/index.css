@@ -318,11 +318,9 @@
   @apply box-border flex items-center h-full
 }
 
-profile-image {
-  @apply h-96 border-8 border-custom-grey-900 rounded-circle
+.profile-image {
+  @apply h-96 border-6 border-gray-900 rounded-circle shadow-inner
 }
-
-
 
 @screen lgxl {
   /* .profile-text {

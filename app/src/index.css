@@ -1184,13 +1184,14 @@ video {
   height: 100%
 }
 
-profile-image {
+.profile-image {
   height: 22rem;
-  border-width: 8px;
+  border-width: 6px;
   --border-opacity: 1;
-  border-color: #262425;
-  border-color: rgba(38, 36, 37, var(--border-opacity));
-  border-radius: 50%
+  border-color: #1a202c;
+  border-color: rgba(26, 32, 44, var(--border-opacity));
+  border-radius: 50%;
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)
 }
 
 @media (min-width: 1275px) {
@@ -14927,10 +14928,10 @@ profile-image {
 }
 
 .inset-p120 {
-  top: 120%;
-  right: 120%;
-  bottom: 120%;
-  left: 120%;
+  top: 130%;
+  right: 130%;
+  bottom: 130%;
+  left: 130%;
 }
 
 .inset-y-0 {
@@ -15064,13 +15065,13 @@ profile-image {
 }
 
 .inset-y-p120 {
-  top: 120%;
-  bottom: 120%;
+  top: 130%;
+  bottom: 130%;
 }
 
 .inset-x-p120 {
-  right: 120%;
-  left: 120%;
+  right: 130%;
+  left: 130%;
 }
 
 .top-0 {
@@ -15282,19 +15283,19 @@ profile-image {
 }
 
 .top-p120 {
-  top: 120%;
+  top: 130%;
 }
 
 .right-p120 {
-  right: 120%;
+  right: 130%;
 }
 
 .bottom-p120 {
-  bottom: 120%;
+  bottom: 130%;
 }
 
 .left-p120 {
-  left: 120%;
+  left: 130%;
 }
 
 .resize-none {
@@ -36210,10 +36211,10 @@ profile-image {
   }
 
   .xsm\:inset-p120 {
-    top: 120%;
-    right: 120%;
-    bottom: 120%;
-    left: 120%;
+    top: 130%;
+    right: 130%;
+    bottom: 130%;
+    left: 130%;
   }
 
   .xsm\:inset-y-0 {
@@ -36347,13 +36348,13 @@ profile-image {
   }
 
   .xsm\:inset-y-p120 {
-    top: 120%;
-    bottom: 120%;
+    top: 130%;
+    bottom: 130%;
   }
 
   .xsm\:inset-x-p120 {
-    right: 120%;
-    left: 120%;
+    right: 130%;
+    left: 130%;
   }
 
   .xsm\:top-0 {
@@ -36565,19 +36566,19 @@ profile-image {
   }
 
   .xsm\:top-p120 {
-    top: 120%;
+    top: 130%;
   }
 
   .xsm\:right-p120 {
-    right: 120%;
+    right: 130%;
   }
 
   .xsm\:bottom-p120 {
-    bottom: 120%;
+    bottom: 130%;
   }
 
   .xsm\:left-p120 {
-    left: 120%;
+    left: 130%;
   }
 
   .xsm\:resize-none {
@@ -57476,10 +57477,10 @@ profile-image {
   }
 
   .sm\:inset-p120 {
-    top: 120%;
-    right: 120%;
-    bottom: 120%;
-    left: 120%;
+    top: 130%;
+    right: 130%;
+    bottom: 130%;
+    left: 130%;
   }
 
   .sm\:inset-y-0 {
@@ -57613,13 +57614,13 @@ profile-image {
   }
 
   .sm\:inset-y-p120 {
-    top: 120%;
-    bottom: 120%;
+    top: 130%;
+    bottom: 130%;
   }
 
   .sm\:inset-x-p120 {
-    right: 120%;
-    left: 120%;
+    right: 130%;
+    left: 130%;
   }
 
   .sm\:top-0 {
@@ -57831,19 +57832,19 @@ profile-image {
   }
 
   .sm\:top-p120 {
-    top: 120%;
+    top: 130%;
   }
 
   .sm\:right-p120 {
-    right: 120%;
+    right: 130%;
   }
 
   .sm\:bottom-p120 {
-    bottom: 120%;
+    bottom: 130%;
   }
 
   .sm\:left-p120 {
-    left: 120%;
+    left: 130%;
   }
 
   .sm\:resize-none {
@@ -78742,10 +78743,10 @@ profile-image {
   }
 
   .smmd\:inset-p120 {
-    top: 120%;
-    right: 120%;
-    bottom: 120%;
-    left: 120%;
+    top: 130%;
+    right: 130%;
+    bottom: 130%;
+    left: 130%;
   }
 
   .smmd\:inset-y-0 {
@@ -78879,13 +78880,13 @@ profile-image {
   }
 
   .smmd\:inset-y-p120 {
-    top: 120%;
-    bottom: 120%;
+    top: 130%;
+    bottom: 130%;
   }
 
   .smmd\:inset-x-p120 {
-    right: 120%;
-    left: 120%;
+    right: 130%;
+    left: 130%;
   }
 
   .smmd\:top-0 {
@@ -79097,19 +79098,19 @@ profile-image {
   }
 
   .smmd\:top-p120 {
-    top: 120%;
+    top: 130%;
   }
 
   .smmd\:right-p120 {
-    right: 120%;
+    right: 130%;
   }
 
   .smmd\:bottom-p120 {
-    bottom: 120%;
+    bottom: 130%;
   }
 
   .smmd\:left-p120 {
-    left: 120%;
+    left: 130%;
   }
 
   .smmd\:resize-none {
@@ -100008,10 +100009,10 @@ profile-image {
   }
 
   .md\:inset-p120 {
-    top: 120%;
-    right: 120%;
-    bottom: 120%;
-    left: 120%;
+    top: 130%;
+    right: 130%;
+    bottom: 130%;
+    left: 130%;
   }
 
   .md\:inset-y-0 {
@@ -100145,13 +100146,13 @@ profile-image {
   }
 
   .md\:inset-y-p120 {
-    top: 120%;
-    bottom: 120%;
+    top: 130%;
+    bottom: 130%;
   }
 
   .md\:inset-x-p120 {
-    right: 120%;
-    left: 120%;
+    right: 130%;
+    left: 130%;
   }
 
   .md\:top-0 {
@@ -100363,19 +100364,19 @@ profile-image {
   }
 
   .md\:top-p120 {
-    top: 120%;
+    top: 130%;
   }
 
   .md\:right-p120 {
-    right: 120%;
+    right: 130%;
   }
 
   .md\:bottom-p120 {
-    bottom: 120%;
+    bottom: 130%;
   }
 
   .md\:left-p120 {
-    left: 120%;
+    left: 130%;
   }
 
   .md\:resize-none {
@@ -121274,10 +121275,10 @@ profile-image {
   }
 
   .lg\:inset-p120 {
-    top: 120%;
-    right: 120%;
-    bottom: 120%;
-    left: 120%;
+    top: 130%;
+    right: 130%;
+    bottom: 130%;
+    left: 130%;
   }
 
   .lg\:inset-y-0 {
@@ -121411,13 +121412,13 @@ profile-image {
   }
 
   .lg\:inset-y-p120 {
-    top: 120%;
-    bottom: 120%;
+    top: 130%;
+    bottom: 130%;
   }
 
   .lg\:inset-x-p120 {
-    right: 120%;
-    left: 120%;
+    right: 130%;
+    left: 130%;
   }
 
   .lg\:top-0 {
@@ -121629,19 +121630,19 @@ profile-image {
   }
 
   .lg\:top-p120 {
-    top: 120%;
+    top: 130%;
   }
 
   .lg\:right-p120 {
-    right: 120%;
+    right: 130%;
   }
 
   .lg\:bottom-p120 {
-    bottom: 120%;
+    bottom: 130%;
   }
 
   .lg\:left-p120 {
-    left: 120%;
+    left: 130%;
   }
 
   .lg\:resize-none {
@@ -142540,10 +142541,10 @@ profile-image {
   }
 
   .lglg\:inset-p120 {
-    top: 120%;
-    right: 120%;
-    bottom: 120%;
-    left: 120%;
+    top: 130%;
+    right: 130%;
+    bottom: 130%;
+    left: 130%;
   }
 
   .lglg\:inset-y-0 {
@@ -142677,13 +142678,13 @@ profile-image {
   }
 
   .lglg\:inset-y-p120 {
-    top: 120%;
-    bottom: 120%;
+    top: 130%;
+    bottom: 130%;
   }
 
   .lglg\:inset-x-p120 {
-    right: 120%;
-    left: 120%;
+    right: 130%;
+    left: 130%;
   }
 
   .lglg\:top-0 {
@@ -142895,19 +142896,19 @@ profile-image {
   }
 
   .lglg\:top-p120 {
-    top: 120%;
+    top: 130%;
   }
 
   .lglg\:right-p120 {
-    right: 120%;
+    right: 130%;
   }
 
   .lglg\:bottom-p120 {
-    bottom: 120%;
+    bottom: 130%;
   }
 
   .lglg\:left-p120 {
-    left: 120%;
+    left: 130%;
   }
 
   .lglg\:resize-none {
@@ -163806,10 +163807,10 @@ profile-image {
   }
 
   .lgxl\:inset-p120 {
-    top: 120%;
-    right: 120%;
-    bottom: 120%;
-    left: 120%;
+    top: 130%;
+    right: 130%;
+    bottom: 130%;
+    left: 130%;
   }
 
   .lgxl\:inset-y-0 {
@@ -163943,13 +163944,13 @@ profile-image {
   }
 
   .lgxl\:inset-y-p120 {
-    top: 120%;
-    bottom: 120%;
+    top: 130%;
+    bottom: 130%;
   }
 
   .lgxl\:inset-x-p120 {
-    right: 120%;
-    left: 120%;
+    right: 130%;
+    left: 130%;
   }
 
   .lgxl\:top-0 {
@@ -164161,19 +164162,19 @@ profile-image {
   }
 
   .lgxl\:top-p120 {
-    top: 120%;
+    top: 130%;
   }
 
   .lgxl\:right-p120 {
-    right: 120%;
+    right: 130%;
   }
 
   .lgxl\:bottom-p120 {
-    bottom: 120%;
+    bottom: 130%;
   }
 
   .lgxl\:left-p120 {
-    left: 120%;
+    left: 130%;
   }
 
   .lgxl\:resize-none {
@@ -185072,10 +185073,10 @@ profile-image {
   }
 
   .xl\:inset-p120 {
-    top: 120%;
-    right: 120%;
-    bottom: 120%;
-    left: 120%;
+    top: 130%;
+    right: 130%;
+    bottom: 130%;
+    left: 130%;
   }
 
   .xl\:inset-y-0 {
@@ -185209,13 +185210,13 @@ profile-image {
   }
 
   .xl\:inset-y-p120 {
-    top: 120%;
-    bottom: 120%;
+    top: 130%;
+    bottom: 130%;
   }
 
   .xl\:inset-x-p120 {
-    right: 120%;
-    left: 120%;
+    right: 130%;
+    left: 130%;
   }
 
   .xl\:top-0 {
@@ -185427,19 +185428,19 @@ profile-image {
   }
 
   .xl\:top-p120 {
-    top: 120%;
+    top: 130%;
   }
 
   .xl\:right-p120 {
-    right: 120%;
+    right: 130%;
   }
 
   .xl\:bottom-p120 {
-    bottom: 120%;
+    bottom: 130%;
   }
 
   .xl\:left-p120 {
-    left: 120%;
+    left: 130%;
   }
 
   .xl\:resize-none {
