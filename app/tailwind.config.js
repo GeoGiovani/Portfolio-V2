@@ -26,6 +26,7 @@ module.exports = {
       '64': '16rem',
       '80': '19rem',
       '96': '22rem',
+      '112': '25rem',
       '128': '32rem',
       '142': '35rem',
       '156': '38rem',
@@ -96,6 +97,7 @@ module.exports = {
         'hero-lglg': '8rem',
         'hero-lgxl': '9rem',
         'hero-xl': '10rem',
+        'profile-xl': '1.75rem',
       },
       fontFamily: {
         'roboto': ['Roboto'],
