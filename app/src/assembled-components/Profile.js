@@ -7,7 +7,7 @@ import '../styles/index.css';
 
 function Profile() {
   return (
-    <div id="Profile" className="h-screen w-screen bg-gray-100">
+    <div id="Profile" className="profile-page">
 
       <Banner 
         header={
@@ -21,19 +21,22 @@ function Profile() {
       />
 
       <div className="profile-content">
-          <div className="profile-pane-left">
 
+          <div className="profile-pane-left">
             {/* Text */}
             <div className="profile-text">
+              
               <p className="mb-4">
                 Hello! I'm a third-year Computer Science student
                 based in Vancouver, BC. I currently study at&nbsp;
                 <a className="profile-link text-custom-purple-400 font-bold" 
                 href="https://www.sfu.ca/">Simon Fraser University
-                </a> and volunteer in the <a className="profile-link text-custom-purple-400 font-bold" 
+                </a> and volunteer in the&nbsp;
+                <a className="profile-link text-custom-purple-400 font-bold" 
                 href="https://sfumars.com/people/george-giovanis/"> 
                 MARS Laboratory</a>.
               </p>
+
               <p className="mb-4">
                 I love creating intuitive web and mobile applications. My 
                 goal is to provide users with fast, enjoyable, and reliable
@@ -46,24 +49,28 @@ function Profile() {
                 developer co-op/internship.
               </p>
 
-              <div className="mr-p5">
+              <div className="profile-button">
                 <LinkButton
                   link="mailto:georgedgiovani.dev@gmail.com"
                   content="Contact Me"
                   buttonStyle="btn-contact"
                 />
               </div>
-            </div>
+
+            </div>{/* End Text */}
+
           </div>
 
-          {/* Image */}
-          <div className="profile-image-wrapper">
+          <div className="profile-pane-right">
+
+            {/* Image */}
             <SplitPaneImage 
               src={require("../media/me.jpg")}
               alt="Catch you next time!"
               outerCardStyle="profile-image-outer"
               imageStyle="profile-image"
             />
+
           </div>
       </div>
     </div>

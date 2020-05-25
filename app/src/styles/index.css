@@ -262,16 +262,16 @@
 }
 
 .profile-banner {
-  @apply flex-col justify-end h-p30 w-screen bg-gray-100 pointer-events-none
+  @apply flex justify-center h-p20 w-screen bg-gray-100 pointer-events-none
 }
 
 .profile-banner-header {
-  @apply flex justify-center items-center h-56
+  @apply flex items-center justify-center h-56
 }
 
 .banner-content {
-  @apply pt-p1 tracking-wide text-center font-roboto text-gray-900 
-         text-hero-lgxl font-bold pointer-events-none
+  @apply pt-p1 text-center font-roboto text-gray-900 
+         text-hero-md font-bold pointer-events-none
 }
 
 .underline-small {
@@ -281,34 +281,42 @@
 
 .underline-small::after {
   content: '';
-  height: 12px;
-  width: 50%;
+  height: 16px;
+  width: 60%;
   position: absolute;
   background: #1A202C;
-  left: 25%;
-  bottom: 0%;
+  left: 20%;
+  bottom: 5%;
+}
+
+.profile-page {
+  @apply h-screen w-screen bg-gray-100
 }
 
 .profile-content {
-  @apply flex items-center justify-center text-white w-screen h-142
+  @apply flex flex-col justify-center items-center text-white w-screen h-p80
 }
 
 .profile-pane-left {
-  @apply flex justify-center items-center h-128 w-p50
+  @apply flex justify-center items-center h-full w-screen order-2
+}
+
+.profile-pane-right {
+  @apply flex justify-center h-96 w-screen order-1
 }
 
 .profile-text {
-  @apply flex-col w-p90 h-auto text-left text-custom-black-900 font-roboto 
-         font-thin text-profile-xl
-}
-
-.profile-tech {
-  @apply box-border py-1 px-2 mr-2 rounded-lg border-2 border-custom-purple-400 
-  text-gray-900
+  @apply flex-col justify-center w-p90 h-auto 
+         text-left text-custom-black-900 font-roboto 
+         font-thin text-2xl
 }
 
 .profile-text-link {
   @apply font-bold text-custom-purple-400
+}
+
+.profile-button {
+  @apply flex justify-center
 }
 
 .profile-link {
@@ -326,16 +334,61 @@
   background-size: 100% 4px;
 }
 
-.profile-image-wrapper {
-  @apply flex pl-p2-5 content-center h-128 w-p30
-}
-
 .profile-image-outer {
-  @apply box-border flex items-center h-full
+  @apply flex items-center h-full w-auto
 }
 
 .profile-image {
-  @apply h-96 border-4 border-gray-900 shadow-inner
+  @apply h-64 border-4 border-gray-900 shadow-inner
+}
+
+@screen lglg {
+  .profile-banner {
+    @apply h-p25
+  }
+  .profile-banner-header {
+    @apply items-center
+  }
+  .banner-content {
+    @apply text-hero-lgxl tracking-wide
+  }
+  .profile-content {
+    @apply flex-row h-p75
+  }
+  .profile-pane-left {
+    @apply justify-end h-128 w-p60 order-1
+
+  }
+  .profile-pane-right {
+    @apply justify-end h-128 w-p40 order-2
+  }
+  .profile-image-outer {
+    @apply mr-p15
+  }
+  .profile-text {
+    @apply text-xl
+  }
+  .profile-button {
+    @apply justify-start
+  }
+}
+
+@screen lglg {
+  .profile-text {
+    @apply text-2xl
+  }
+  .profile-image {
+    @apply h-96
+  }
+}
+
+@screen xl {
+  .profile-text {
+    @apply text-profile-xl w-p80
+  }
+  .profile-image-outer {
+    @apply mr-p30
+  }
 }
 
 .btn-contact {
@@ -350,18 +403,6 @@
 
 .btn-contact:hover {
   @apply text-white shadow-xl
-}
-
-@screen lgxl {
-  /* .profile-text {
-    @apply text-3xl
-  } */
-}
-
-@screen xl {
-  /* .profile-text {
-    @apply text-4xl
-  } */
 }
 
 @tailwind utilities;
