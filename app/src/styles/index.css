@@ -7,7 +7,8 @@
 }
 
 .space-hero-name-wrapper {
-  @apply box-border w-screen h-auto absolute top-p30 left-0 z-10
+  @apply box-border w-screen h-auto absolute top-p30 left-0 z-10 
+         pointer-events-none
 }
 
 .space-hero-name {
@@ -280,7 +281,7 @@
 }
 
 .profile-content {
-  @apply flex flex-col justify-center items-center text-white w-screen h-p80
+  @apply flex flex-col justify-center items-center text-white w-screen h-p80 bg-gray-100
 }
 
 .profile-pane-left {
@@ -380,17 +381,23 @@
 }
 
 @screen lglg {
+  .profile-banner {
+    @apply h-48
+  }
   .banner-content {
     @apply text-hero-lglg
   }
   .profile-page {
     @apply h-screen w-screen
   }
+  .profile-content {
+    @apply flex-row h-128 mt-6
+  }
   .profile-banner {
-    @apply h-p25 items-end
+    @apply h-56
   }
   .profile-content {
-    @apply h-p75
+    @apply h-142
   }
   .profile-text {
     @apply text-2xl
@@ -404,6 +411,12 @@
 }
 
 @screen lgxl {
+  .profile-banner {
+    @apply h-56
+  }
+  .profile-content {
+    @apply mt-12
+  }
   .banner-content {
     @apply text-hero-lgxl
   }
