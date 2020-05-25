@@ -618,9 +618,9 @@ video {
   }
 }
 
-@media (min-width: 1275px) {
+@media (min-width: 1290px) {
   .container {
-    max-width: 1275px;
+    max-width: 1290px;
   }
 }
 
@@ -755,7 +755,7 @@ video {
   }
 }
 
-@media (min-width: 1275px) {
+@media (min-width: 1290px) {
   .space-hero-name {
     font-size: 9rem
   }
@@ -1308,9 +1308,7 @@ video {
   }
 
   .profile-content {
-    flex-direction: row;
-    height: 32rem;
-    margin-top: 1.5rem
+    flex-direction: row
   }
 
   .profile-banner {
@@ -1318,7 +1316,8 @@ video {
   }
 
   .profile-content {
-    height: 35rem
+    height: 32rem;
+    margin-top: 0.5rem
   }
 
   .profile-text {
@@ -1334,13 +1333,14 @@ video {
   }
 }
 
-@media (min-width: 1275px) {
+@media (min-width: 1290px) {
   .profile-banner {
     height: 14rem
   }
 
   .profile-content {
-    margin-top: 3rem
+    margin-top: 3rem;
+    height: 35rem
   }
 
   .banner-content {
@@ -12118,7 +12118,7 @@ video {
 }
 
 .max-w-screen-lgxl {
-  max-width: 1275px;
+  max-width: 1290px;
 }
 
 .max-w-screen-xl {
@@ -33891,7 +33891,7 @@ video {
   }
 
   .xsm\:max-w-screen-lgxl {
-    max-width: 1275px;
+    max-width: 1290px;
   }
 
   .xsm\:max-w-screen-xl {
@@ -55603,7 +55603,7 @@ video {
   }
 
   .sm\:max-w-screen-lgxl {
-    max-width: 1275px;
+    max-width: 1290px;
   }
 
   .sm\:max-w-screen-xl {
@@ -77315,7 +77315,7 @@ video {
   }
 
   .smmd\:max-w-screen-lgxl {
-    max-width: 1275px;
+    max-width: 1290px;
   }
 
   .smmd\:max-w-screen-xl {
@@ -99027,7 +99027,7 @@ video {
   }
 
   .md\:max-w-screen-lgxl {
-    max-width: 1275px;
+    max-width: 1290px;
   }
 
   .md\:max-w-screen-xl {
@@ -120739,7 +120739,7 @@ video {
   }
 
   .lg\:max-w-screen-lgxl {
-    max-width: 1275px;
+    max-width: 1290px;
   }
 
   .lg\:max-w-screen-xl {
@@ -142451,7 +142451,7 @@ video {
   }
 
   .lglg\:max-w-screen-lgxl {
-    max-width: 1275px;
+    max-width: 1290px;
   }
 
   .lglg\:max-w-screen-xl {
@@ -153403,7 +153403,7 @@ video {
   }
 }
 
-@media (min-width: 1275px) {
+@media (min-width: 1290px) {
   .lgxl\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(0rem * calc(1 - var(--space-y-reverse)));
@@ -164163,7 +164163,7 @@ video {
   }
 
   .lgxl\:max-w-screen-lgxl {
-    max-width: 1275px;
+    max-width: 1290px;
   }
 
   .lgxl\:max-w-screen-xl {
@@ -185875,7 +185875,7 @@ video {
   }
 
   .xl\:max-w-screen-lgxl {
-    max-width: 1275px;
+    max-width: 1290px;
   }
 
   .xl\:max-w-screen-xl {

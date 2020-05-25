@@ -391,13 +391,13 @@
     @apply h-screen w-screen
   }
   .profile-content {
-    @apply flex-row h-128 mt-6
+    @apply flex-row
   }
   .profile-banner {
     @apply h-56
   }
   .profile-content {
-    @apply h-142
+    @apply h-128 mt-2
   }
   .profile-text {
     @apply text-2xl
@@ -415,7 +415,7 @@
     @apply h-56
   }
   .profile-content {
-    @apply mt-12
+    @apply mt-12 h-142
   }
   .banner-content {
     @apply text-hero-lgxl
