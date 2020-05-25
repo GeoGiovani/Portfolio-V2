@@ -102,12 +102,12 @@
   @apply hidden my-3 
 }
 
-.active-profile {
-  @apply bg-custom-purple-400 h-6 w-6
-}
-
 .active-hero {
   @apply bg-custom-red-500 h-6 w-6
+}
+
+.active-profile {
+  @apply bg-custom-purple-400 h-6 w-6
 }
 
 .active-projects {
@@ -258,11 +258,16 @@
 }
 
 .banner-header {
-  @apply box-border h-auto w-p40 tracking-wide text-center font-roboto
+  @apply box-border h-auto w-p40 text-center font-roboto
+}
+
+.profile-page {
+  @apply h-auto w-full bg-gray-100
 }
 
 .profile-banner {
-  @apply flex items-center justify-center h-32 w-screen bg-gray-100 pointer-events-none
+  @apply flex items-center justify-center h-32 w-screen bg-gray-100 
+          pointer-events-none
 }
 
 .profile-banner-header {
@@ -271,26 +276,7 @@
 
 .banner-content {
   @apply pt-p1 text-center font-roboto text-gray-900 
-         text-hero-sm font-bold pointer-events-none
-}
-
-.underline-small {
-  display: inline-block;
-  position: relative;
-}
-
-.underline-small::after {
-  content: '';
-  height: 6px;
-  width: 60%;
-  position: absolute;
-  background: #1A202C;
-  left: 20%;
-  bottom: 5%;
-}
-
-.profile-page {
-  @apply h-auto w-full bg-gray-100
+        text-hero-sm font-bold pointer-events-none tracking-wide
 }
 
 .profile-content {
@@ -307,27 +293,11 @@
 
 .profile-text {
   @apply flex-col justify-center w-p90 h-auto 
-         text-left text-custom-black-900 font-roboto 
-         font-thin text-xl
+         text-left text-custom-black-900 font-roboto font-thin text-xl
 }
 
 .profile-text-link {
   @apply font-bold text-custom-purple-400
-}
-
-.profile-link {
-  text-decoration: none;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 4px;
-  transition: background-size cubic-bezier(.25,.5,0,1) 0.5s;
-}
-
-.profile-link:hover,
-.profile-link:focus {
-  text-decoration: none;
-  background-size: 100% 4px;
 }
 
 .profile-image-outer {
@@ -335,7 +305,7 @@
 }
 
 .profile-image {
-  @apply h-56 border-4 border-gray-900 rounded-circle shadow-inner
+  @apply h-56 border-4 border-gray-300 rounded-circle shadow-inner
 }
 
 .profile-button {
@@ -343,13 +313,11 @@
 }
 
 .btn-contact {
-  @apply flex justify-center items-center text-gray-100 w-48 py-2 border-2
-         font-roboto text-xl tracking-wide
-         border-custom-purple-400
-         bg-custom-purple-400
-         shadow-lg
-         transition ease-in duration-500
-         
+  @apply flex justify-center items-center w-48 py-2 border-2
+         font-roboto text-xl tracking-wide text-white
+         border-custom-red-500 shadow-lg
+         bg-custom-red-500
+         transition ease-in duration-500      
 }
 
 .btn-contact:hover {
@@ -385,7 +353,7 @@
     @apply h-48
   }
   .banner-content {
-    @apply text-hero-lg tracking-wide
+    @apply text-hero-lg
   }
   .profile-content {
     @apply flex-row h-128
@@ -397,9 +365,6 @@
   .profile-pane-right {
     @apply justify-end h-128 w-p40 order-2
   }
-  .profile-image-outer {
-    @apply items-end mr-p15
-  }
   .profile-text {
     @apply text-xl
   }
@@ -407,7 +372,10 @@
     @apply justify-start
   }
   .profile-image-outer {
-    @apply items-center
+    @apply items-center mr-p15
+  }
+  .profile-image {
+    @apply border-8
   }
 }
 
@@ -456,7 +424,51 @@
 
 @responsive {
   .bg-teal-gradient {
-    /* background-image: linear-gradient(#62f4eb, #3ae7e1); */
-    background-image: linear-gradient(theme('colors.custom-teal-300'), theme('colors.custom-teal-400'));
+    background-image: linear-gradient(theme('colors.custom-teal-300'), 
+                                      theme('colors.custom-teal-400'));
   }
+}
+
+.underline-small {
+  display: inline-block;
+  position: relative;
+}
+
+.underline-small::after {
+  content: '';
+  height: 4px;
+  width: 40%;
+  position: absolute;
+  background: #1A202C;
+  left: 30%;
+  bottom: 15%;
+}
+
+@media only screen and (min-width: 640px) {
+  .underline-small::after {
+    height: 6px;
+    bottom: 10%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .underline-small::after {
+    height: 8px;
+    bottom: 15%;
+  }
+}
+
+.profile-link {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 4px;
+  transition: background-size cubic-bezier(.25,.5,0,1) 0.5s;
+}
+
+.profile-link:hover,
+.profile-link:focus {
+  text-decoration: none;
+  background-size: 100% 4px;
 }
