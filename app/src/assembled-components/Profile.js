@@ -11,12 +11,12 @@ function Profile() {
 
       <Banner 
         header={
-          <div className="banner-content">
+          <div className="banner-content text-gray-900">
             <p className="underline-small">
               Profile
             </p>
           </div>}
-        bannerStyle="profile-banner"
+        bannerStyle="profile-banner bg-gray-100"
         headerStyle="profile-banner-header"
       />
 

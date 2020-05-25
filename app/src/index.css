@@ -704,12 +704,11 @@ video {
 
 .btn-space:hover {
   --bg-opacity: 1;
-  background-color: #2E55C1;
-  background-color: rgba(46, 85, 193, var(--bg-opacity));
+  background-color: #04C2C9;
+  background-color: rgba(4, 194, 201, var(--bg-opacity));
   --border-opacity: 1;
-  border-color: #2E55C1;
-  border-color: rgba(46, 85, 193, var(--border-opacity));
-  --bg-opacity: 0.75;
+  border-color: #04C2C9;
+  border-color: rgba(4, 194, 201, var(--border-opacity));
   --text-opacity: 1;
   color: #f7fafc;
   color: rgba(247, 250, 252, var(--text-opacity))
@@ -805,8 +804,8 @@ video {
 
 .active-hero {
   --bg-opacity: 1;
-  background-color: #ff3f83;
-  background-color: rgba(255, 63, 131, var(--bg-opacity));
+  background-color: #04C2C9;
+  background-color: rgba(4, 194, 201, var(--bg-opacity));
   height: 1.5rem;
   width: 1.5rem
 }
@@ -821,8 +820,8 @@ video {
 
 .active-projects {
   --bg-opacity: 1;
-  background-color: #276749;
-  background-color: rgba(39, 103, 73, var(--bg-opacity));
+  background-color: #ff3f83;
+  background-color: rgba(255, 63, 131, var(--bg-opacity));
   height: 1.5rem;
   width: 1.5rem
 }
@@ -1067,6 +1066,8 @@ video {
   font-family: Roboto
 }
 
+/* ================================ PROFILE ================================ */
+
 .profile-page {
   height: auto;
   width: 100%;
@@ -1081,9 +1082,6 @@ video {
   justify-content: center;
   height: 8rem;
   width: 100vw;
-  --bg-opacity: 1;
-  background-color: #f7fafc;
-  background-color: rgba(247, 250, 252, var(--bg-opacity));
   pointer-events: none
 }
 
@@ -1098,9 +1096,6 @@ video {
   padding-top: 1%;
   text-align: center;
   font-family: Roboto;
-  --text-opacity: 1;
-  color: #1a202c;
-  color: rgba(26, 32, 44, var(--text-opacity));
   font-size: 4.5rem;
   font-weight: 700;
   pointer-events: none;
@@ -1241,10 +1236,6 @@ video {
   .profile-image {
     height: 19rem
   }
-
-  .underline-small::after {
-    height: 10px;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -1357,6 +1348,24 @@ video {
   .profile-image-outer {
     margin-right: 30%
   }
+}
+
+/* =============================== PROJECTS ================================ */
+
+.project-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  width: 100vw;
+  pointer-events: none
+}
+
+.project-banner-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem
 }
 
 .space-y-0 > :not(template) ~ :not(template) {
@@ -18476,6 +18485,10 @@ video {
   z-index: auto;
 }
 
+.z-neg {
+  z-index: -1;
+}
+
 .gap-0 {
   grid-gap: 0rem;
   gap: 0rem;
@@ -23113,6 +23126,36 @@ video {
   .underline-small::after {
     height: 8px;
     bottom: 15%;
+  }
+}
+
+.underline-small-projects {
+  display: inline-block;
+  position: relative;
+}
+
+.underline-small-projects::after {
+  content: '';
+  height: 4px;
+  width: 40%;
+  position: absolute;
+  background: #E2E8F0;
+  opacity: 75%;
+  left: 30%;
+  bottom: 5%;
+}
+
+@media only screen and (min-width: 640px) {
+  .underline-small-projects::after {
+    height: 6px;
+    bottom: 5%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .underline-small-projects::after {
+    height: 8px;
+    bottom: 5%;
   }
 }
 
@@ -40247,6 +40290,10 @@ video {
 
   .xsm\:z-auto {
     z-index: auto;
+  }
+
+  .xsm\:z-neg {
+    z-index: -1;
   }
 
   .xsm\:gap-0 {
@@ -61961,6 +62008,10 @@ video {
     z-index: auto;
   }
 
+  .sm\:z-neg {
+    z-index: -1;
+  }
+
   .sm\:gap-0 {
     grid-gap: 0rem;
     gap: 0rem;
@@ -83671,6 +83722,10 @@ video {
 
   .smmd\:z-auto {
     z-index: auto;
+  }
+
+  .smmd\:z-neg {
+    z-index: -1;
   }
 
   .smmd\:gap-0 {
@@ -105385,6 +105440,10 @@ video {
     z-index: auto;
   }
 
+  .md\:z-neg {
+    z-index: -1;
+  }
+
   .md\:gap-0 {
     grid-gap: 0rem;
     gap: 0rem;
@@ -127095,6 +127154,10 @@ video {
 
   .lg\:z-auto {
     z-index: auto;
+  }
+
+  .lg\:z-neg {
+    z-index: -1;
   }
 
   .lg\:gap-0 {
@@ -148809,6 +148872,10 @@ video {
     z-index: auto;
   }
 
+  .lglg\:z-neg {
+    z-index: -1;
+  }
+
   .lglg\:gap-0 {
     grid-gap: 0rem;
     gap: 0rem;
@@ -170521,6 +170588,10 @@ video {
     z-index: auto;
   }
 
+  .lgxl\:z-neg {
+    z-index: -1;
+  }
+
   .lgxl\:gap-0 {
     grid-gap: 0rem;
     gap: 0rem;
@@ -192231,6 +192302,10 @@ video {
 
   .xl\:z-auto {
     z-index: auto;
+  }
+
+  .xl\:z-neg {
+    z-index: -1;
   }
 
   .xl\:gap-0 {

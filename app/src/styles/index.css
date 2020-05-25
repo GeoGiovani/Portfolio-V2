@@ -27,7 +27,7 @@
 }
 
 .btn-space:hover {
-  @apply bg-custom-purple-400 border-custom-purple-400 bg-opacity-75 
+  @apply bg-custom-green-400 border-custom-green-400 
          text-gray-100
 }
 
@@ -104,7 +104,7 @@
 }
 
 .active-hero {
-  @apply bg-custom-red-500 h-6 w-6
+  @apply bg-custom-green-400 h-6 w-6
 }
 
 .active-profile {
@@ -112,7 +112,7 @@
 }
 
 .active-projects {
-  @apply bg-green-800 h-6 w-6
+  @apply bg-custom-red-500 h-6 w-6
 }
 
 .btn {
@@ -262,13 +262,14 @@
   @apply box-border h-auto w-p40 text-center font-roboto
 }
 
+/* ================================ PROFILE ================================ */
+
 .profile-page {
   @apply h-auto w-full bg-gray-100
 }
 
 .profile-banner {
-  @apply flex items-center justify-center h-32 w-screen bg-gray-100 
-          pointer-events-none
+  @apply flex items-center justify-center h-32 w-screen pointer-events-none
 }
 
 .profile-banner-header {
@@ -276,8 +277,8 @@
 }
 
 .banner-content {
-  @apply pt-p1 text-center font-roboto text-gray-900 
-        text-hero-sm font-bold pointer-events-none tracking-wide
+  @apply pt-p1 text-center font-roboto
+         text-hero-sm font-bold pointer-events-none tracking-wide
 }
 
 .profile-content {
@@ -343,9 +344,6 @@
   }
   .profile-image {
     @apply h-80
-  }
-  .underline-small::after {
-    height: 10px;
   }
 }
 
@@ -431,6 +429,17 @@
   }
 }
 
+
+/* =============================== PROJECTS ================================ */
+
+.project-banner {
+  @apply flex items-center justify-center h-32 w-screen pointer-events-none
+}
+
+.project-banner-header {
+  @apply flex items-center justify-center h-32
+}
+
 @tailwind utilities;
 
 /* Your custom CSS here */
@@ -468,6 +477,36 @@
   .underline-small::after {
     height: 8px;
     bottom: 15%;
+  }
+}
+
+.underline-small-projects {
+  display: inline-block;
+  position: relative;
+}
+
+.underline-small-projects::after {
+  content: '';
+  height: 4px;
+  width: 40%;
+  position: absolute;
+  background: #E2E8F0;
+  opacity: 75%;
+  left: 30%;
+  bottom: 5%;
+}
+
+@media only screen and (min-width: 640px) {
+  .underline-small-projects::after {
+    height: 6px;
+    bottom: 5%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .underline-small-projects::after {
+    height: 8px;
+    bottom: 5%;
   }
 }
 

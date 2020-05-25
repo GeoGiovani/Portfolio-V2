@@ -123,6 +123,9 @@ module.exports = {
       borderWidth: {
         '6': '6px',
       },
+      zIndex: {
+        'neg': '-1',
+      },
     },
   },
   variants: {
