@@ -12,7 +12,7 @@ function Profile() {
       <Banner 
         header={
           <div className="banner-content">
-            <p className="underline-small">
+            <p className="underline">
               Profile
             </p>
           </div>}
