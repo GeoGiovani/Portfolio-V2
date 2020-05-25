@@ -262,11 +262,11 @@
 }
 
 .profile-banner {
-  @apply flex justify-center h-40 w-screen bg-gray-100 pointer-events-none
+  @apply flex items-center justify-center h-32 w-screen bg-gray-100 pointer-events-none
 }
 
 .profile-banner-header {
-  @apply flex items-center justify-center h-40
+  @apply flex items-center justify-center h-32
 }
 
 .banner-content {
@@ -331,7 +331,7 @@
 }
 
 .profile-image-outer {
-  @apply flex items-center h-full w-auto
+  @apply flex items-center h-full w-auto pb-4
 }
 
 .profile-image {
@@ -357,14 +357,11 @@
 }
 
 @screen sm {
-  .profile-page {
-    @apply h-screen w-screen
-  }
   .profile-banner {
-    @apply h-p20
+    @apply h-40
   }
   .profile-pane-right {
-    @apply h-80
+    @apply h-96
   }
   .profile-text {
     @apply text-2xl
@@ -373,13 +370,10 @@
     @apply text-hero-md
   }
   .profile-image-outer {
-    @apply items-end
+    @apply pb-0
   }
   .profile-image {
-    @apply h-64
-  }
-  .btn-contact {
-    @apply text-2xl
+    @apply h-80
   }
   .underline-small::after {
     height: 10px;
@@ -388,16 +382,13 @@
 
 @screen lg {
   .profile-banner {
-    @apply h-p25 items-end
-  }
-  .profile-banner-header {
-    @apply items-center
+    @apply h-48
   }
   .banner-content {
-    @apply text-hero-lgxl tracking-wide
+    @apply text-hero-lg tracking-wide
   }
   .profile-content {
-    @apply flex-row h-p75
+    @apply flex-row h-128
   }
   .profile-pane-left {
     @apply justify-end h-128 w-p60 order-1
@@ -407,7 +398,7 @@
     @apply justify-end h-128 w-p40 order-2
   }
   .profile-image-outer {
-    @apply mr-p15
+    @apply items-end mr-p15
   }
   .profile-text {
     @apply text-xl
@@ -421,11 +412,32 @@
 }
 
 @screen lglg {
+  .banner-content {
+    @apply text-hero-lglg
+  }
+  .profile-page {
+    @apply h-screen w-screen
+  }
+  .profile-banner {
+    @apply h-p25 items-end
+  }
+  .profile-content {
+    @apply h-p75
+  }
   .profile-text {
+    @apply text-2xl
+  }
+  .btn-contact {
     @apply text-2xl
   }
   .profile-image {
     @apply h-96
+  }
+}
+
+@screen lgxl {
+  .banner-content {
+    @apply text-hero-lgxl
   }
 }
 
