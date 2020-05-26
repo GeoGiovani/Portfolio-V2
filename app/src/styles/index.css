@@ -316,14 +316,13 @@
 
 .btn-contact {
   @apply flex justify-center items-center w-48 py-2 border-2
-         font-roboto text-xl tracking-wide text-white
-         border-custom-red-500 shadow-lg
-         bg-custom-red-500
-         transition ease-in duration-500      
+         font-roboto text-xl tracking-wide text-custom-black-900
+         border-custom-red-500
+         transition ease-in duration-300      
 }
 
 .btn-contact:hover {
-  @apply text-white shadow-xl
+  @apply text-white bg-custom-red-500 text-gray-100 shadow-lg
 }
 
 @screen sm {
@@ -386,7 +385,7 @@
     @apply text-hero-lglg
   }
   .profile-page {
-    @apply h-screen w-screen
+    @apply h-auto w-screen
   }
   .profile-content {
     @apply flex-row
@@ -440,9 +439,23 @@
   @apply flex items-center justify-center h-32
 }
 
+.reveal-on-hover {
+  @apply opacity-0
+}
+
+.grid-overlay:hover .reveal-on-hover{
+  @apply opacity-100
+}
+
+.slide-top {
+  
+}
+
+
+
 @tailwind utilities;
 
-/* Your custom CSS here */
+/* ============================== CUSTOM CSS =============================== */
 
 @responsive {
   .bg-teal-gradient {
@@ -490,8 +503,8 @@
   height: 4px;
   width: 40%;
   position: absolute;
-  background: #E2E8F0;
-  opacity: 75%;
+  /* background: #E2E8F0; */
+  background: #0c0c0c;
   left: 30%;
   bottom: 5%;
 }
