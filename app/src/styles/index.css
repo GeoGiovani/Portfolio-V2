@@ -439,17 +439,76 @@
   @apply flex items-center justify-center h-32
 }
 
-.reveal-on-hover {
-  @apply opacity-0
+.project-content {
+  @apply flex justify-center items-center box-border w-screen h-auto mt-12
+         font-roboto text-custom-black-900 text-5xl
 }
 
-.grid-overlay:hover .reveal-on-hover{
+.project-grid-wrapper {
+  @apply flex items-center w-p80 h-142
+}
+
+.project-grid {
+  @apply  grid grid-rows-2 grid-cols-3 gap-2 box-border w-full h-full
+}
+
+
+.grid-card-SwiftCalc {
+  @apply row-span-2 col-span-1 
+}
+
+.grid-content {
+  @apply relative w-full h-full m-auto overflow-hidden shadow-xl
+}
+
+.grid-content .grid-content-overlay {
+  @apply absolute h-full w-full
+         left-0 top-0 bottom-0 right-0 opacity-0
+         ease-in-out duration-500
+}
+
+.grid-content:hover .grid-content-overlay {
   @apply opacity-100
 }
 
-.slide-top {
-  
+.grid-content-details {
+  @apply absolute text-center pl-4 pr-4 w-p100 top-p50 left-p50
+         opacity-0 ease-in-out duration-500
 }
+
+.grid-content-details {
+  transform: translate(-50%, -50%);
+}
+
+.grid-content:hover .grid-content-details{
+  @apply top-p50 left-p50 opacity-100
+}
+
+.grid-content-details h3 {
+  @apply text-gray-300 font-bold tracking-wide mb-4
+}
+
+
+.grid-content-details p {
+  @apply text-gray-300
+}
+
+.slide-top {
+  @apply top-p20
+}
+
+.slide-left {
+  @apply left-p20
+}
+
+.slide-right {
+  @apply left-p80
+}
+
+.slide-bottom {
+  @apply top-p80
+}
+
 
 
 
@@ -503,8 +562,9 @@
   height: 4px;
   width: 40%;
   position: absolute;
-  /* background: #E2E8F0; */
-  background: #0c0c0c;
+  background: #E2E8F0;
+  /* opacity: 75%; */
+  /* background: #0c0c0c; */
   left: 30%;
   bottom: 5%;
 }
