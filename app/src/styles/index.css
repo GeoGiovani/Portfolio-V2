@@ -457,6 +457,12 @@
   @apply row-span-2 col-span-1 
 }
 
+.grid-card-MathBender {
+  @apply row-span-1 col-span-1
+}
+
+
+
 .grid-content {
   @apply relative w-full h-full m-auto overflow-hidden shadow-xl
 }
@@ -490,10 +496,10 @@
 
 
 .grid-content-details p {
-  @apply text-gray-300
+  @apply text-gray-300 text-2xl
 }
 
-.slide-top {
+.slide-down {
   @apply top-p20
 }
 
@@ -505,11 +511,9 @@
   @apply left-p80
 }
 
-.slide-bottom {
+.slide-up {
   @apply top-p80
 }
-
-
 
 
 @tailwind utilities;

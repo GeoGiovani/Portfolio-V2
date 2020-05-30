@@ -23,9 +23,8 @@ function Projects() {
           <div className="project-grid">
 
             <div class="grid-card-SwiftCalc">
-
-              <div class="grid-content bg-teal-100 rounded-md">
-                  <div class="grid-content-overlay bg-custom-black-900 bg-opacity-75"></div>
+              <div class="grid-content bg-custom-purple-400 rounded-md">
+                  <div class="grid-content-overlay bg-custom-black-800 bg-opacity-75"></div>
 
                   <SplitPaneImage 
                     src={require("../media/SwiftCalc.png")}
@@ -34,21 +33,35 @@ function Projects() {
                     imageStyle=""
                   />
 
-                  <div class="grid-content-details slide-bottom">
+                  <div class="grid-content-details slide-down">
                     <h3>SwiftCalc</h3>
                     <p>A minimalist calculator</p>
                   </div>
               </div>
-
             </div>
 
-            <div class="row-span-1 col-span-1 bg-custom-red-500 flex items-center justify-center">
-              MathBender
+            <div class="grid-card-MathBender">
+              <div class="grid-content bg-purple-300 rounded-md">
+                  <div class="grid-content-overlay bg-custom-black-800 bg-opacity-75"></div>
+
+                  <SplitPaneImage 
+                    src={require("../media/mathBender.gif")}
+                    alt="SwiftCalc"
+                    outerCardStyle="box-border h-full flex items-end overflow-auto"
+                    imageStyle=""
+                  />
+
+                  <div class="grid-content-details slide-left">
+                    <h3>MathBender</h3>
+                    <p>A Discord bot that queries Wolfram|Alpha</p>
+                  </div>
+              </div>
             </div>
-            <div class="row-span-1 col-span-1 bg-custom-black-900 flex items-center justify-center text-gray-100">
+
+            <div class="row-span-1 col-span-1 bg-custom-red-400 flex items-center justify-center text-gray-100">
               STIgen
             </div>
-            <div class="row-span-1 col-span-2 bg-custom-purple-400 flex items-center justify-center">
+            <div class="row-span-1 col-span-2 bg-yellow-200 flex items-center justify-center">
               Personal Website
             </div>
           </div>

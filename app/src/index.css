@@ -1408,6 +1408,11 @@ video {
   grid-column: span 1 / span 1
 }
 
+.grid-card-MathBender {
+  grid-row: span 1 / span 1;
+  grid-column: span 1 / span 1
+}
+
 .grid-content {
   position: relative;
   width: 100%;
@@ -1469,10 +1474,11 @@ video {
 .grid-content-details p {
   --text-opacity: 1;
   color: #e2e8f0;
-  color: rgba(226, 232, 240, var(--text-opacity))
+  color: rgba(226, 232, 240, var(--text-opacity));
+  font-size: 1.5rem
 }
 
-.slide-top {
+.slide-down {
   top: 20%
 }
 
@@ -1484,7 +1490,7 @@ video {
   left: 80%
 }
 
-.slide-bottom {
+.slide-up {
   top: 80%
 }
 
