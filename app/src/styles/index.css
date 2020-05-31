@@ -431,14 +431,6 @@
 
 /* =============================== PROJECTS ================================ */
 
-.project-banner {
-  @apply flex items-center justify-center h-32 w-screen pointer-events-none
-}
-
-.project-banner-header {
-  @apply flex items-center justify-center h-32
-}
-
 .project-content {
   @apply flex justify-center items-center box-border w-screen h-auto mt-12
          font-roboto text-custom-black-900 text-5xl
@@ -449,28 +441,31 @@
 }
 
 .project-grid {
-  @apply  grid grid-rows-2 grid-cols-3 gap-2 box-border w-full h-full
+  @apply  grid grid-rows-4 grid-cols-3 gap-2 box-border w-full h-full
 }
 
 
 .grid-card-SwiftCalc {
-  @apply row-span-2 col-span-1 
+  @apply row-span-4 col-span-1
 }
 
 .grid-card-MathBender {
-  @apply row-span-1 col-span-1
+  @apply row-span-2 col-span-1 
 }
 
-
+.grid-card-Portfolio {
+  @apply row-span-2 col-span-2
+}
 
 .grid-content {
-  @apply relative w-full h-full m-auto overflow-hidden shadow-xl
+  @apply relative w-full h-full rounded-md m-auto overflow-hidden shadow-xl
 }
 
 .grid-content .grid-content-overlay {
   @apply absolute h-full w-full
          left-0 top-0 bottom-0 right-0 opacity-0
-         ease-in-out duration-500
+         bg-custom-black-800 bg-opacity-75
+         ease-in-out duration-300 
 }
 
 .grid-content:hover .grid-content-overlay {
@@ -479,12 +474,17 @@
 
 .grid-content-details {
   @apply absolute text-center pl-4 pr-4 w-p100 top-p50 left-p50
-         opacity-0 ease-in-out duration-500
+         opacity-0 ease-in-out duration-400
 }
 
 .grid-content-details {
   transform: translate(-50%, -50%);
 }
+
+.details-thin {
+  transform: translate(-50%, -40%);
+}
+
 
 .grid-content:hover .grid-content-details{
   @apply top-p50 left-p50 opacity-100
@@ -514,6 +514,54 @@
 .slide-up {
   @apply top-p80
 }
+
+
+.browser-mockup {
+  border-top: 1.15em solid #323234;
+  position: relative;
+  border-radius: 3px 3px 0 0;
+  zIndex: 10;
+  height: 100%;
+}
+
+.browser-mockup:before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: -.7em;
+  left: .5em;
+  width: 0.3em;
+  height: 0.3em;
+  border-radius: 50%;
+  background-color: #ff3f83;
+  box-shadow: 0 0 0 2px #ff3f83, .7em 0 0 2px #04c2c9, 1.4em 0 0 2px #fb5;
+}
+
+.browser-mockup:after {
+  
+  display: block;
+  position: absolute;
+  content: "https://geogiovani.github.io/";
+  
+  top:  -2.2em;
+  left: 20%;
+  width: 70%;
+  height: auto;
+  border-radius: 2px;
+  background-color: #474749;
+    
+  font: Roboto;
+  font-size: 16pt;
+  font-weight: 100;
+  color: #cbd5e0;
+  text-align: left;
+  margin-bottom: 2em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+
+
 
 
 @tailwind utilities;
@@ -566,9 +614,10 @@
   height: 4px;
   width: 40%;
   position: absolute;
-  background: #E2E8F0;
+  /* background: #E2E8F0; */
+  background: #0c0c0c;
   /* opacity: 75%; */
-  /* background: #0c0c0c; */
+  
   left: 30%;
   bottom: 5%;
 }

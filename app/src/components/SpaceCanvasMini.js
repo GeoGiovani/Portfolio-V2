@@ -2,10 +2,10 @@ import React from 'react'
 import {PtsCanvas} from 'react-pts-canvas'
 import {Line, Create, Group, Pt} from 'pts/dist/es5'
 
-class ShootingStars extends PtsCanvas {
+class ShootingStarsMini extends PtsCanvas {
 
   start (bound, space) {
-    this.pts = Create.distributeRandom( space.innerBound, (105*space.size.x/space.size.y)  );
+    this.pts = Create.distributeRandom( space.innerBound, (15*space.size.x/space.size.y)  );
     this.nw = new Pt(0,0);
     this.ne = new Pt(space.width, 0);
     this.sw = new Pt(0, space.height);
@@ -18,22 +18,24 @@ class ShootingStars extends PtsCanvas {
     // Generate a Line object along bottom axis
     let perpends = new Group( this.sw, this.se ).op( Line.perpendicularFromPt );
     // Rotate all points
-    this.pts.rotate2D( 0.0003, space.center );
+    this.pts.rotate2D( 0.0002, space.center );
     // Draw perpendicular lines to each point
     this.pts.forEach( (p, i) => {
       let lp = perpends( p );
-      var ratio = Math.min( .6, 1 - lp.$subtract(p).magnitude()/(space.size.x/(space.size.x/space.size.y*1.3)));
+      var ratio = 1;
+      // var ratio = Math.min( 1, 1 - lp.$subtract(p).magnitude()/(space.size.x/(space.size.x/space.size.y*1.3)));
       let fadeColors = ['rgba(255,63,142', 'rgba(4,194,201', 'rgba(255,187,85'];
+      // let fadeColors = ['rgba(0,0,0', 'rgba(0,0,0', 'rgba(0,0,0'];
       this.form.stroke(`${fadeColors[i%3]},${ratio})`, ratio*2).line( [ p, lp ] );
       this.form.fillOnly( this.colors[i%3] ).point( p, 1 );
     });
   }
 }
 
-function SpaceCanvas(props) {
+function SpaceCanvasMini(props) {
   return (
-    <ShootingStars background={props.bgColor} style={props.style}/>
+    <ShootingStarsMini background={props.bgColor} style={props.style}/>
   );
 }
 
-export default SpaceCanvas;
+export default SpaceCanvasMini;

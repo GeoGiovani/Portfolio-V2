@@ -85,7 +85,8 @@ module.exports = {
         'custom-red-600': '#980124',
         'custom-purple-400': '#2E55C1',
         'custom-yellow-400': '#ffeb3b',
-        'custom-green-400': '#04C2C9',
+        'custom-green-400': '#04c2c9',
+        'custom-green-300': '#87dda1',
       },
       borderRadius: {
         'circle': '50%',
@@ -127,6 +128,9 @@ module.exports = {
       },
       zIndex: {
         'neg': '-1',
+      },
+      transitionDuration: {
+        '400': '400ms',
       },
     },
   },
