@@ -1497,48 +1497,6 @@ video {
   top: 80%
 }
 
-.browser-mockup {
-  border-top: 1.15em solid #323234;
-  position: relative;
-  border-radius: 3px 3px 0 0;
-  zIndex: 10;
-  height: 100%;
-}
-
-.browser-mockup:before {
-  display: block;
-  position: absolute;
-  content: '';
-  top: -.7em;
-  left: .5em;
-  width: 0.3em;
-  height: 0.3em;
-  border-radius: 50%;
-  background-color: #ff3f83;
-  box-shadow: 0 0 0 2px #ff3f83, .7em 0 0 2px #04c2c9, 1.4em 0 0 2px #fb5;
-}
-
-.browser-mockup:after {
-  display: block;
-  position: absolute;
-  content: "https://geogiovani.github.io/";
-  top:  -2.2em;
-  left: 20%;
-  width: 70%;
-  height: auto;
-  border-radius: 2px;
-  background-color: #474749;
-  font: Roboto;
-  font-size: 16pt;
-  font-weight: 100;
-  color: #cbd5e0;
-  text-align: left;
-  margin-bottom: 2em;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 20px;
-}
-
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
   margin-top: calc(0rem * calc(1 - var(--space-y-reverse)));
@@ -23604,8 +23562,8 @@ video {
   height: 4px;
   width: 40%;
   position: absolute;
-  /* background: #E2E8F0; */
-  background: #0c0c0c;
+  background: #E2E8F0;
+  /* background: #0c0c0c; */
   /* opacity: 75%; */
   left: 30%;
   bottom: 5%;
@@ -23638,6 +23596,48 @@ video {
 .profile-link:focus {
   text-decoration: none;
   background-size: 100% 4px;
+}
+
+.browser-mockup {
+  border-top: 1.15em solid #323234;
+  position: relative;
+  border-radius: 3px 3px 0 0;
+  zIndex: 10;
+  height: 100%;
+}
+
+.browser-mockup:before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: -.7em;
+  left: .5em;
+  width: 0.3em;
+  height: 0.3em;
+  border-radius: 50%;
+  background-color: #ff3f83;
+  box-shadow: 0 0 0 2px #ff3f83, .7em 0 0 2px #04c2c9, 1.4em 0 0 2px #fb5;
+}
+
+.browser-mockup:after {
+  display: block;
+  position: absolute;
+  content: "https://geogiovani.github.io/";
+  top:  -2.2em;
+  left: 20%;
+  width: 70%;
+  height: auto;
+  border-radius: 2px;
+  background-color: #474749;
+  font: Roboto;
+  font-size: 16pt;
+  font-weight: 100;
+  color: #cbd5e0;
+  text-align: left;
+  margin-bottom: 2em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
 }
 
 @media (min-width: 360px) {

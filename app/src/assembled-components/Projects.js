@@ -6,11 +6,11 @@ import '../styles/index.css';
 
 function Projects() {
   return (
-    <div id="Projects" className="w-screen h-screen bg-gray-100 ">
+    <div id="Projects" className="w-screen h-screen bg-custom-black-800">
       
       <Banner 
         header={
-          <div className="banner-content text-custom-black-800">
+          <div className="banner-content text-gray-300">
             <p className="underline-small-projects">
               Projects
             </p>
@@ -25,7 +25,7 @@ function Projects() {
 
             {/* SwiftCalc */}
             <div class="grid-card-SwiftCalc">
-              <div class="grid-content bg-purple-200">
+              <div class="grid-content bg-purple-300">
                   <div class="grid-content-overlay"></div>
 
                   <SplitPaneImage 
@@ -44,7 +44,7 @@ function Projects() {
 
             {/* MathBender */}
             <div class="grid-card-MathBender">
-              <div class="grid-content bg-purple-200">
+              <div class="grid-content bg-pink-300">
                 <div class="grid-content-overlay"></div>
 
                 <SplitPaneImage 
@@ -61,6 +61,20 @@ function Projects() {
               </div>
             </div>
 
+            {/* SFUnit Game */}
+            <div class="row-span-1 col-span-1">
+              <div class="grid-content bg-yellow-300">
+                <div class="grid-content-overlay"></div>
+
+                  {/* TODO: Showcase SFU work */}
+
+                <div class="grid-content-details slide-left">
+                  <h3>S.F.U.</h3>
+                  <p>A web-based survival game</p>
+                </div>
+              </div>
+            </div>
+
             {/* Transition Detector */}
             <div class="grid-card-detector">
               <div class="grid-content bg-blue-200">
@@ -69,27 +83,13 @@ function Projects() {
                   <SplitPaneImage 
                     src={require("../media/STImg.png")}
                     alt="SwiftCalc"
-                    outerCardStyle="box-border h-full flex items-end overflow-auto"
+                    outerCardStyle="box-border h-auto flex items-end overflow-auto"
                     imageStyle="h-40"
                   />
 
                   <div class="grid-content-details slide-left">
                     <h3>School Project</h3>
                     <p>Video Transition Detector</p>
-                  </div>
-                </div>
-            </div>
-
-            {/* SFUnit Game */}
-            <div class="row-span-1 col-span-1">
-              <div class="grid-content bg-red-200">
-                  <div class="grid-content-overlay"></div>
-
-                    {/* TODO: Showcase SFU work */}
-
-                  <div class="grid-content-details slide-left">
-                    <h3>S.F.U.</h3>
-                    <p>A web-based survival game</p>
                   </div>
                 </div>
             </div>
