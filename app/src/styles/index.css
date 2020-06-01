@@ -432,7 +432,7 @@
 /* =============================== PROJECTS ================================ */
 
 .project-content {
-  @apply flex justify-center items-center box-border w-screen h-auto mt-12
+  @apply flex justify-center items-center box-border w-screen h-auto pt-12 pb-24
          font-roboto text-custom-black-900 text-5xl
 }
 

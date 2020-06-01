@@ -1358,7 +1358,8 @@ video {
   box-sizing: border-box;
   width: 100vw;
   height: auto;
-  margin-top: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
   font-family: Roboto;
   --text-opacity: 1;
   color: #0c0c0c;

@@ -19,13 +19,13 @@ function Projects() {
         headerStyle="profile-banner-header"
       />
 
-      <div className="project-content">
+      <div className="project-content bg-custom-black-800">
         <div className="project-grid-wrapper">
           <div className="project-grid">
 
             {/* SwiftCalc */}
             <div class="grid-card-SwiftCalc">
-              <div class="grid-content bg-purple-300">
+              <div class="grid-content bg-custom-yellow-300">
                   <div class="grid-content-overlay"></div>
 
                   <SplitPaneImage 
@@ -37,14 +37,14 @@ function Projects() {
 
                   <div class="grid-content-details slide-down">
                     <h3>SwiftCalc</h3>
-                    <p>A minimalist calculator</p>
+                    <p>A minimalist calculator for iOS</p>
                   </div>
               </div>
             </div>
 
             {/* MathBender */}
             <div class="grid-card-MathBender">
-              <div class="grid-content bg-pink-300">
+              <div class="grid-content bg-custom-green-400">
                 <div class="grid-content-overlay"></div>
 
                 <SplitPaneImage 
@@ -63,13 +63,13 @@ function Projects() {
 
             {/* SFUnit Game */}
             <div class="row-span-1 col-span-1">
-              <div class="grid-content bg-yellow-300">
+              <div class="grid-content bg-custom-red-500">
                 <div class="grid-content-overlay"></div>
 
                   {/* TODO: Showcase SFU work */}
 
                 <div class="grid-content-details slide-left">
-                  <h3>S.F.U.</h3>
+                  <h3>School Project</h3>
                   <p>A web-based survival game</p>
                 </div>
               </div>
@@ -89,7 +89,7 @@ function Projects() {
 
                   <div class="grid-content-details slide-left">
                     <h3>School Project</h3>
-                    <p>Video Transition Detector</p>
+                    <p>A video Transition Detector</p>
                   </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@ function Projects() {
 
                   <div class="grid-content-details details-thin z-20 slide-up">
                     <h3>Portfolio V2</h3>
-                    <p>An interactive portfolio for myself</p>
+                    <p>My interactive portfolio</p>
                   </div>
               </div>
             </div>
