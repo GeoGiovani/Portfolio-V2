@@ -457,6 +457,10 @@
   @apply row-span-2 col-span-2
 }
 
+.grid-card-detector {
+  @apply row-span-1 col-span-1 
+}
+
 .grid-content {
   @apply relative w-full h-full rounded-md m-auto overflow-hidden shadow-xl
 }

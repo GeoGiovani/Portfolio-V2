@@ -23,6 +23,7 @@ function Projects() {
         <div className="project-grid-wrapper">
           <div className="project-grid">
 
+            {/* SwiftCalc */}
             <div class="grid-card-SwiftCalc">
               <div class="grid-content bg-purple-200">
                   <div class="grid-content-overlay"></div>
@@ -41,6 +42,7 @@ function Projects() {
               </div>
             </div>
 
+            {/* MathBender */}
             <div class="grid-card-MathBender">
               <div class="grid-content bg-purple-200">
                 <div class="grid-content-overlay"></div>
@@ -59,10 +61,26 @@ function Projects() {
               </div>
             </div>
 
-            <div class="row-span-1 col-span-1 rounded-md bg-red-200 flex items-center justify-center text-gray-100">
-              {/* STIgen */}
+            {/* Transition Detector */}
+            <div class="grid-card-detector">
+              <div class="grid-content bg-blue-200">
+                  <div class="grid-content-overlay"></div>
+
+                  <SplitPaneImage 
+                    src={require("../media/STImg.png")}
+                    alt="SwiftCalc"
+                    outerCardStyle="box-border h-full flex items-end overflow-auto"
+                    imageStyle="h-40"
+                  />
+
+                  <div class="grid-content-details slide-left">
+                    <h3>School Project</h3>
+                    <p>Video Transition Detector</p>
+                  </div>
+                </div>
             </div>
 
+            {/* SFUnit Game */}
             <div class="row-span-1 col-span-1">
               <div class="grid-content bg-red-200">
                   <div class="grid-content-overlay"></div>
@@ -76,6 +94,7 @@ function Projects() {
                 </div>
             </div>
 
+            {/* Portfolio V2 */}
             <div class="grid-card-Portfolio">
               <div class="grid-content">
                   <div class="grid-content-overlay z-10"></div>
