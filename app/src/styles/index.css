@@ -104,15 +104,15 @@
 }
 
 .active-hero {
-  @apply bg-custom-green-400 h-6 w-6
+  @apply bg-custom-yellow-300 h-6 w-6
 }
 
 .active-profile {
-  @apply bg-custom-purple-400 h-6 w-6
+  @apply bg-custom-red-500 h-6 w-6
 }
 
 .active-projects {
-  @apply bg-custom-red-500 h-6 w-6
+  @apply bg-custom-green-400 h-6 w-6
 }
 
 .btn {
@@ -265,7 +265,7 @@
 /* ================================ PROFILE ================================ */
 
 .profile-page {
-  @apply h-auto w-full bg-gray-100
+  @apply h-auto w-full bg-custom-black-800
 }
 
 .profile-banner {
@@ -282,7 +282,7 @@
 }
 
 .profile-content {
-  @apply flex flex-col justify-center items-center text-white w-screen h-p80 bg-gray-100
+  @apply flex flex-col justify-center items-center text-white w-screen h-p80
 }
 
 .profile-pane-left {
@@ -295,7 +295,7 @@
 
 .profile-text {
   @apply flex-col justify-center w-p90 h-auto 
-         text-left text-custom-black-900 font-roboto font-thin text-xl
+         text-left text-gray-300 font-roboto font-thin text-xl
 }
 
 .profile-text-link {
@@ -307,7 +307,7 @@
 }
 
 .profile-image {
-  @apply h-56 border-4 border-gray-300 rounded-circle shadow-inner
+  @apply h-56 border-2 border-custom-yellow-200 rounded-circle shadow-inner
 }
 
 .profile-button {
@@ -316,13 +316,13 @@
 
 .btn-contact {
   @apply flex justify-center items-center w-48 py-2 border-2
-         font-roboto text-xl tracking-wide text-custom-black-900
-         border-custom-red-500
+         font-roboto text-xl tracking-wide text-gray-300
+         border-custom-black-800
          transition ease-in duration-300      
 }
 
 .btn-contact:hover {
-  @apply text-white bg-custom-red-500 text-gray-100 shadow-lg
+  @apply text-white bg-custom-black-800 text-gray-300 shadow-lg
 }
 
 @screen sm {
@@ -373,7 +373,7 @@
     @apply items-center mr-p15
   }
   .profile-image {
-    @apply border-8
+    @apply border-2
   }
 }
 
@@ -537,7 +537,10 @@
   height: 4px;
   width: 40%;
   position: absolute;
-  background: #1A202C;
+  background: #E2E8F0;
+  /* background: #1A202C; */
+  /* background: #ffbb55; */
+  /* background: #101010; */
   left: 30%;
   bottom: 15%;
 }
