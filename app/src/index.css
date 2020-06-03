@@ -669,9 +669,10 @@ video {
 .space-hero-button-wrapper {
   z-index: 10;
   box-sizing: border-box;
-  width: 100vw;
+  width: 40%;
   position: absolute;
-  bottom: 7.5%
+  bottom: 7.5%;
+  left: 30%
 }
 
 .btn-space {
@@ -1297,17 +1298,12 @@ video {
     width: 100vw
   }
 
-  .profile-content {
-    flex-direction: row
-  }
-
   .profile-banner {
     height: 14rem
   }
 
   .profile-content {
-    height: 32rem;
-    margin-top: 0.5rem
+    flex-direction: row
   }
 
   .profile-text {
@@ -1329,7 +1325,6 @@ video {
   }
 
   .profile-content {
-    margin-top: 3rem;
     height: 35rem
   }
 

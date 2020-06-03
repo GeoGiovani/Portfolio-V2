@@ -17,7 +17,7 @@
 }
 
 .space-hero-button-wrapper {
-  @apply z-10 box-border w-screen absolute bottom-p7-5
+  @apply z-10 box-border w-p40 absolute bottom-p7-5 left-p30
 }
 
 .btn-space {
@@ -387,14 +387,11 @@
   .profile-page {
     @apply h-auto w-screen
   }
-  .profile-content {
-    @apply flex-row
-  }
   .profile-banner {
     @apply h-56
   }
   .profile-content {
-    @apply h-128 mt-2
+    @apply flex-row
   }
   .profile-text {
     @apply text-2xl
@@ -412,7 +409,7 @@
     @apply h-56
   }
   .profile-content {
-    @apply mt-12 h-142
+    @apply h-142
   }
   .banner-content {
     @apply text-hero-lgxl
@@ -432,7 +429,8 @@
 /* =============================== PROJECTS ================================ */
 
 .project-content {
-  @apply flex justify-center items-center box-border w-screen h-auto pt-12 pb-24
+  @apply flex justify-center items-center 
+         box-border w-screen h-auto pt-12 pb-24
          font-roboto text-custom-black-900 text-5xl
 }
 

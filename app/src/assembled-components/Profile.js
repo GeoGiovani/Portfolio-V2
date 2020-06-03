@@ -38,7 +38,7 @@ function Profile() {
                 software. To do this, I develop using modern 
                 software-engineering methods.
               </p>
-              <p className="mb-8">
+              <p className="mb-0">
                 I am currently seeking a software engineering or full-stack
                 developer co-op/internship.&nbsp;
                 <a className="profile-link text-custom-red-500 font-bold"
