@@ -42,6 +42,7 @@ module.exports = {
       'p5': '5%',
       'p7-5': '7.5%',
       'p10': '10%',
+      'p12-5': '12.5%',
       'p15': '15%',
       'p17-5': '17.5%',
       'p20': '20%',
@@ -91,6 +92,11 @@ module.exports = {
         'custom-green-400': '#04c2c9',
         'custom-green-300': '#87dda1',
       },
+      opacity: {
+        '80': '.8',
+        '85': '.85',
+        '90': '.9',
+      },
       borderRadius: {
         'circle': '50%',
       },
@@ -112,8 +118,10 @@ module.exports = {
       },
       inset: {
         'p5': '5%',
+        'p6': '6%',
         'p7-5': '7.5%',
         'p10': '10%',
+        'p12-5': '12.5%',
         'p15': '15%',
         'p20': '20%',
         'p25': '25%',
@@ -134,6 +142,13 @@ module.exports = {
       },
       transitionDuration: {
         '400': '400ms',
+      },
+      gridTemplateRows: {
+        '7': 'repeat(7, minmax(0, 1fr))',
+        '8': 'repeat(8, minmax(0, 1fr))',
+        '9': 'repeat(9, minmax(0, 1fr))',
+        '10': 'repeat(10, minmax(0, 1fr))',
+        '12': 'repeat(12, minmax(0, 1fr))',
       },
     },
   },

@@ -8,7 +8,7 @@ import '../styles/index.css';
 
 function Projects() {
   return (
-    <div id="Projects" className="w-screen h-screen bg-custom-black-800">
+    <div id="Projects" className="w-screen h-auto bg-custom-black-800">
       
       <Banner 
         bannerStyle="profile-banner"
@@ -33,15 +33,16 @@ function Projects() {
                 wrapperStyle="grid-card-SwiftCalc"
                 content={ 
                   <div className="grid-content bg-custom-yellow-300">
-                    <div className="grid-content-overlay"></div>
+                    <div className="grid-content-overlay bg-custom-yellow-300 bg-opacity-50"></div>
                     <SplitPaneImage 
                       src={require("../media/SwiftCalc.png")}
                       alt="SwiftCalc"
-                      outerCardStyle="box-border h-full overflow-hidden"
-                      imageStyle=""
+                      outerCardStyle="box-border h-full w-auto overflow-hidden"
+                      imageStyle="img-swiftcalc"
                     />
-                    <div className="grid-content-details slide-down">
+                    <div className="grid-content-details text-custom-black-800 slide-down">
                       <h3>SwiftCalc</h3>
+                      <span className="mb-12">Swift / Flutter</span>
                       <p>A minimalist calculator for iOS</p>
                     </div>
                   </div> 
@@ -52,15 +53,16 @@ function Projects() {
                 wrapperStyle="grid-card-MathBender"
                 content={ 
                   <div className="grid-content bg-custom-green-400">
-                    <div className="grid-content-overlay"></div>
+                    <div className="grid-content-overlay bg-custom-green-400 bg-opacity-50"></div>
                     <SplitPaneImage 
                       src={require("../media/mathBender.gif")}
-                      alt="SwiftCalc"
+                      alt="MathBender"
                       outerCardStyle="box-border h-full flex items-end"
-                      imageStyle=""
+                      imageStyle="img-mathBender"
                     />
-                    <div className="grid-content-details slide-left">
+                    <div className="grid-content-details text-custom-black-800 slide-left">
                       <h3>MathBender</h3>
+                      <span className="mb-12">JavaScript / Node.js</span>
                       <p>A bot that queries Wolfram|Alpha</p>
                     </div>
                   </div> 
@@ -68,13 +70,14 @@ function Projects() {
               />
 
               <GridComponent
-                wrapperStyle="row-span-1 col-span-1"
+                wrapperStyle="grid-card-sfunit"
                 content={ 
                   <div className="grid-content bg-custom-red-500">
-                    <div className="grid-content-overlay"></div>
+                    <div className="grid-content-overlay bg-custom-red-500 bg-opacity-25"></div>
                     {/* TODO: Showcase SFU work */}
                     <div className="grid-content-details slide-left">
-                      <h3>School Project</h3>
+                      <h3>SFUnit</h3>
+                      <span> JavaScript / HTML / CSS </span>
                       <p>A web-based survival game</p>
                     </div>
                   </div> 
@@ -84,13 +87,13 @@ function Projects() {
               <GridComponent
                 wrapperStyle="grid-card-detector"
                 content={ 
-                  <div className="grid-content bg-blue-200">
+                  <div className="grid-content bg-custom-black-800">
                     <div className="grid-content-overlay"></div>
                     <SplitPaneImage 
                       src={require("../media/STImg.png")}
-                      alt="SwiftCalc"
-                      outerCardStyle="box-border h-auto flex items-end"
-                      imageStyle="h-40"
+                      alt="Transition Detector"
+                      outerCardStyle="box-border h-full"
+                      imageStyle="img-detector h-40"
                     />
                     <div className="grid-content-details slide-left">
                       <h3>School Project</h3>
@@ -104,7 +107,7 @@ function Projects() {
                 wrapperStyle="grid-card-Portfolio"
                 content={ 
                   <div className="grid-content">
-                    <div className="grid-content-overlay z-10"></div>
+                    <div className="grid-content-overlay z-1 bg-custom-black-800 bg-opacity-50"></div>
                     <div className="browser-mockup">
                       <SpaceCanvasMini
                           bgColor="#101010"
