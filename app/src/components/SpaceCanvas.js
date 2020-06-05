@@ -28,7 +28,7 @@ class ShootingStars extends PtsCanvas {
       var thickness = 1; (ratio*2.5 > 1) ? thickness = ratio*2.5 : thickness = .75;
       let fadeColors = ['rgba(255,63,142', 'rgba(4,194,201', 'rgba(255,187,85'];
       this.form.stroke(`${fadeColors[i%3]},${ratio})`, thickness).line( [ p, lp ] );
-      this.form.fillOnly( this.colors[i%3] ).point( p, 1 );
+      this.form.fillOnly( this.colors[i%3] ).point( p, .5 );
     });
   }
 }

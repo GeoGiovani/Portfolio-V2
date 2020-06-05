@@ -322,7 +322,7 @@
 }
 
 .btn-contact:hover {
-  @apply text-white bg-custom-black-800 text-gray-300 shadow-lg
+  @apply text-white bg-custom-black-800 text-gray-300
 }
 
 @screen sm {
