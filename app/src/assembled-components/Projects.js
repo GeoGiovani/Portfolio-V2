@@ -4,6 +4,7 @@ import PortfolioGrid from '../components/PortfolioGrid.js'
 import GridComponent from '../components/GridComponent.js'
 import SplitPaneImage from '../components/SplitPaneImage.js'
 import SpaceCanvasMini from '../components/SpaceCanvasMini.js'
+import LinkButton from '../components/LinkButton.js'
 import '../styles/index.css';
 
 function Projects() {
@@ -41,9 +42,16 @@ function Projects() {
                       imageStyle="img-swiftcalc"
                     />
                     <div className="grid-content-details text-custom-black-800 slide-down">
-                      <h3>SwiftCalc</h3>
+                      <h3 className="leading-none">SwiftCalc</h3>
                       <span className="mb-12">Swift / Flutter</span>
-                      <p>A minimalist calculator for iOS</p>
+                      {/* <p>A minimalist calculator for iOS</p> */}
+                      <div className="flex w-full justify-center">
+                        <LinkButton
+                          link=""
+                          content="View More"
+                          buttonStyle="btn-project"
+                        />
+                      </div>
                     </div>
                   </div> 
                 }
@@ -61,9 +69,16 @@ function Projects() {
                       imageStyle="img-mathBender"
                     />
                     <div className="grid-content-details text-custom-black-800 slide-left">
-                      <h3>MathBender</h3>
-                      <span className="mb-12">JavaScript / Node.js</span>
-                      <p>A bot that queries Wolfram|Alpha</p>
+                      <h3 className="leading-none">MathBender</h3>
+                      <span className="mb-8">JavaScript / Node.js</span>
+                      {/* <p>A bot that queries Wolfram|Alpha</p> */}
+                      <div className="flex w-full justify-center">
+                        <LinkButton
+                          link=""
+                          content="View More"
+                          buttonStyle="btn-project"
+                        />
+                      </div>
                     </div>
                   </div> 
                 }
@@ -77,8 +92,15 @@ function Projects() {
                     {/* TODO: Showcase SFU work */}
                     <div className="grid-content-details slide-left">
                       <h3>SFUnit</h3>
-                      <span> JavaScript / HTML / CSS </span>
-                      <p>A web-based survival game</p>
+                      {/* <p>A web-based survival game</p> */}
+                      <div className="flex w-full justify-center items-center">
+                        <span>JavaScript / HTML</span>
+                        <LinkButton
+                          link=""
+                          content="View More"
+                          buttonStyle="btn-project ml-4"
+                        />
+                      </div>
                     </div>
                   </div> 
                 }
@@ -96,9 +118,16 @@ function Projects() {
                       imageStyle="img-detector h-40"
                     />
                     <div className="grid-content-details slide-left">
-                      <h3>School Project</h3>
-                      <span>Node.js / Flask / Redux</span>
-                      <p>A video Transition Detector</p>
+                      <h3>Transition</h3>
+                      {/* <p>A video Transition Detector</p> */}
+                      <div className="flex w-full justify-center items-center">
+                        <span>React.js / Flask</span>
+                        <LinkButton
+                          link=""
+                          content="View More"
+                          buttonStyle="btn-project ml-4"
+                        />
+                      </div>
                     </div>
                   </div> 
                 }
@@ -116,9 +145,16 @@ function Projects() {
                         />
                     </div>
                     <div className="grid-content-details grid-thin z-20 slide-up">
-                      <h3>Portfolio V2</h3>
-                      <span className="mb-12">React.js / JavaScript / Tailwind CSS</span>
-                      <p>My interactive portfolio</p>
+                      <h3 className="leading-none">Portfolio V2</h3>
+                      <span className="mb-8">React.js / JavaScript / Tailwind CSS</span>
+                      {/* <p>My interactive portfolio</p> */}
+                      <div className="flex w-full justify-center">
+                        <LinkButton
+                          link=""
+                          content="View More"
+                          buttonStyle="btn-project"
+                        />
+                      </div>
                     </div>
                   </div> 
                 }

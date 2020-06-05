@@ -544,7 +544,7 @@
 }
 
 .grid-content-details h3 {
-  @apply font-extrabold tracking-wide inline-block leading-none text-gray-100
+  @apply font-extrabold tracking-wide inline-block text-gray-100
 }
 
 .grid-content-details p {
@@ -553,6 +553,18 @@
 
 .grid-content-details span {
   @apply font-roboto font-thin text-2xl inline-block text-gray-100 w-auto 
+}
+
+.btn-project {
+  @apply flex justify-center w-32 py-1 px-0 border rounded-sm
+         font-roboto text-xl tracking-wide text-white
+         border-gray-100
+         bg-gray-100 bg-opacity-25
+         transition ease-in-out duration-500      
+}
+
+.btn-project:hover {
+  @apply bg-opacity-100 shadow-lg text-custom-black-800 
 }
 
 .img-swiftcalc {

@@ -1530,7 +1530,6 @@ video {
   font-weight: 800;
   letter-spacing: 0.025em;
   display: inline-block;
-  line-height: 1;
   --text-opacity: 1;
   color: #f7fafc;
   color: rgba(247, 250, 252, var(--text-opacity))
@@ -1554,6 +1553,42 @@ video {
   color: #f7fafc;
   color: rgba(247, 250, 252, var(--text-opacity));
   width: auto
+}
+
+.btn-project {
+  display: flex;
+  justify-content: center;
+  width: 8rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  border-width: 1px;
+  border-radius: 0.125rem;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  letter-spacing: 0.025em;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  --border-opacity: 1;
+  border-color: #f7fafc;
+  border-color: rgba(247, 250, 252, var(--border-opacity));
+  --bg-opacity: 1;
+  background-color: #f7fafc;
+  background-color: rgba(247, 250, 252, var(--bg-opacity));
+  --bg-opacity: 0.25;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms
+}
+
+.btn-project:hover {
+  --bg-opacity: 1;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --text-opacity: 1;
+  color: #101010;
+  color: rgba(16, 16, 16, var(--text-opacity))
 }
 
 .img-swiftcalc {
