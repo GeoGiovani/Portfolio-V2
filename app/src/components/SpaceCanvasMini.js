@@ -26,8 +26,8 @@ class ShootingStarsMini extends PtsCanvas {
       // var ratio = Math.min( 1, 1 - lp.$subtract(p).magnitude()/(space.size.x/(space.size.x/space.size.y*1.3)));
       let fadeColors = ['rgba(255,63,142', 'rgba(4,194,201', 'rgba(255,187,85'];
       // let fadeColors = ['rgba(0,0,0', 'rgba(0,0,0', 'rgba(0,0,0'];
-      this.form.stroke(`${fadeColors[i%3]},${ratio})`, ratio*2).line( [ p, lp ] );
-      this.form.fillOnly( this.colors[i%3] ).point( p, 1 );
+      this.form.stroke(`${fadeColors[i%3]},${ratio})`, ratio*1.5).line( [ p, lp ] );
+      this.form.fillOnly( this.colors[i%3] ).point( p, .5 );
     });
   }
 }

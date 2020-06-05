@@ -97,6 +97,7 @@ function Projects() {
                     />
                     <div className="grid-content-details slide-left">
                       <h3>School Project</h3>
+                      <span>Node.js / Flask / Redux</span>
                       <p>A video Transition Detector</p>
                     </div>
                   </div> 
@@ -116,6 +117,7 @@ function Projects() {
                     </div>
                     <div className="grid-content-details grid-thin z-20 slide-up">
                       <h3>Portfolio V2</h3>
+                      <span className="mb-12">React.js / JavaScript / Tailwind CSS</span>
                       <p>My interactive portfolio</p>
                     </div>
                   </div> 

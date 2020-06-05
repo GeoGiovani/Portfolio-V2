@@ -22,7 +22,7 @@
 
 .btn-space {
   @apply flex justify-center text-gray-100 text-opacity-75 font-roboto text-xl
-         py-2 px-0 border-2 border-gray-100 border-opacity-75 bg-gray-400 
+         py-2 px-0 border border-gray-100 border-opacity-75 bg-gray-400 
          bg-opacity-25 w-48 transition ease-in duration-300
 }
 
@@ -544,7 +544,7 @@
 }
 
 .grid-content-details h3 {
-  @apply font-extrabold tracking-wide inline-block leading-tight text-gray-100
+  @apply font-extrabold tracking-wide inline-block leading-none text-gray-100
 }
 
 .grid-content-details p {
@@ -552,7 +552,7 @@
 }
 
 .grid-content-details span {
-  @apply font-roboto font-thin text-2xl inline-block text-gray-100
+  @apply font-roboto font-thin text-2xl inline-block text-gray-100 w-auto 
 }
 
 .img-swiftcalc {

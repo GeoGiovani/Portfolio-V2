@@ -25,10 +25,10 @@ function Profile() {
               <p className="mb-4">
                 Hello! I'm a third-year Computer Science student
                 based in Vancouver, BC. I currently study at&nbsp;
-                <a className="profile-link text-custom-yellow-300 font-bold" 
+                <a className="profile-link text-custom-green-400 font-bold" 
                 href="https://www.sfu.ca/">Simon Fraser University
                 </a> and volunteer in the&nbsp;
-                <a className="profile-link text-custom-yellow-300 font-bold" 
+                <a className="profile-link text-custom-green-400 font-bold" 
                 href="https://sfumars.com/people/george-giovanis/"> 
                 MARS Laboratory.</a>
               </p>

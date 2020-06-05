@@ -688,7 +688,7 @@ video {
   padding-bottom: 0.5rem;
   padding-left: 0rem;
   padding-right: 0rem;
-  border-width: 2px;
+  border-width: 1px;
   --border-opacity: 1;
   border-color: #f7fafc;
   border-color: rgba(247, 250, 252, var(--border-opacity));
@@ -1530,7 +1530,7 @@ video {
   font-weight: 800;
   letter-spacing: 0.025em;
   display: inline-block;
-  line-height: 1.25;
+  line-height: 1;
   --text-opacity: 1;
   color: #f7fafc;
   color: rgba(247, 250, 252, var(--text-opacity))
@@ -1552,7 +1552,8 @@ video {
   display: inline-block;
   --text-opacity: 1;
   color: #f7fafc;
-  color: rgba(247, 250, 252, var(--text-opacity))
+  color: rgba(247, 250, 252, var(--text-opacity));
+  width: auto
 }
 
 .img-swiftcalc {
