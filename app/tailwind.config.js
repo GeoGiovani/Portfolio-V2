@@ -20,7 +20,9 @@ module.exports = {
       '24': '6rem',
       '28': '6.5rem',
       '32': '8rem',
+      '36': '9rem',
       '40': '10rem',
+      '44': '11rem',
       '48': '12rem',
       '56': '14rem',
       '64': '16rem',
@@ -103,6 +105,7 @@ module.exports = {
       fontSize: {
         'hero-xxsm': '24pt',
         'hero-xsm': '2.5rem',
+        'hero-vsm': '3rem',
         'hero-sm': '4.5rem',
         'hero-smmd': '5rem',
         'hero-md': '6rem',

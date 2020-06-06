@@ -23,7 +23,6 @@ function SpaceHero() {
     <div className="space-hero-name-wrapper">
       <div className="space-hero-name">
         George Giovanis
-        <span className="text-gray-300 text-opacity-75"> . </span> 
       </div>
     </div>
 

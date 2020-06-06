@@ -21,14 +21,13 @@
 }
 
 .btn-space {
-  @apply flex justify-center text-gray-100 text-opacity-75 font-roboto text-xl
+  @apply flex justify-center text-gray-100 text-opacity-75 font-roboto text-lg
          py-2 px-0 border border-gray-100 border-opacity-75 bg-gray-400 
-         bg-opacity-25 w-48 transition ease-in duration-300
+         rounded-sm bg-opacity-25 w-36 transition ease-in duration-300
 }
 
 .btn-space:hover {
-  @apply bg-custom-green-400 border-custom-green-400 
-         text-gray-100
+  @apply bg-custom-yellow-300 border-custom-yellow-300 text-custom-black-800
 }
 
 @screen xsm {
@@ -39,7 +38,10 @@
 
 @screen sm {
   .space-hero-name {
-    @apply text-hero-sm
+    @apply text-hero-sm 
+  }
+  .btn-space {
+    @apply text-xl w-44
   }
 }
 
@@ -394,7 +396,7 @@
     @apply flex-row
   }
   .profile-text {
-    @apply text-2xl
+    @apply text-2xl w-p80
   }
   .btn-contact {
     @apply text-2xl
@@ -430,12 +432,18 @@
 
 .project-content {
   @apply flex justify-center items-center 
-         box-border w-screen h-auto pt-12 pb-24
+         box-border w-screen h-auto pt-12 pb-12
          font-roboto text-custom-black-900 text-5xl
 }
 
+@screen sm {
+  .project-content {
+    @apply pb-24
+  }
+}
+
 .project-grid-wrapper {
-  @apply flex items-center w-p80 h-auto
+  @apply flex items-center w-p90 h-auto
 }
 
 .project-grid {
@@ -490,6 +498,10 @@
   .project-grid-wrapper {
     @apply h-128
   }
+  .project-grid-wrapper {
+    @apply w-p80
+  }
+  
 }
 
 @screen lgxl {
@@ -525,7 +537,7 @@
 
 .grid-content-details {
   @apply absolute text-center pl-4 pr-4 w-p100 top-p50 left-p50
-         flex flex-col justify-center
+         flex flex-col justify-center items-center
          opacity-0 ease-in-out duration-400 z-20
 }
 
@@ -534,30 +546,123 @@
   transform: translate(-50%, -50%);
 }
 
-.grid-thin {
-  -webkit-transform: translate(-50%, -40%);
-  transform: translate(-50%, -40%);
-}
-
 .grid-content:hover .grid-content-details{
   @apply top-p50 left-p50 opacity-100
 }
 
 .grid-content-details h3 {
-  @apply font-extrabold tracking-wide inline-block text-gray-100
+  @apply font-extrabold tracking-wide inline-block text-gray-100 text-hero-xsm
+         leading-none
 }
 
 .grid-content-details p {
-  @apply text-2xl font-thin inline-block text-gray-100
+  @apply text-xl font-thin inline-block text-gray-100
 }
 
 .grid-content-details span {
-  @apply font-roboto font-thin text-2xl inline-block text-gray-100 w-auto 
+  @apply font-roboto font-thin text-base inline-block text-gray-100 w-auto 
+}
+
+.grid-content-inner {
+  @apply  flex flex-col w-full justify-center items-center 
+}
+
+.grid-content-inner-swiftCalc {
+  @apply grid-content-inner
+}
+
+.grid-content-inner-swiftCalc span {
+  @apply mb-12
+}
+
+.grid-content-inner-mathBender {
+  @apply grid-content-inner
+}
+
+.grid-content-inner-mathBender span {
+  @apply mb-6
+}
+
+.grid-content-inner-sfunit {
+  @apply grid-content-inner
+}
+
+.grid-content-inner-detector {
+  @apply grid-content-inner
+}
+
+.grid-content-inner-portfolio {
+  @apply grid-content-inner
+}
+
+.grid-content-inner-portfolio span {
+  @apply mb-12
+}
+
+.grid-content-inner-thin {
+  @apply flex flex-col items-center justify-center
+}
+
+.grid-content-inner-thin span {
+  @apply mb-6
+}
+
+@screen sm {
+  .grid-content-inner-swiftCalc span {
+    @apply mb-6
+  }
+  .grid-content-inner-portfolio span {
+    @apply mb-6
+  }
+  .grid-content-inner-thin {
+    @apply flex-row
+  }
+  .grid-content-inner-thin span {
+    @apply mb-0 mr-4
+  }
+}
+
+@screen md {
+  .grid-content-inner-sfunit h3 {
+    @apply leading-snug
+  }
+  .grid-content-inner-detector h3 {
+    @apply leading-snug
+  }  
+  .grid-content-inner-swiftCalc span {
+    @apply mb-8
+  }
+  .grid-content-inner-mathBender span {
+    @apply mb-8
+  }
+  .grid-content-inner-portfolio span {
+    @apply mb-6
+  }
+}
+
+@screen lglg {
+  .grid-content-inner-sfunit h3 {
+    @apply mb-1
+  }
+  .grid-content-inner-detector h3 {
+    @apply mb-1
+  }  
+  .grid-content-inner-swiftCalc span {
+    @apply mb-12
+  }
+  .grid-content-inner-portfolio span {
+    @apply mb-8
+  }
+}
+
+.grid-thin {
+  -webkit-transform: translate(-50%, -40%);
+  transform: translate(-50%, -40%);
 }
 
 .btn-project {
-  @apply flex justify-center w-32 py-1 px-0 border rounded-sm
-         font-roboto text-xl tracking-wide text-white
+  @apply flex justify-center w-28 py-1 px-0 border rounded-sm
+         font-roboto text-base tracking-wide text-white
          border-gray-100
          bg-gray-100 bg-opacity-25
          transition ease-in-out duration-500      
@@ -571,16 +676,69 @@
   @apply absolute top-p6
 }
 
+@screen xsm {
+  .grid-content-details span {
+    @apply text-lg
+  }
+  .btn-project {
+    @apply text-lg
+  } 
+}
+
+@screen sm {
+  .grid-content-details h3 {
+    @apply text-hero-xxsm
+  } 
+  .grid-content-details span {
+    @apply text-sm
+  }
+  .btn-project {
+    @apply text-sm
+  } 
+}
+
 @screen smmd {
   .img-swiftcalc {
     @apply top-p20
   }
 }
 
+@screen md {
+  .grid-content-details h3 {
+    @apply text-hero-xxsm
+  } 
+  .grid-content-details span {
+    @apply text-lg
+  }
+  .btn-project {
+    @apply text-lg
+  } 
+}
+
 @screen lg {
   .img-swiftcalc {
     @apply top-p12-5
   }
+}
+
+@screen lglg {
+  .grid-content-details h3 {
+    @apply text-hero-xsm
+  } 
+  .btn-project {
+    @apply w-32
+  } 
+}
+@screen lgxl {
+  .grid-content-details h3 {
+    @apply text-hero-vsm
+  } 
+  .grid-content-details span {
+    @apply text-2xl
+  }
+  .btn-project {
+    @apply text-xl
+  } 
 }
 
 .slide-down {
