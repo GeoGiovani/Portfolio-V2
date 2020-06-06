@@ -17,6 +17,7 @@ module.exports = {
       '14': '3.5rem',
       '16': '4rem',
       '20': '5rem',
+      '22': '5.5rem',
       '24': '6rem',
       '28': '6.5rem',
       '32': '8rem',
@@ -103,6 +104,7 @@ module.exports = {
         'circle': '50%',
       },
       fontSize: {
+        'hero-xxxsm': '21pt',
         'hero-xxsm': '24pt',
         'hero-xsm': '2.5rem',
         'hero-vsm': '3rem',

@@ -470,7 +470,7 @@
   @apply row-span-1 col-span-1
 }
 
-@screen smmd {
+@screen sm {
   .project-grid-wrapper {
     @apply h-96
   }
@@ -614,21 +614,27 @@
   .grid-content-inner-portfolio span {
     @apply mb-6
   }
+  .grid-content-inner-thin span {
+    @apply mb-0 mr-2
+  }
   .grid-content-inner-thin {
     @apply flex-row
   }
+  .grid-content-inner-sfunit h3 {
+    @apply leading-none
+  }
+  .grid-content-inner-detector h3 {
+    @apply leading-none
+  }  
+}
+
+@screen smmd {
   .grid-content-inner-thin span {
-    @apply mb-0 mr-4
+    @apply mr-4
   }
 }
 
 @screen md {
-  .grid-content-inner-sfunit h3 {
-    @apply leading-snug
-  }
-  .grid-content-inner-detector h3 {
-    @apply leading-snug
-  }  
   .grid-content-inner-swiftCalc span {
     @apply mb-8
   }
@@ -638,6 +644,21 @@
   .grid-content-inner-portfolio span {
     @apply mb-6
   }
+  .grid-content-inner-sfunit h3 {
+    @apply leading-snug
+  }
+  .grid-content-inner-detector h3 {
+    @apply leading-snug
+  }  
+}
+
+@screen lg {
+  .grid-content-inner-sfunit h3 {
+    @apply leading-snug
+  }
+  .grid-content-inner-detector h3 {
+    @apply leading-snug
+  }  
 }
 
 @screen lglg {
@@ -678,23 +699,38 @@
 
 @screen xsm {
   .grid-content-details span {
-    @apply text-lg
+    @apply text-xl
   }
   .btn-project {
-    @apply text-lg
+    @apply text-xl w-32
   } 
 }
 
 @screen sm {
   .grid-content-details h3 {
-    @apply text-hero-xxsm
+    @apply text-hero-xxxsm
   } 
   .grid-content-details span {
     @apply text-sm
   }
   .btn-project {
-    @apply text-sm
+    @apply text-sm w-22
   } 
+}
+
+@screen smmd {
+  .grid-content-details h3 {
+    @apply text-hero-xxsm
+  } 
+  .btn-project {
+    @apply text-sm w-28
+  } 
+}
+
+@screen sm {
+  .img-swiftcalc {
+    @apply top-p15
+  }
 }
 
 @screen smmd {
@@ -708,10 +744,10 @@
     @apply text-hero-xxsm
   } 
   .grid-content-details span {
-    @apply text-lg
+    @apply text-base
   }
   .btn-project {
-    @apply text-lg
+    @apply text-base
   } 
 }
 
@@ -719,6 +755,12 @@
   .img-swiftcalc {
     @apply top-p12-5
   }
+  .grid-content-details span {
+    @apply text-lg
+  }
+  .btn-project {
+    @apply text-lg
+  } 
 }
 
 @screen lglg {
