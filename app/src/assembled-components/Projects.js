@@ -9,7 +9,7 @@ import '../styles/index.css';
 
 function Projects() {
   return (
-    <div id="Projects" className="w-screen h-auto bg-custom-black-800">
+    <div id="Projects" className="project-page">
       
       <Banner 
         bannerStyle="profile-banner"
@@ -23,7 +23,7 @@ function Projects() {
         }
       />
 
-      <div className="project-content bg-custom-black-800">
+      <div className="project-content">
 
         <PortfolioGrid 
           wrapperStyle="project-grid-wrapper"
@@ -31,17 +31,17 @@ function Projects() {
             <div className="project-grid">
 
               <GridComponent
-                wrapperStyle="grid-card-SwiftCalc"
+                wrapperStyle="grid-card-swiftCalc"
                 content={ 
                   <div className="grid-content bg-custom-yellow-300">
-                    <div className="grid-content-overlay bg-custom-yellow-300 bg-opacity-50"></div>
+                    <div className="grid-content-overlay-swiftcalc"></div>
                     <SplitPaneImage 
-                      src={require("../media/SwiftCalc.png")}
+                      src={require("../media/swiftCalc.png")}
                       alt="SwiftCalc"
                       outerCardStyle="box-border h-full w-auto overflow-hidden"
                       imageStyle="img-swiftcalc"
                     />
-                    <div className="grid-content-details text-custom-black-800 slide-down">
+                    <div className="grid-content-details slide-down">
                       <div className="grid-content-inner-swiftCalc">
                         <h3>SwiftCalc</h3>
                         <span>Swift / Flutter</span>
@@ -57,17 +57,17 @@ function Projects() {
               />
 
               <GridComponent 
-                wrapperStyle="grid-card-MathBender"
+                wrapperStyle="grid-card-mathBender"
                 content={ 
                   <div className="grid-content bg-custom-green-400">
-                    <div className="grid-content-overlay bg-custom-green-400 bg-opacity-50"></div>
+                    <div className="grid-content-overlay-mathBender"></div>
                     <SplitPaneImage 
                       src={require("../media/mathBender.gif")}
                       alt="MathBender"
                       outerCardStyle="box-border h-full flex items-end"
-                      imageStyle="img-mathBender"
+                      imageStyle="img-mathBender w-full"
                     />
-                    <div className="grid-content-details text-custom-black-800 slide-left">
+                    <div className="grid-content-details slide-left">
                       <div className="grid-content-inner-mathBender">
                         <h3>MathBender</h3>
                         <span>JavaScript / Node.js</span>
@@ -86,7 +86,7 @@ function Projects() {
                 wrapperStyle="grid-card-sfunit"
                 content={ 
                   <div className="grid-content bg-custom-red-500">
-                    <div className="grid-content-overlay bg-custom-red-500 bg-opacity-25"></div>
+                    <div className="grid-content-overlay-sfunit"></div>
                     <div className="grid-content-details slide-right">
                       <div className="grid-content-inner-sfunit">
                         <h3>SFUnit</h3>
@@ -133,13 +133,13 @@ function Projects() {
               />
               
               <GridComponent
-                wrapperStyle="grid-card-Portfolio"
+                wrapperStyle="grid-card-portfolio"
                 content={ 
                   <div className="grid-content">
-                    <div className="grid-content-overlay z-1 bg-custom-black-800 bg-opacity-50"></div>
+                    <div className="grid-content-overlay-portfolio"></div>
                     <div className="browser-mockup">
                       <SpaceCanvasMini
-                          bgColor="#101010"
+                          bgColor="#0c0c0c"
                           style={{height: '101%', width: '101%'}}
                         />
                     </div>

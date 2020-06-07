@@ -6,8 +6,6 @@ class ShootingStars extends PtsCanvas {
 
   start (bound, space) {
     this.pts = Create.distributeRandom( space.innerBound, (105*space.size.x/space.size.y)  );
-    this.nw = new Pt(0,0);
-    this.ne = new Pt(space.width, 0);
     this.sw = new Pt(0, space.height);
     this.se = new Pt(space.width, space.height);
     this.mouse = space.center;

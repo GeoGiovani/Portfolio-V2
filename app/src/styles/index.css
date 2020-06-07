@@ -3,93 +3,93 @@
 @tailwind components;
 
 .space-hero {
-  @apply box-border w-screen h-screen bg-custom-black-900
+  @apply box-border w-screen h-screen bg-custom-black-900;
 }
 
 .space-hero-name-wrapper {
   @apply box-border w-screen h-auto absolute top-p30 left-0 z-10 
-         pointer-events-none
+         pointer-events-none;
 }
 
 .space-hero-name {
   @apply text-hero-xxsm box-border font-bold flex justify-center w-screen 
-  font-roboto text-gray-300 text-opacity-75 tracking-wide pointer-events-none
+  font-roboto text-gray-300 text-opacity-75 tracking-wide pointer-events-none;
 }
 
 .space-hero-button-wrapper {
-  @apply z-10 box-border w-p40 absolute bottom-p7-5 left-p30
+  @apply z-10 box-border w-p40 absolute bottom-p7-5 left-p30;
 }
 
 .btn-space {
   @apply flex justify-center text-gray-100 text-opacity-75 font-roboto text-lg
          py-2 px-0 border border-gray-100 border-opacity-75 bg-gray-400 
-         rounded-sm bg-opacity-25 w-36 transition ease-in duration-300
+         rounded-sm bg-opacity-25 w-36 transition ease-in duration-300;
 }
 
 .btn-space:hover {
-  @apply bg-custom-yellow-300 border-custom-yellow-300 text-custom-black-800
+  @apply bg-custom-yellow-300 border-custom-yellow-300 text-custom-black-800;
 }
 
 @screen xsm {
   .space-hero-name {
-    @apply text-hero-xsm
+    @apply text-hero-xsm;
   }
 }
 
 @screen sm {
   .space-hero-name {
-    @apply text-hero-sm 
+    @apply text-hero-sm;
   }
   .btn-space {
-    @apply text-xl w-44
+    @apply text-xl w-44;
   }
 }
 
 @screen smmd {
   .space-hero-name {
-    @apply text-hero-smmd
+    @apply text-hero-smmd;
   }
 }
 
 @screen md {
   .space-hero-name {
-    @apply text-hero-md
+    @apply text-hero-md;
   }
 }
 
 @screen lg {
   .space-hero-name {
-    @apply text-hero-lg
+    @apply text-hero-lg;
   }
 }
 
 @screen lglg {
   .space-hero-name {
-    @apply text-hero-lglg
+    @apply text-hero-lglg;
   }
   .space-hero-name-wrapper {
-    @apply top-p20
+    @apply top-p20;
   }
 }
 
 @screen lgxl {
   .space-hero-name {
-    @apply text-hero-lgxl
+    @apply text-hero-lgxl;
   }
 }
 
 @screen xl {
   .space-hero-name {
-    @apply text-hero-xl
+    @apply text-hero-xl;
   }
 }
 
 .night-sky-canvas {
-  @apply box-border w-screen h-screen
+  @apply box-border w-screen h-screen;
 }
 
 .navbar {
-  @apply box-border flex justify-end
+  @apply box-border flex justify-end;
 }
 
 .nav-spacing-right {
@@ -98,35 +98,35 @@
 }
 
 .nav-button {
-  @apply h-5 w-5 bg-gray-300 bg-opacity-75 rounded-full flex mx-3
+  @apply h-5 w-5 bg-gray-300 bg-opacity-75 rounded-full flex mx-3;
 }
 
 .nav-link {
-  @apply hidden my-3 
+  @apply hidden my-3;
 }
 
 .active-hero {
-  @apply bg-custom-yellow-300 h-6 w-6
+  @apply bg-custom-yellow-300 h-6 w-6;
 }
 
 .active-profile {
-  @apply bg-custom-red-500 h-6 w-6
+  @apply bg-custom-red-500 h-6 w-6;
 }
 
 .active-projects {
-  @apply bg-custom-green-400 h-6 w-6
+  @apply bg-custom-green-400 h-6 w-6;
 }
 
 .btn {
-  @apply py-3 px-4 rounded
+  @apply py-3 px-4 rounded;
 }
 
 .btn-teal {
-  @apply bg-custom-teal-300 text-custom-grey-900 font-semibold 
+  @apply bg-custom-teal-300 text-custom-grey-900 font-semibold;
 }
 
 .btn-teal:hover{
-  @apply bg-teal-gradient
+  @apply bg-teal-gradient;
 }
 
 .card {
@@ -147,46 +147,46 @@
 
 @screen sm {
   .card {
-    @apply w-128 h-96
+    @apply w-128 h-96;
   }
   .card-title {
-    @apply w-128 ml-0
+    @apply w-128 ml-0;
   }
   .card-style {
-    @apply w-128
+    @apply w-128;
   }
   .card-content {
-    @apply w-128 ml-0
+    @apply w-128 ml-0;
   }
   .card-spacer {
-    @apply h-12
+    @apply h-12;
   }
 }
 
 @screen md {
   .card {
-    @apply w-96 h-128
+    @apply w-96 h-128;
   }
   .card-title {
-    @apply w-96
+    @apply w-96;
   }
   .card-style {
-    @apply w-96
+    @apply w-96;
   }
   .card-content {
-    @apply w-96
+    @apply w-96;
   }
 }
 
 @screen xsm {
   .profile {
-    @apply pt-0
+    @apply pt-0;
   }
 }
 
 @screen md {
   .profile {
-    @apply pt-6 pl-12
+    @apply pt-6 pl-12;
   }
 }
 
@@ -210,317 +210,338 @@
 
 @screen sm {
   .pane {
-    @apply h-256
+    @apply h-256;
   }
   .pane-left {
-    @apply pt-12
+    @apply pt-12;
   }
 
   .pane-right {
-    @apply pt-0
+    @apply pt-0;
   }
 }
 
 @screen md {
   .pane {
-    @apply flex items-stretch h-full
+    @apply flex items-stretch h-full;
   }
   .pane-left {
-    @apply flex-1 justify-end text-left p-8
+    @apply flex-1 justify-end text-left p-8;
   }
 
   .pane-right {
-    @apply flex-1 justify-start text-right p-8 
+    @apply flex-1 justify-start text-right p-8;
   }
 }
 
 .hero {
-  @apply flex items-center justify-center h-screen w-screen font-serif
+  @apply flex items-center justify-center h-screen w-screen font-serif;
 }
  
 .hero-title {
-  @apply box-border h-16 w-80 text-4xl tracking-wide text-center border-b
+  @apply box-border h-16 w-80 text-4xl tracking-wide text-center border-b;
 }
 
 .hero-footer {
-  @apply my-4 box-border text-2xl font-light h-24 text-center
+  @apply my-4 box-border text-2xl font-light h-24 text-center;
 }
 
 @screen sm {
   .hero-title {
-    @apply h-28 w-128 text-6xl tracking-wide
+    @apply h-28 w-128 text-6xl tracking-wide;
   }
   
   .hero-footer {
-    @apply my-4 box-border text-3xl font-light h-24 text-center
+    @apply my-4 box-border text-3xl font-light h-24 text-center;
   }
 }
 
 .banner {
-  @apply flex items-end justify-center h-p20 w-screen
+  @apply flex items-end justify-center h-p20 w-screen;
 }
 
 .banner-header {
-  @apply box-border h-auto w-p40 text-center font-roboto
+  @apply box-border h-auto w-p40 text-center font-roboto;
 }
 
 /* ================================ PROFILE ================================ */
 
 .profile-page {
-  @apply h-auto w-full bg-custom-black-800
+  @apply h-auto w-full bg-custom-black-800;
 }
 
 .profile-banner {
-  @apply flex items-center justify-center h-32 w-screen pointer-events-none
+  @apply flex items-center justify-center h-32 w-screen pointer-events-none;
 }
 
 .profile-banner-header {
-  @apply flex items-center justify-center h-32
+  @apply flex items-center justify-center h-32;
 }
 
 .banner-content {
   @apply pt-p1 text-center font-roboto
-         text-hero-sm font-bold pointer-events-none tracking-wide
+         text-hero-sm font-bold pointer-events-none tracking-wide;
 }
 
 .profile-content {
-  @apply flex flex-col justify-center items-center text-white w-screen h-p80
+  @apply flex flex-col justify-center items-center text-white w-screen h-p80;
 }
 
 .profile-pane-left {
-  @apply flex justify-center items-center h-full w-screen order-2
+  @apply flex justify-center items-center h-full w-screen order-2;
 }
 
 .profile-pane-right {
-  @apply flex justify-center h-64 w-screen order-1
+  @apply flex justify-center h-64 w-screen order-1;
 }
 
 .profile-text {
   @apply flex-col justify-center w-p90 h-auto 
-         text-left text-gray-300 font-roboto font-thin text-xl
+         text-left text-gray-300 font-roboto font-thin text-xl;
 }
 
 .profile-text-link {
-  @apply font-bold text-custom-purple-400
+  @apply font-bold text-custom-purple-400;
 }
 
 .profile-image-outer {
-  @apply flex items-center h-full w-auto pb-4
+  @apply flex items-center h-full w-auto pb-4;
 }
 
 .profile-image {
-  @apply h-56 border-2 border-custom-yellow-200 rounded-circle shadow-inner
+  @apply h-56 border-2 border-custom-yellow-200 rounded-circle shadow-inner;
 }
 
 .profile-button {
-  @apply flex justify-center mb-6
+  @apply flex justify-center mb-6;
 }
 
 .btn-contact {
   @apply flex justify-center items-center w-48 py-2 border-2
          font-roboto text-xl tracking-wide text-gray-300
          border-custom-black-800
-         transition ease-in duration-300      
+         transition ease-in duration-300;     
 }
 
 .btn-contact:hover {
-  @apply text-white bg-custom-black-800 text-gray-300
+  @apply text-white bg-custom-black-800 text-gray-300;
 }
 
 @screen sm {
   .profile-banner {
-    @apply h-40
+    @apply h-40;
   }
   .profile-pane-right {
-    @apply h-96
+    @apply h-96;
   }
   .profile-text {
-    @apply text-2xl
+    @apply text-2xl;
   }
   .banner-content {
-    @apply text-hero-md
+    @apply text-hero-md;
   }
   .profile-image-outer {
-    @apply pb-0
+    @apply pb-0;
   }
   .profile-image {
-    @apply h-80
+    @apply h-80;
   }
 }
 
 @screen lg {
   .profile-banner {
-    @apply h-48
+    @apply h-48;
   }
   .banner-content {
-    @apply text-hero-lg
+    @apply text-hero-lg;
   }
   .profile-content {
-    @apply flex-row h-128
+    @apply flex-row h-128;
   }
   .profile-pane-left {
-    @apply justify-end h-128 w-p60 order-1
+    @apply justify-end h-128 w-p60 order-1;
 
   }
   .profile-pane-right {
-    @apply justify-end h-128 w-p40 order-2
+    @apply justify-end h-128 w-p40 order-2;
   }
   .profile-text {
-    @apply text-xl
+    @apply text-xl;
   }
   .profile-button {
-    @apply justify-start
+    @apply justify-start;
   }
   .profile-image-outer {
-    @apply items-center mr-p15
+    @apply items-center mr-p15;
   }
   .profile-image {
-    @apply border-2
+    @apply border-2;
   }
 }
 
 @screen lglg {
   .profile-banner {
-    @apply h-48
+    @apply h-48;
   }
   .banner-content {
-    @apply text-hero-lglg
+    @apply text-hero-lglg;
   }
   .profile-page {
-    @apply h-auto w-screen
+    @apply h-auto w-screen;
   }
   .profile-banner {
-    @apply h-56
+    @apply h-56;
   }
   .profile-content {
-    @apply flex-row
+    @apply flex-row;
   }
   .profile-text {
-    @apply text-2xl w-p80
+    @apply text-2xl w-p80;
   }
   .btn-contact {
-    @apply text-2xl
+    @apply text-2xl;
   }
   .profile-image {
-    @apply h-96
+    @apply h-96;
   }
 }
 
 @screen lgxl {
   .profile-banner {
-    @apply h-56
+    @apply h-56;
   }
   .profile-content {
-    @apply h-142
+    @apply h-142;
   }
   .banner-content {
-    @apply text-hero-lgxl
+    @apply text-hero-lgxl;
   }
 }
 
 @screen xl {
   .profile-text {
-    @apply text-profile-xl w-p80
+    @apply text-profile-xl w-p80;
   }
   .profile-image-outer {
-    @apply mr-p30
+    @apply mr-p30;
   }
 }
 
 
 /* =============================== PROJECTS ================================ */
 
+.project-page {
+  @apply w-screen h-auto bg-custom-black-800;
+}
+
 .project-content {
   @apply flex justify-center items-center 
          box-border w-screen h-auto pt-12 pb-12
-         font-roboto text-custom-black-900 text-5xl
+         font-roboto text-custom-black-900 text-5xl;
 }
 
 @screen sm {
   .project-content {
-    @apply pb-24
+    @apply pb-24;
   }
 }
 
 .project-grid-wrapper {
-  @apply flex items-center w-p90 h-auto
+  @apply flex items-center w-p90 h-auto;
 }
 
 .project-grid {
-  @apply  grid grid-rows-7 grid-cols-1 row-gap-2 box-border w-full h-auto
+  @apply  grid grid-rows-7 grid-cols-1 row-gap-2 box-border w-full h-auto;
 }
 
-.grid-card-SwiftCalc {
-  @apply row-span-2 col-span-1
+.grid-card-swiftCalc {
+  @apply row-span-2 col-span-1;
 }
 
-.grid-card-MathBender {
-  @apply row-span-1 col-span-1 
+.grid-card-mathBender {
+  @apply row-span-1 col-span-1 ;
 }
 
-.grid-card-Portfolio {
-  @apply row-span-2 col-span-1 row-start-5
+.grid-card-portfolio {
+  @apply row-span-2 col-span-1 row-start-5;
 }
 
 .grid-card-detector {
-  @apply row-span-1 col-span-1 
+  @apply row-span-1 col-span-1;
 }
 
 .grid-card-sfunit {
-  @apply row-span-1 col-span-1
+  @apply row-span-1 col-span-1;
 }
 
 @screen sm {
   .project-grid-wrapper {
-    @apply h-96
+    @apply h-96;
   }
   .project-grid {
-    @apply grid-rows-4 grid-cols-3 row-gap-0 gap-2 h-full
+    @apply grid-rows-4 grid-cols-3 row-gap-0 gap-2 h-full;
   }
-  .grid-card-SwiftCalc {
-    @apply row-span-4 col-span-1
+  .grid-card-swiftCalc {
+    @apply row-span-4 col-span-1;
   } 
-  .grid-card-Portfolio {
-    @apply row-span-2 col-span-2
+  .grid-card-portfolio {
+    @apply row-span-2 col-span-2;
   }
-  .grid-card-MathBender {
-    @apply row-span-2 col-span-1 
+  .grid-card-mathBender {
+    @apply row-span-2 col-span-1;
   }
 }
 
 @screen md {
   .project-grid-wrapper {
-    @apply h-112
+    @apply h-112;
   }
 }
 
 @screen lglg {
   .project-grid-wrapper {
-    @apply h-128
+    @apply h-128;
   }
   .project-grid-wrapper {
-    @apply w-p80
+    @apply w-p80;
   }
   
 }
 
 @screen lgxl {
   .project-grid-wrapper {
-    @apply h-142
+    @apply h-142;
   }
 }
 
 .grid-content {
-  @apply relative w-full h-full rounded-md m-auto overflow-hidden shadow-xl
+  @apply relative w-full h-full rounded-md m-auto overflow-hidden shadow-xl;
 }
 
-.grid-content .grid-content-overlay {
+.grid-content-overlay {
   @apply absolute h-full w-full
          left-0 top-0 bottom-0 right-0 opacity-0 z-10
-         ease-in-out duration-300 
+         ease-in duration-300; 
 }
+
 .grid-content:hover .grid-content-overlay {
-  @apply opacity-100
+  @apply opacity-100;
+}
+
+.grid-content-overlay-swiftCalc {
+  @apply grid-content-overlay bg-custom-yellow-300 bg-opacity-50;
+}
+
+.grid-content-overlay-mathBender {
+  @apply grid-content-overlay bg-custom-green-400 bg-opacity-50;
+}
+
+.grid-content-overlay-sfunit {
+  @apply grid-content-overlay bg-custom-red-500 bg-opacity-25;
+}
+
+.grid-content-overlay-portfolio {
+  @apply grid-content-overlay z-10 bg-custom-black-800 bg-opacity-50;
 }
 
 .grid-content:hover .img-swiftcalc {
@@ -537,8 +558,8 @@
 
 .grid-content-details {
   @apply absolute text-center pl-4 pr-4 w-p100 top-p50 left-p50
-         flex flex-col justify-center items-center
-         opacity-0 ease-in-out duration-400 z-20
+         flex flex-col justify-center items-center text-gray-100
+         opacity-0 ease-in-out duration-400 z-20;
 }
 
 .grid-content-details {
@@ -547,137 +568,137 @@
 }
 
 .grid-content:hover .grid-content-details{
-  @apply top-p50 left-p50 opacity-100
+  @apply top-p50 left-p50 opacity-100;
 }
 
 .grid-content-details h3 {
-  @apply font-extrabold tracking-wide inline-block text-gray-100 text-hero-xsm
-         leading-none
+  @apply font-extrabold tracking-wide inline-block text-hero-xsm
+         leading-none;
 }
 
 .grid-content-details p {
-  @apply text-xl font-thin inline-block text-gray-100
+  @apply text-xl font-thin inline-block;
 }
 
 .grid-content-details span {
-  @apply font-roboto font-thin text-base inline-block text-gray-100 w-auto 
+  @apply font-roboto font-thin text-base inline-block w-auto;
 }
 
 .grid-content-inner {
-  @apply  flex flex-col w-full justify-center items-center 
+  @apply  flex flex-col w-full justify-center items-center;
 }
 
 .grid-content-inner-swiftCalc {
-  @apply grid-content-inner
+  @apply grid-content-inner;
 }
 
 .grid-content-inner-swiftCalc span {
-  @apply mb-12
+  @apply mb-12;
 }
 
 .grid-content-inner-mathBender {
-  @apply grid-content-inner
+  @apply grid-content-inner;
 }
 
 .grid-content-inner-mathBender span {
-  @apply mb-6
+  @apply mb-6;
 }
 
 .grid-content-inner-sfunit {
-  @apply grid-content-inner
+  @apply grid-content-inner;
 }
 
 .grid-content-inner-detector {
-  @apply grid-content-inner
+  @apply grid-content-inner;
 }
 
 .grid-content-inner-portfolio {
-  @apply grid-content-inner
+  @apply grid-content-inner;
 }
 
 .grid-content-inner-portfolio span {
-  @apply mb-12
+  @apply mb-12;
 }
 
 .grid-content-inner-thin {
-  @apply flex flex-col items-center justify-center
+  @apply flex flex-col items-center justify-center;
 }
 
 .grid-content-inner-thin span {
-  @apply mb-6
+  @apply mb-6;
 }
 
 @screen sm {
   .grid-content-inner-swiftCalc span {
-    @apply mb-6
+    @apply mb-6;
   }
   .grid-content-inner-portfolio span {
-    @apply mb-6
+    @apply mb-6;
   }
   .grid-content-inner-thin span {
-    @apply mb-0 mr-2
+    @apply mb-0 mr-2;
   }
   .grid-content-inner-thin {
-    @apply flex-row
+    @apply flex-row;
   }
   .grid-content-inner-sfunit h3 {
-    @apply leading-none
+    @apply leading-none;
   }
   .grid-content-inner-detector h3 {
-    @apply leading-none
+    @apply leading-none;
   }  
 }
 
 @screen smmd {
   .grid-content-inner-thin span {
-    @apply mr-4
+    @apply mr-4;
   }
 }
 
 @screen md {
   .grid-content-inner-swiftCalc span {
-    @apply mb-8
+    @apply mb-8;
   }
   .grid-content-inner-mathBender span {
-    @apply mb-8
+    @apply mb-8;
   }
   .grid-content-inner-portfolio span {
-    @apply mb-6
+    @apply mb-6;
   }
   .grid-content-inner-sfunit h3 {
-    @apply leading-snug
+    @apply leading-snug;
   }
   .grid-content-inner-detector h3 {
-    @apply leading-snug
+    @apply leading-snug;
   }  
 }
 
 @screen lg {
   .grid-content-inner-sfunit h3 {
-    @apply leading-snug
+    @apply leading-snug;
   }
   .grid-content-inner-detector h3 {
-    @apply leading-snug
+    @apply leading-snug;
   }  
 }
 
 @screen lglg {
   .grid-content-inner-sfunit h3 {
-    @apply mb-1
+    @apply mb-1;
   }
   .grid-content-inner-detector h3 {
-    @apply mb-1
+    @apply mb-1;
   }  
   .grid-content-inner-swiftCalc span {
-    @apply mb-12
+    @apply mb-12;
   }
   .grid-content-inner-portfolio span {
-    @apply mb-8
+    @apply mb-8;
   }
 }
 
 .grid-thin {
-  -webkit-transform: translate(-50%, -40%);
+  -webkit-transform: translate(-50%, -40%) translateZ(0);
   transform: translate(-50%, -40%);
 }
 
@@ -686,117 +707,117 @@
          font-roboto text-base tracking-wide text-white
          border-gray-100
          bg-gray-100 bg-opacity-25
-         transition ease-in-out duration-500      
+         transition ease-in-out duration-500;   
 }
 
 .btn-project:hover {
-  @apply bg-opacity-100 shadow-lg text-custom-black-800 
+  @apply bg-opacity-100 shadow-lg text-custom-black-800;
 }
 
 .img-swiftcalc {
-  @apply absolute top-p6
+  @apply absolute top-p6;
 }
 
 @screen xsm {
   .grid-content-details span {
-    @apply text-xl
+    @apply text-xl;
   }
   .btn-project {
-    @apply text-xl w-32
+    @apply text-xl w-32;
   } 
 }
 
 @screen sm {
   .grid-content-details h3 {
-    @apply text-hero-xxxsm
+    @apply text-hero-xxxsm;
   } 
   .grid-content-details span {
-    @apply text-sm
+    @apply text-sm;
   }
   .btn-project {
-    @apply text-sm w-22
+    @apply text-sm w-22;
   } 
 }
 
 @screen smmd {
   .grid-content-details h3 {
-    @apply text-hero-xxsm
+    @apply text-hero-xxsm;
   } 
   .btn-project {
-    @apply text-sm w-28
+    @apply text-sm w-28;
   } 
 }
 
 @screen sm {
   .img-swiftcalc {
-    @apply top-p15
+    @apply top-p15;
   }
 }
 
 @screen smmd {
   .img-swiftcalc {
-    @apply top-p20
+    @apply top-p20;
   }
 }
 
 @screen md {
   .grid-content-details h3 {
-    @apply text-hero-xxsm
+    @apply text-hero-xxsm;
   } 
   .grid-content-details span {
-    @apply text-base
+    @apply text-base;
   }
   .btn-project {
-    @apply text-base
+    @apply text-base;
   } 
 }
 
 @screen lg {
   .img-swiftcalc {
-    @apply top-p12-5
+    @apply top-p12-5;
   }
   .grid-content-details span {
-    @apply text-lg
+    @apply text-lg;
   }
   .btn-project {
-    @apply text-lg
+    @apply text-lg;
   } 
 }
 
 @screen lglg {
   .grid-content-details h3 {
-    @apply text-hero-xsm
+    @apply text-hero-xsm;
   } 
   .btn-project {
-    @apply w-32
+    @apply w-32;
   } 
 }
 @screen lgxl {
   .grid-content-details h3 {
-    @apply text-hero-vsm
+    @apply text-hero-vsm;
   } 
   .grid-content-details span {
-    @apply text-2xl
+    @apply text-2xl;
   }
   .btn-project {
-    @apply text-xl
+    @apply text-xl;
   } 
 }
 
 .slide-down {
-  @apply top-p20
+  @apply top-p20;
 }
 
 .slide-left {
-  @apply left-p20
+  @apply left-p20;
 }
 
 .slide-right {
-  @apply left-p80
+  @apply left-p80;
 }
 
 .slide-up {
-  @apply top-p80
+  @apply top-p80;
 }
 
 @tailwind utilities;

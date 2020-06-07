@@ -1,6 +1,5 @@
 {
   "name": "app",
-  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -36,7 +35,7 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.6",
+    "autoprefixer": "^9.8.0",
     "postcss-cli": "^7.1.1",
     "pts": "^0.9.4",
     "react-scroll": "^1.7.16",
