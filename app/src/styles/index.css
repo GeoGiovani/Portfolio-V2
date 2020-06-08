@@ -2,8 +2,10 @@
 
 @tailwind components;
 
+/* ================================= Hero ================================== */
+
 .space-hero {
-  @apply box-border w-screen h-screen bg-custom-black-900;
+  @apply box-border w-screen h-screen;
 }
 
 .space-hero-name-wrapper {
@@ -84,9 +86,12 @@
   }
 }
 
+/* Staged for removal */
 .night-sky-canvas {
   @apply box-border w-screen h-screen;
 }
+
+/* ================================ Navbar ================================= */
 
 .navbar {
   @apply box-border flex justify-end;
@@ -117,78 +122,7 @@
   @apply bg-custom-green-400 h-6 w-6;
 }
 
-.btn {
-  @apply py-3 px-4 rounded;
-}
-
-.btn-teal {
-  @apply bg-custom-teal-300 text-custom-grey-900 font-semibold;
-}
-
-.btn-teal:hover{
-  @apply bg-teal-gradient;
-}
-
-.card {
-  @apply box-border h-96 flex items-center justify-center;
-}
-
-.card-title {
-  @apply box-border w-p90 h-14 font-semibold text-2xl ml-p5;
-}
-
-.card-content {
-  @apply box-border w-p90 h-64 font-thin ml-p5;
-}
-
-.card-spacer {
-  @apply box-border w-p90 h-10;
-}
-
-@screen sm {
-  .card {
-    @apply w-128 h-96;
-  }
-  .card-title {
-    @apply w-128 ml-0;
-  }
-  .card-style {
-    @apply w-128;
-  }
-  .card-content {
-    @apply w-128 ml-0;
-  }
-  .card-spacer {
-    @apply h-12;
-  }
-}
-
-@screen md {
-  .card {
-    @apply w-96 h-128;
-  }
-  .card-title {
-    @apply w-96;
-  }
-  .card-style {
-    @apply w-96;
-  }
-  .card-content {
-    @apply w-96;
-  }
-}
-
-@screen xsm {
-  .profile {
-    @apply pt-0;
-  }
-}
-
-@screen md {
-  .profile {
-    @apply pt-6 pl-12;
-  }
-}
+/* =========================== Component Pieces ============================ */
 
 .pane-left {
   @apply flex items-center justify-center text-center pt-6;
@@ -198,20 +132,7 @@
   @apply flex items-center justify-center text-center pt-16 pb-6;
 }
 
-.pane {
-  @apply h-350 w-full;
-}
-
-@screen xsm {
-  .pane {
-    @apply h-300 w-full;
-  }
-}
-
 @screen sm {
-  .pane {
-    @apply h-256;
-  }
   .pane-left {
     @apply pt-12;
   }
@@ -222,9 +143,6 @@
 }
 
 @screen md {
-  .pane {
-    @apply flex items-stretch h-full;
-  }
   .pane-left {
     @apply flex-1 justify-end text-left p-8;
   }
@@ -232,36 +150,6 @@
   .pane-right {
     @apply flex-1 justify-start text-right p-8;
   }
-}
-
-.hero {
-  @apply flex items-center justify-center h-screen w-screen font-serif;
-}
- 
-.hero-title {
-  @apply box-border h-16 w-80 text-4xl tracking-wide text-center border-b;
-}
-
-.hero-footer {
-  @apply my-4 box-border text-2xl font-light h-24 text-center;
-}
-
-@screen sm {
-  .hero-title {
-    @apply h-28 w-128 text-6xl tracking-wide;
-  }
-  
-  .hero-footer {
-    @apply my-4 box-border text-3xl font-light h-24 text-center;
-  }
-}
-
-.banner {
-  @apply flex items-end justify-center h-p20 w-screen;
-}
-
-.banner-header {
-  @apply box-border h-auto w-p40 text-center font-roboto;
 }
 
 /* ================================ PROFILE ================================ */
@@ -823,13 +711,6 @@
 @tailwind utilities;
 
 /* ============================== CUSTOM CSS =============================== */
-
-@responsive {
-  .bg-teal-gradient {
-    background-image: linear-gradient(theme('colors.custom-teal-300'), 
-                                      theme('colors.custom-teal-400'));
-  }
-}
 
 .underline-small {
   display: inline-block;

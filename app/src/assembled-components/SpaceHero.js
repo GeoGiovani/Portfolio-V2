@@ -9,9 +9,9 @@ function SpaceHero() {
     
     <div className="space-hero">
       <SpaceCanvas 
-        bgColor="#0c0c0c"
+        bgColor="#101010"
         style={{
-          height: '100%',
+          height: '100vh',
           width: '100%', 
           position: 'absolute', 
           top: 0, 

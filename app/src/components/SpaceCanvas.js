@@ -32,16 +32,16 @@ class ShootingStars extends PtsCanvas {
 
     this.perpends = new Group (this.lsw, this.lse).op(Line.perpendicularFromPt);
     
-    this.ptColors = ["#FF3F8E", "#04C2C9", "#fb5"];
+    this.ptColors = ["#ff3f8e", "#04c2c9", "#ffbb55"];
     this.lnColors = ['rgba(255,63,142', 'rgba(4,194,201', 'rgba(255,187,85'];
   }
   
   animate (time, ftime, space) {
 
     // Rotate all points
-    this.upperPts.rotate2D( 0.0003, this.center );
-    this.middlePts.rotate2D( 0.0003, this.center );
-    this.lowerPts.rotate2D( 0.0003, this.center );
+    this.upperPts.rotate2D( 0.0005, this.center );
+    this.middlePts.rotate2D( 0.0005, this.center );
+    this.lowerPts.rotate2D( 0.0005, this.center );
 
     // Draw perpendicular lines to each point
     this.upperPts.forEach ( (p, i) => {
