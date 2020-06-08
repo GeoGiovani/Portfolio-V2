@@ -5,16 +5,26 @@
 /* ================================= Hero ================================== */
 
 .space-hero {
-  @apply box-border w-screen h-screen;
+  @apply flex w-full h-p95;
+}
+
+@screen sm {
+  .space-hero {
+    @apply h-full;
+  }
+}
+
+.space-hero-canvas {
+  @apply w-full h-auto bg-custom-black-800;
 }
 
 .space-hero-name-wrapper {
-  @apply box-border w-screen h-auto absolute top-p30 left-0 z-10 
+  @apply box-border w-full h-auto absolute top-p30 left-0 z-10 
          pointer-events-none;
 }
 
 .space-hero-name {
-  @apply text-hero-xxsm box-border font-bold flex justify-center w-screen 
+  @apply text-hero-xxsm box-border font-bold flex justify-center w-full 
   font-roboto text-gray-300 text-opacity-75 tracking-wide pointer-events-none;
 }
 
@@ -86,11 +96,6 @@
   }
 }
 
-/* Staged for removal */
-.night-sky-canvas {
-  @apply box-border w-screen h-screen;
-}
-
 /* ================================ Navbar ================================= */
 
 .navbar {
@@ -159,7 +164,7 @@
 }
 
 .profile-banner {
-  @apply flex items-center justify-center h-32 w-screen pointer-events-none;
+  @apply flex items-center justify-center h-32 w-full pointer-events-none;
 }
 
 .profile-banner-header {
@@ -172,15 +177,15 @@
 }
 
 .profile-content {
-  @apply flex flex-col justify-center items-center text-white w-screen h-p80;
+  @apply flex flex-col justify-center items-center text-white w-full h-p80;
 }
 
 .profile-pane-left {
-  @apply flex justify-center items-center h-full w-screen order-2;
+  @apply flex justify-center items-center h-full w-full order-2;
 }
 
 .profile-pane-right {
-  @apply flex justify-center h-64 w-screen order-1;
+  @apply flex justify-center h-64 w-full order-1;
 }
 
 .profile-text {
@@ -188,16 +193,12 @@
          text-left text-gray-300 font-roboto font-thin text-xl;
 }
 
-.profile-text-link {
-  @apply font-bold text-custom-purple-400;
-}
-
 .profile-image-outer {
   @apply flex items-center h-full w-auto pb-4;
 }
 
 .profile-image {
-  @apply h-56 border-2 border-custom-yellow-200 rounded-circle shadow-inner;
+  @apply h-56 border-2 border-custom-yellow-200 rounded-full shadow-inner;
 }
 
 .profile-button {
@@ -275,7 +276,7 @@
     @apply text-hero-lglg;
   }
   .profile-page {
-    @apply h-auto w-screen;
+    @apply h-auto w-full;
   }
   .profile-banner {
     @apply h-56;
@@ -319,7 +320,7 @@
 /* =============================== PROJECTS ================================ */
 
 .project-page {
-  @apply w-screen h-auto bg-custom-black-800;
+  @apply w-full h-auto bg-custom-black-800;
 }
 
 .project-content {
@@ -445,7 +446,7 @@
 }
 
 .grid-content-details {
-  @apply absolute text-center pl-4 pr-4 w-p100 top-p50 left-p50
+  @apply absolute text-center pl-4 pr-4 w-full top-p50 left-p50
          flex flex-col justify-center items-center text-gray-100
          opacity-0 ease-in-out duration-400 z-20;
 }

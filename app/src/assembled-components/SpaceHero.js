@@ -5,13 +5,13 @@ import '../styles/index.css';
 
 function SpaceHero() {
   return(
-  <div id="Hero">
+  <div id="Hero" className="space-hero">
     
-    <div className="space-hero">
+    <div className="space-hero-canvas">
       <SpaceCanvas 
         bgColor="#101010"
         style={{
-          height: '100vh',
+          height: '100%',
           width: '100%', 
           position: 'absolute', 
           top: 0, 

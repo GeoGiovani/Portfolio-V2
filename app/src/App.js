@@ -7,7 +7,7 @@ import SpaceHero from './assembled-components/SpaceHero.js'
 
 function App() {
   return (
-    <div>
+    <div className="h-screen w-screen">
       <SpaceHero />
       {/* <PoolBallHero /> */}
       {/* <MinimalistHero /> */}

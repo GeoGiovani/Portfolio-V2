@@ -14,7 +14,6 @@ module.exports = {
       '8': '2rem',
       '10': '2.5rem',
       '12': '3rem',
-      '14': '3.5rem',
       '16': '4rem',
       '20': '5rem',
       '22': '5.5rem',
@@ -32,36 +31,17 @@ module.exports = {
       '112': '25rem',
       '128': '32rem',
       '142': '35rem',
-      '156': '38rem',
-      '196': '42rem',
-      '256': '52rem',
-      '300': '56rem',
-      '350': '62rem',
       'p1': '1%',
-      'p2': '2%',
-      'p2-5': '2.5%',
-      'p3': '3%',
-      'p4': '4%',
-      'p5': '5%',
       'p7-5': '7.5%',
-      'p10': '10%',
       'p12-5': '12.5%',
       'p15': '15%',
-      'p17-5': '17.5%',
       'p20': '20%',
-      'p25': '25%',
       'p30': '30%',
-      'p33': '33.33333%',
-      'p37-5': '37.5%',
       'p40': '40%',
-      'p50': '50%',
       'p60': '60%',
-      'p70': '70%',
-      'p75': '75%',
       'p80': '80%',
-      'p85': '85%',
       'p90': '90%',
-      'p100': '100%',
+      'p95': '95%',
     },
     screens: {
       'xsm': '360px',
@@ -81,7 +61,6 @@ module.exports = {
         'custom-grey-900': '#262425',
         'custom-red-400': '#fe2c5d',
         'custom-red-500': '#ff3f8e',
-        'custom-purple-400': '#2E55C1',
         'custom-yellow-200': '#ffd699',
         'custom-yellow-300': '#ffbb55',
         'custom-green-400': '#04c2c9',
@@ -90,9 +69,6 @@ module.exports = {
         '80': '.8',
         '85': '.85',
         '90': '.9',
-      },
-      borderRadius: {
-        'circle': '50%',
       },
       fontSize: {
         'hero-xxxsm': '21pt',
@@ -110,7 +86,6 @@ module.exports = {
       },
       fontFamily: {
         'roboto': ['Roboto'],
-        'open-sans': ['Open Sans'],
       },
       inset: {
         'p5': '5%',
@@ -126,25 +101,12 @@ module.exports = {
         'p50': '50%',
         'p80': '80%',
         'p100': '100%',
-        'p110': '110%',
-        'p120': '120%',
-        'p120': '130%',
-      },
-      borderWidth: {
-        '6': '6px',
-      },
-      zIndex: {
-        'neg': '-1',
       },
       transitionDuration: {
         '400': '400ms',
       },
       gridTemplateRows: {
         '7': 'repeat(7, minmax(0, 1fr))',
-        '8': 'repeat(8, minmax(0, 1fr))',
-        '9': 'repeat(9, minmax(0, 1fr))',
-        '10': 'repeat(10, minmax(0, 1fr))',
-        '12': 'repeat(12, minmax(0, 1fr))',
       },
     },
   },
@@ -153,27 +115,4 @@ module.exports = {
       backgroundColor: ['responsive', 'hover', 'focus'],
     },
   },
-  plugins: [
-    plugin(require("tailwind-heropatterns")({
-      // as per tailwind docs you can pass variants
-      variants: [],
-    
-      // the list of patterns you want to generate a class for
-      // the names must be in kebab-case
-      // an empty array will generate all 87 patterns
-      patterns: ["church-on-sunday"],
-    
-      // The foreground colors of the pattern
-      colors: {
-        default: "#9C92AC",
-        "custom-grey-900": "#262425" //also works with rgb(0,0,205)
-      },
-    
-      // The foreground opacity
-      opacity: {
-        default: "0.5",
-        "100": "1.0"
-      }
-    }))
-  ],
 }
