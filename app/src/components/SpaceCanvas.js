@@ -32,8 +32,8 @@ class ShootingStars extends PtsCanvas {
 
     this.perpends = new Group (this.lsw, this.lse).op(Line.perpendicularFromPt);
     
-    this.ptColors = ["#ff3f8e", "#04c2c9", "#ffbb55", "#ff3f8e", "#04c2c9"];
-    this.lnColors = ['rgba(255,63,142', 'rgba(4,194,201', 'rgba(255,187,85', 'rgba(255,63,142', 'rgba(4,194,201'];
+    this.ptColors = ["#ff3f8e", "#81e6d9", "#ffbb55"];
+    this.lnColors = ['rgba(255,63,156', 'rgba(129, 230, 217', 'rgba(255,181,85'];
   }
   
   animate (time, ftime, space) {
@@ -59,13 +59,13 @@ class ShootingStars extends PtsCanvas {
   }
 
   drawLine(p, i, lp) {
-    var gamma = 1 - ((this.height-p.y)/this.height*1.2)**2;
-    var ratio = Math.min(.8, gamma);
+    var gamma = 1 - ((this.height-p.y)/this.height*1.3);
+    var ratio = Math.min(1, gamma);
 
     // Ensure thickness > 0.5 to avoid resolution scaling bugs
-    var thickness = 1; (ratio*1.5 > 0.75) ? thickness = ratio*1.5 : thickness = .75;
-    this.form.stroke(`${this.lnColors[i%5]},${ratio})`, thickness).line([p,lp]);
-    this.form.fillOnly( this.ptColors[i%5]).point( p, thickness );
+    var thickness = 1; (ratio*2.5 > 1) ? thickness = ratio*2 : thickness = .75;
+    this.form.stroke(`${this.lnColors[i%3]},${ratio})`, thickness).line([p,lp]);
+    this.form.fillOnly( this.ptColors[i%3]).point( p, 1 );
   }
 }
 

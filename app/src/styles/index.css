@@ -19,7 +19,7 @@
 
 .space-hero-name {
   @apply text-hero-xxsm box-border font-bold flex justify-center w-full 
-  font-roboto text-gray-300 text-opacity-75 tracking-wide pointer-events-none;
+  font-roboto text-gray-300 text-opacity-85 tracking-wide pointer-events-none;
 }
 
 .space-hero-button-wrapper {
@@ -114,7 +114,7 @@
 }
 
 .active-profile {
-  @apply bg-custom-red-500 h-6 w-6;
+  @apply bg-custom-red-400 h-6 w-6;
 }
 
 .active-projects {
@@ -166,8 +166,8 @@
 }
 
 .banner-content {
-  @apply pt-p1 text-center font-roboto
-         text-hero-sm font-bold pointer-events-none tracking-wide;
+  @apply pt-p1 text-center font-fira-sans text-gray-300 text-opacity-95
+         text-hero-sm font-extrabold pointer-events-none tracking-wide;
 }
 
 .profile-content {
@@ -404,7 +404,7 @@
 .grid-content-overlay {
   @apply absolute h-full w-full
          left-0 top-0 bottom-0 right-0 opacity-0 z-10
-         ease-in duration-300; 
+         ease-in duration-400; 
 }
 
 .grid-content:hover .grid-content-overlay {
@@ -420,7 +420,7 @@
 }
 
 .grid-content-overlay-sfunit {
-  @apply grid-content-overlay bg-custom-red-500 bg-opacity-25;
+  @apply grid-content-overlay bg-custom-red-400 bg-opacity-25;
 }
 
 .grid-content-overlay-portfolio {

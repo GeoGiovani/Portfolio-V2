@@ -58,16 +58,17 @@ module.exports = {
         'custom-black-900': '#0c0c0c',
         'custom-grey-800': '#343233',
         'custom-grey-900': '#262425',
-        'custom-red-400': '#fe2c5d',
-        'custom-red-500': '#ff3f8e',
+        'custom-red-300': '#ec528d',
+        'custom-red-400': '#ff3f8e',
         'custom-yellow-200': '#ffd699',
         'custom-yellow-300': '#ffbb55',
+        'custom-yellow-400': '#f5bd67',
+        'custom-green-300': '#81e6d9',
         'custom-green-400': '#04c2c9',
       },
       opacity: {
-        '80': '.8',
         '85': '.85',
-        '90': '.9',
+        '95': '.95',
       },
       fontSize: {
         'hero-xxxsm': '21pt',
@@ -85,6 +86,7 @@ module.exports = {
       },
       fontFamily: {
         'roboto': ['Roboto'],
+        'fira-sans':['Fira+Sans']
       },
       inset: {
         'p5': '5%',

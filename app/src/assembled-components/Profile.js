@@ -10,7 +10,7 @@ function Profile() {
 
       <Banner 
         header={
-          <div className="banner-content text-gray-300">
+          <div className="banner-content">
             <p className="underline-small">
               Profile
             </p>
@@ -28,7 +28,7 @@ function Profile() {
                 <a className="profile-link text-custom-yellow-300 font-bold" 
                 href="https://www.sfu.ca/">Simon Fraser University
                 </a> and volunteer in the&nbsp;
-                <a className="profile-link text-custom-yellow-300 font-bold" 
+                <a className="profile-link text-custom-green-300 font-bold" 
                 href="https://sfumars.com/people/george-giovanis/"> 
                 MARS Laboratory.</a>
               </p>
@@ -41,7 +41,7 @@ function Profile() {
               <p className="mb-0">
                 I am currently seeking a software engineering or full-stack
                 developer co-op/internship.&nbsp;
-                <a className="profile-link text-custom-red-500 font-bold"
+                <a className="profile-link text-custom-red-400 font-bold"
                 href="mailto:georgedgiovani.dev@gmail.com/"> 
                 Let's get in touch.</a>
               </p>

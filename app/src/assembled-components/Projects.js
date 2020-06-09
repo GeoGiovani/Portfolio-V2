@@ -15,7 +15,7 @@ function Projects() {
         bannerStyle="profile-banner"
         headerStyle="profile-banner-header"
         header={
-          <div className="banner-content text-gray-300">
+          <div className="banner-content">
             <p className="underline-small-projects">
               Projects
             </p>
@@ -85,7 +85,7 @@ function Projects() {
               <GridComponent
                 wrapperStyle="grid-card-sfunit"
                 content={ 
-                  <div className="grid-content bg-custom-red-500">
+                  <div className="grid-content bg-custom-red-400">
                     <div className="grid-content-overlay-sfunit"></div>
                     <div className="grid-content-details slide-right">
                       <div className="grid-content-inner-sfunit">
