@@ -5,13 +5,7 @@
 /* ================================= Hero ================================== */
 
 .space-hero {
-  @apply flex w-full h-p95;
-}
-
-@screen sm {
-  .space-hero {
-    @apply h-full;
-  }
+  @apply flex w-screen h-screen;
 }
 
 .space-hero-canvas {
