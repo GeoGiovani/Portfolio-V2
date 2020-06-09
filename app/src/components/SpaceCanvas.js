@@ -24,7 +24,7 @@ class ShootingStars extends PtsCanvas {
     this.middleBound = new Bound(this.mnw, this.mse)
     this.lowerBound = new Bound(this.lnw, this.lse)
 
-    this.numPts = Math.floor((30*space.size.x/space.size.y))
+    this.numPts = Math.floor((35*space.size.x/space.size.y))
 
     this.upperPts = Create.distributeRandom(this.upperBound, this.numPts);
     this.middlePts = Create.distributeRandom(this.middleBound, this.numPts);
@@ -32,16 +32,16 @@ class ShootingStars extends PtsCanvas {
 
     this.perpends = new Group (this.lsw, this.lse).op(Line.perpendicularFromPt);
     
-    this.ptColors = ["#ff3f8e", "#04c2c9", "#ffbb55"];
-    this.lnColors = ['rgba(255,63,142', 'rgba(4,194,201', 'rgba(255,187,85'];
+    this.ptColors = ["#ff3f8e", "#04c2c9", "#ffbb55", "#ff3f8e", "#04c2c9"];
+    this.lnColors = ['rgba(255,63,142', 'rgba(4,194,201', 'rgba(255,187,85', 'rgba(255,63,142', 'rgba(4,194,201'];
   }
   
   animate (time, ftime, space) {
 
     // Rotate all points
-    this.upperPts.rotate2D( 0.0005, this.center );
-    this.middlePts.rotate2D( 0.0005, this.center );
-    this.lowerPts.rotate2D( 0.0005, this.center );
+    this.upperPts.rotate2D( 0.0003, this.center );
+    this.middlePts.rotate2D( 0.0003, this.center );
+    this.lowerPts.rotate2D( 0.0003, this.center );
 
     // Draw perpendicular lines to each point
     this.upperPts.forEach ( (p, i) => {
@@ -63,9 +63,9 @@ class ShootingStars extends PtsCanvas {
     var ratio = Math.min(.8, gamma);
 
     // Ensure thickness > 0.5 to avoid resolution scaling bugs
-    var thickness = 1; (ratio*2.5 > 1) ? thickness = ratio*2.5 : thickness = .75;
-    this.form.stroke(`${this.lnColors[i%3]},${ratio})`, thickness).line([p,lp]);
-    this.form.fillOnly( this.ptColors[i%3]).point( p, .75 );
+    var thickness = 1; (ratio*1.5 > 0.75) ? thickness = ratio*1.5 : thickness = .75;
+    this.form.stroke(`${this.lnColors[i%5]},${ratio})`, thickness).line([p,lp]);
+    this.form.fillOnly( this.ptColors[i%5]).point( p, thickness );
   }
 }
 
