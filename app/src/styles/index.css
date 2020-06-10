@@ -2,6 +2,7 @@
 
 @tailwind components;
 
+
 /* ================================= Hero ================================== */
 
 .space-hero {
@@ -90,6 +91,7 @@
   }
 }
 
+
 /* ================================ Navbar ================================= */
 
 .navbar {
@@ -151,14 +153,16 @@
   }
 }
 
+
 /* ================================ PROFILE ================================ */
 
 .profile-page {
-  @apply h-auto w-full bg-custom-black-800;
+  @apply h-auto w-screen bg-custom-black-800;
 }
 
 .profile-banner {
-  @apply flex items-center justify-center h-32 w-full pointer-events-none;
+  @apply flex items-center justify-center h-32 w-screen pointer-events-none
+         bg-custom-black-800;
 }
 
 .profile-banner-header {
@@ -171,7 +175,8 @@
 }
 
 .profile-content {
-  @apply flex flex-col justify-center items-center text-white w-full h-p80;
+  @apply flex flex-col justify-center items-center text-white w-screen h-p80
+         bg-custom-black-800;
 }
 
 .profile-pane-left {
@@ -314,7 +319,7 @@
 /* =============================== PROJECTS ================================ */
 
 .project-page {
-  @apply w-full h-auto bg-custom-black-800;
+  @apply w-screen h-auto bg-custom-black-800;
 }
 
 .project-content {
@@ -697,28 +702,57 @@
   @apply top-p80;
 }
 
+
 /* ================================ Contact ================================ */
+
+.contact-footer {
+  @apply flex justify-center w-screen h-24 bg-custom-black-800;
+}
+
+.contact-buttons-wrapper {
+  @apply flex justify-center w-full;
+}
+
+@screen sm {
+  .contact-buttons-wrapper {
+    @apply w-p40;
+  }  
+}
+
+.contact-buttons {
+  @apply flex w-p80 justify-center justify-between items-center;
+}
 
 .icon {
   @apply fill-current h-12 w-12;
 }
 
+.link-github {
+  @apply text-gray-100 text-opacity-75 transition ease-in duration-300;
+}
+
+.link-linkedIn {
+  @apply text-gray-100 text-opacity-75 transition ease-in duration-300;
+}
+
+.link-contact {
+  @apply text-gray-100 text-opacity-75 transition ease-in duration-300;
+}
+
 .link-github:hover {
-  @apply fill-current text-custom-yellow-300 transition ease-in-out duration-300;
+  @apply fill-current text-custom-yellow-300 text-opacity-100 transition 
+         ease-in duration-200;
 }
 
 .link-linkedIn:hover {
-  @apply fill-current text-custom-green-400 transition ease-in-out duration-300;
+  @apply fill-current text-custom-green-400 text-opacity-100 transition 
+         ease-in duration-200;
 }
 
 .link-contact:hover {
-  @apply fill-current text-custom-red-300 transition ease-in-out duration-300;
+  @apply fill-current text-custom-red-300 text-opacity-100 transition 
+         ease-in duration-200;
 }
-
-
-
-
-
 
 
 /* ============================== CUSTOM CSS =============================== */

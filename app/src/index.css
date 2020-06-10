@@ -885,7 +885,7 @@ video {
 
 .profile-page {
   height: auto;
-  width: 100%;
+  width: 100vw;
   --bg-opacity: 1;
   background-color: #121212;
   background-color: rgba(18, 18, 18, var(--bg-opacity));
@@ -896,8 +896,11 @@ video {
   align-items: center;
   justify-content: center;
   height: 8rem;
-  width: 100%;
+  width: 100vw;
   pointer-events: none;
+  --bg-opacity: 1;
+  background-color: #121212;
+  background-color: rgba(18, 18, 18, var(--bg-opacity));
 }
 
 .profile-banner-header {
@@ -929,8 +932,11 @@ video {
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
-  width: 100%;
+  width: 100vw;
   height: 80%;
+  --bg-opacity: 1;
+  background-color: #121212;
+  background-color: rgba(18, 18, 18, var(--bg-opacity));
 }
 
 .profile-pane-left {
@@ -1158,7 +1164,7 @@ video {
 /* =============================== PROJECTS ================================ */
 
 .project-page {
-  width: 100%;
+  width: 100vw;
   height: auto;
   --bg-opacity: 1;
   background-color: #121212;
@@ -1762,10 +1768,70 @@ video {
 
 /* ================================ Contact ================================ */
 
+.contact-footer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 6rem;
+  --bg-opacity: 1;
+  background-color: #121212;
+  background-color: rgba(18, 18, 18, var(--bg-opacity));
+}
+
+.contact-buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .contact-buttons-wrapper {
+    width: 40%;
+  }
+}
+
+.contact-buttons {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .icon {
   fill: currentColor;
   height: 3rem;
   width: 3rem;
+}
+
+.link-github {
+  --text-opacity: 1;
+  color: #f7fafc;
+  color: rgba(247, 250, 252, var(--text-opacity));
+  --text-opacity: 0.75;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  transition-duration: 300ms;
+}
+
+.link-linkedIn {
+  --text-opacity: 1;
+  color: #f7fafc;
+  color: rgba(247, 250, 252, var(--text-opacity));
+  --text-opacity: 0.75;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  transition-duration: 300ms;
+}
+
+.link-contact {
+  --text-opacity: 1;
+  color: #f7fafc;
+  color: rgba(247, 250, 252, var(--text-opacity));
+  --text-opacity: 0.75;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  transition-duration: 300ms;
 }
 
 .link-github:hover {
@@ -1773,9 +1839,10 @@ video {
   --text-opacity: 1;
   color: #ffbb55;
   color: rgba(255, 187, 85, var(--text-opacity));
+  --text-opacity: 1;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  transition-duration: 200ms;
 }
 
 .link-linkedIn:hover {
@@ -1783,9 +1850,10 @@ video {
   --text-opacity: 1;
   color: #04c2c9;
   color: rgba(4, 194, 201, var(--text-opacity));
+  --text-opacity: 1;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  transition-duration: 200ms;
 }
 
 .link-contact:hover {
@@ -1793,9 +1861,10 @@ video {
   --text-opacity: 1;
   color: #ec528d;
   color: rgba(236, 82, 141, var(--text-opacity));
+  --text-opacity: 1;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  transition-duration: 200ms;
 }
 
 /* ============================== CUSTOM CSS =============================== */
