@@ -916,7 +916,7 @@ video {
   color: rgba(226, 232, 240, var(--text-opacity));
   --text-opacity: .95;
   font-size: 4.5rem;
-  font-weight: 800;
+  font-weight: 700;
   pointer-events: none;
   letter-spacing: 0.025em;
 }
@@ -1765,6 +1765,40 @@ video {
 .slide-up {
   top: 80%;
 }
+
+/* ================================ Contact ================================ */
+
+.icon {
+  fill: currentColor;
+  height: 3rem;
+  width: 3rem;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  transition-duration: 300ms
+}
+
+.link-github:hover {
+  fill: currentColor;
+  --text-opacity: 1;
+  color: #ec528d;
+  color: rgba(236, 82, 141, var(--text-opacity));
+}
+
+.link-linkedIn:hover {
+  fill: currentColor;
+  --text-opacity: 1;
+  color: #04c2c9;
+  color: rgba(4, 194, 201, var(--text-opacity));
+}
+
+.link-contact:hover {
+  fill: currentColor;
+  --text-opacity: 1;
+  color: #ffbb55;
+  color: rgba(255, 187, 85, var(--text-opacity));
+}
+
+/* ============================== CUSTOM CSS =============================== */
 
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
@@ -20320,8 +20354,6 @@ video {
   transition-delay: 1000ms;
 }
 
-/* ============================== CUSTOM CSS =============================== */
-
 .underline-small {
   display: inline-block;
   position: relative;
@@ -20332,7 +20364,7 @@ video {
   height: 4px;
   width: 40%;
   position: absolute;
-  background: #E2E8F0;
+  background: #d9dee5;
   /* background: #1A202C; */
   /* background: #ffbb55; */
   /* background: #101010; */
@@ -20364,7 +20396,7 @@ video {
   height: 4px;
   width: 40%;
   position: absolute;
-  background: #E2E8F0;
+  background: #d9dee5;
   /* background: #0c0c0c; */
   /* opacity: 75%; */
   left: 30%;

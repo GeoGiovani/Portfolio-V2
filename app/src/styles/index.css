@@ -167,7 +167,7 @@
 
 .banner-content {
   @apply pt-p1 text-center font-fira-sans text-gray-300 text-opacity-95
-         text-hero-sm font-extrabold pointer-events-none tracking-wide;
+         text-hero-sm font-bold pointer-events-none tracking-wide;
 }
 
 .profile-content {
@@ -703,9 +703,31 @@
   @apply top-p80;
 }
 
-@tailwind utilities;
+/* ================================ Contact ================================ */
+
+.icon {
+  @apply fill-current h-12 w-12 transition ease-in duration-300
+}
+
+.link-github:hover {
+  @apply fill-current text-custom-red-300;
+}
+
+.link-linkedIn:hover {
+  @apply fill-current text-custom-green-400;
+}
+
+.link-contact:hover {
+  @apply fill-current text-custom-yellow-300;
+}
+
+
+
+
 
 /* ============================== CUSTOM CSS =============================== */
+
+@tailwind utilities;
 
 .underline-small {
   display: inline-block;
@@ -717,7 +739,7 @@
   height: 4px;
   width: 40%;
   position: absolute;
-  background: #E2E8F0;
+  background: #d9dee5;
   /* background: #1A202C; */
   /* background: #ffbb55; */
   /* background: #101010; */
@@ -749,7 +771,7 @@
   height: 4px;
   width: 40%;
   position: absolute;
-  background: #E2E8F0;
+  background: #d9dee5;
   /* background: #0c0c0c; */
   /* opacity: 75%; */
   
