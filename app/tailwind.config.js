@@ -54,8 +54,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        'custom-black-800': '#101010',
-        'custom-black-900': '#0c0c0c',
+        'custom-black-800': '#121212',
+        'custom-black-900': '#101010',
+        'custom-black-1000': '#0c0c0c',
         'custom-grey-800': '#343233',
         'custom-grey-900': '#262425',
         'custom-red-300': '#ec528d',

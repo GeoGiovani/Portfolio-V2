@@ -319,14 +319,8 @@
 
 .project-content {
   @apply flex justify-center items-center 
-         box-border w-screen h-auto pt-12 pb-12
+         box-border w-screen h-auto pt-12 pb-8
          font-roboto text-custom-black-900 text-5xl;
-}
-
-@screen sm {
-  .project-content {
-    @apply pb-24;
-  }
 }
 
 .project-grid-wrapper {
@@ -706,20 +700,22 @@
 /* ================================ Contact ================================ */
 
 .icon {
-  @apply fill-current h-12 w-12 transition ease-in duration-300
+  @apply fill-current h-12 w-12;
 }
 
 .link-github:hover {
-  @apply fill-current text-custom-red-300;
+  @apply fill-current text-custom-yellow-300 transition ease-in-out duration-300;
 }
 
 .link-linkedIn:hover {
-  @apply fill-current text-custom-green-400;
+  @apply fill-current text-custom-green-400 transition ease-in-out duration-300;
 }
 
 .link-contact:hover {
-  @apply fill-current text-custom-yellow-300;
+  @apply fill-current text-custom-red-300 transition ease-in-out duration-300;
 }
+
+
 
 
 

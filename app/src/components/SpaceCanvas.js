@@ -24,7 +24,7 @@ class ShootingStars extends PtsCanvas {
     this.middleBound = new Bound(this.mnw, this.mse)
     this.lowerBound = new Bound(this.lnw, this.lse)
 
-    this.numPts = Math.floor((35*space.size.x/space.size.y))
+    this.numPts = Math.floor((35*this.width/this.height))
 
     this.upperPts = Create.distributeRandom(this.upperBound, this.numPts);
     this.middlePts = Create.distributeRandom(this.middleBound, this.numPts);
@@ -59,13 +59,18 @@ class ShootingStars extends PtsCanvas {
   }
 
   drawLine(p, i, lp) {
-    var gamma = 1 - ((this.height-p.y)/this.height*1.3);
-    var ratio = Math.min(1, gamma);
 
-    // Ensure thickness > 0.5 to avoid resolution scaling bugs
+    // Draw the Pt
+    this.form.fillOnly( this.ptColors[i%3]).point( p, 1 );
+
+    // Calculate line opacity, return if line is too faint
+    let gamma = 1 - ((this.height-p.y)/this.height*1.3);
+    var ratio = Math.min(1, gamma);
+    if(ratio < 0.10) return;
+
+    // Draw the line; Ensure thickness > 0.5 to avoid resolution scaling bugs
     var thickness = 1; (ratio*2.5 > 1) ? thickness = ratio*2 : thickness = .75;
     this.form.stroke(`${this.lnColors[i%3]},${ratio})`, thickness).line([p,lp]);
-    this.form.fillOnly( this.ptColors[i%3]).point( p, 1 );
   }
 }
 
