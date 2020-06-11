@@ -5,6 +5,7 @@ import GridComponent from '../components/GridComponent.js'
 import SplitPaneImage from '../components/SplitPaneImage.js'
 import SpaceCanvasMini from '../components/SpaceCanvasMini.js'
 import LinkButton from '../components/LinkButton.js'
+import Contact from '../assembled-components/Contact.js'
 import '../styles/index.css';
 
 function Projects() {
@@ -163,8 +164,10 @@ function Projects() {
             </div> 
           }   
         />    {/* End of PortfolioGrid */}
+
         
       </div>  {/* End of project-content */}
+        <Contact />
     </div> 
   );
 }

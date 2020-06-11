@@ -6,7 +6,7 @@
 /* ================================= Hero ================================== */
 
 .space-hero {
-  @apply flex w-screen h-screen;
+  @apply flex w-full h-screen;
 }
 
 .space-hero-canvas {
@@ -157,11 +157,11 @@
 /* ================================ PROFILE ================================ */
 
 .profile-page {
-  @apply h-auto w-screen bg-custom-black-800;
+  @apply h-auto w-full bg-custom-black-800;
 }
 
 .profile-banner {
-  @apply flex items-center justify-center h-32 w-screen pointer-events-none
+  @apply flex items-center justify-center h-32 w-full pointer-events-none
          bg-custom-black-800;
 }
 
@@ -175,7 +175,7 @@
 }
 
 .profile-content {
-  @apply flex flex-col justify-center items-center text-white w-screen h-p80
+  @apply flex flex-col justify-center items-center text-white w-full h-p80
          bg-custom-black-800;
 }
 
@@ -217,7 +217,7 @@
 
 @screen sm {
   .profile-banner {
-    @apply h-40;
+    @apply h-36;
   }
   .profile-pane-right {
     @apply h-96;
@@ -237,21 +237,18 @@
 }
 
 @screen lg {
-  .profile-banner {
-    @apply h-48;
-  }
   .banner-content {
     @apply text-hero-lg;
   }
   .profile-content {
-    @apply flex-row h-128;
+    @apply flex-row h-116;
   }
   .profile-pane-left {
-    @apply justify-end h-128 w-p60 order-1;
+    @apply justify-end h-116 w-p60 order-1;
 
   }
   .profile-pane-right {
-    @apply justify-end h-128 w-p40 order-2;
+    @apply justify-end h-116 w-p40 order-2;
   }
   .profile-text {
     @apply text-xl;
@@ -268,17 +265,11 @@
 }
 
 @screen lglg {
-  .profile-banner {
-    @apply h-48;
-  }
   .banner-content {
     @apply text-hero-lglg;
   }
   .profile-page {
     @apply h-auto w-full;
-  }
-  .profile-banner {
-    @apply h-56;
   }
   .profile-content {
     @apply flex-row;
@@ -296,10 +287,17 @@
 
 @screen lgxl {
   .profile-banner {
-    @apply h-56;
+    @apply h-44;
   }
   .profile-content {
-    @apply h-142;
+    @apply h-124;
+  }
+  .profile-pane-left {
+    @apply h-124;
+
+  }
+  .profile-pane-right {
+    @apply h-124;
   }
   .banner-content {
     @apply text-hero-lgxl;
@@ -319,12 +317,12 @@
 /* =============================== PROJECTS ================================ */
 
 .project-page {
-  @apply w-screen h-auto bg-custom-black-800;
+  @apply w-full h-auto bg-custom-black-800;
 }
 
 .project-content {
   @apply flex justify-center items-center 
-         box-border w-screen h-auto pt-12 pb-8
+         box-border w-full h-auto pt-8 pb-4 bg-custom-black-800
          font-roboto text-custom-black-900 text-5xl;
 }
 
@@ -357,6 +355,9 @@
 }
 
 @screen sm {
+  .project-content {
+    @apply pt-12
+  }
   .project-grid-wrapper {
     @apply h-96;
   }
@@ -381,6 +382,9 @@
 }
 
 @screen lglg {
+  .project-page {
+    @apply h-screen;
+  }
   .project-grid-wrapper {
     @apply h-128;
   }
@@ -392,7 +396,7 @@
 
 @screen lgxl {
   .project-grid-wrapper {
-    @apply h-142;
+    @apply h-156;
   }
 }
 
@@ -706,7 +710,13 @@
 /* ================================ Contact ================================ */
 
 .contact-footer {
-  @apply flex justify-center w-screen h-24 bg-custom-black-800;
+  @apply flex justify-center w-full h-20 bg-custom-black-800;
+}
+
+@screen lgxl {
+  .contact-footer {
+    @apply h-24
+  }
 }
 
 .contact-buttons-wrapper {
