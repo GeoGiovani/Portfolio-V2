@@ -9,6 +9,7 @@ class ShootingStars extends PtsCanvas {
     this.height = space.height;
     this.width = space.width;
     this.center = space.center;
+    this.pxlRatio = window.devicePixelRatio;
 
     this.unw = new Pt(0,0);
     this.use = new Pt(this.width, this.height/3);
@@ -35,7 +36,7 @@ class ShootingStars extends PtsCanvas {
     this.ptColors = ["#ff3f8e", "#81e6d9", "#ffbb55"];
     this.lnColors = ['rgba(255,63,156', 'rgba(129, 230, 217', 'rgba(255,181,85'];
   }
-  
+
   animate (time, ftime, space) {
 
     // Rotate all points
@@ -61,15 +62,21 @@ class ShootingStars extends PtsCanvas {
   drawLine(p, i, lp) {
 
     // Draw the Pt
-    this.form.fillOnly( this.ptColors[i%3]).point( p, 1 );
+    this.form.fillOnly(this.ptColors[i%3]).point(p,1);
 
     // Calculate line opacity, return if line is too faint
     let gamma = 1 - ((this.height-p.y)/this.height*1.3);
-    var ratio = Math.min(1, gamma);
-    if(ratio < 0.10) return;
+    let ratio = Math.min(1, gamma);
+    if(ratio < 0.05) return;
 
-    // Draw the line; Ensure thickness > 0.5 to avoid resolution scaling bugs
-    var thickness = 1; (ratio*2.5 > 1) ? thickness = ratio*2 : thickness = .75;
+    // Draw the line; Ensure thickness is appropriate for users display
+    var thickness = 1; 
+    if(this.pxlRatio > 1) {
+      (ratio*2.25 > 1) ? thickness = ratio*2.25 : thickness = 1;
+    }
+    else {
+      (ratio*2.5 > 1.5) ? thickness = ratio*2.5 : thickness = 1.5;
+    }
     this.form.stroke(`${this.lnColors[i%3]},${ratio})`, thickness).line([p,lp]);
   }
 }
