@@ -164,10 +164,8 @@ function Projects() {
             </div> 
           }   
         />    {/* End of PortfolioGrid */}
-
-        
       </div>  {/* End of project-content */}
-        <Contact />
+      <Contact />
     </div> 
   );
 }

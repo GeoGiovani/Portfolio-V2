@@ -72,7 +72,7 @@ class ShootingStars extends PtsCanvas {
     // Draw the line; Ensure thickness is appropriate for users display
     var thickness = 1; 
     if(this.pxlRatio > 1) {
-      (ratio*2.25 > 1) ? thickness = ratio*2.25 : thickness = 1;
+      (ratio*2.5 > .75) ? thickness = ratio*2.5 : thickness = .75;
     }
     else {
       (ratio*2.5 > 1.5) ? thickness = ratio*2.5 : thickness = 1.5;

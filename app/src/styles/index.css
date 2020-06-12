@@ -175,7 +175,7 @@
 }
 
 .profile-content {
-  @apply flex flex-col justify-center items-center text-white w-full h-p80
+  @apply flex flex-col justify-center items-center text-white w-full h-auto
          bg-custom-black-800;
 }
 
@@ -188,7 +188,7 @@
 }
 
 .profile-text {
-  @apply flex-col justify-center w-p90 h-auto 
+  @apply flex flex-col justify-center w-p90 h-auto 
          text-left text-gray-300 font-roboto font-thin text-xl;
 }
 
@@ -219,11 +219,14 @@
   .profile-banner {
     @apply h-36;
   }
+  .profile-content {
+    @apply pb-4;
+  }
   .profile-pane-right {
     @apply h-96;
   }
   .profile-text {
-    @apply text-2xl;
+    @apply text-2xl w-p80;
   }
   .banner-content {
     @apply text-hero-md;
@@ -236,28 +239,27 @@
   }
 }
 
-@screen lg {
+@screen md {
   .banner-content {
     @apply text-hero-lg;
   }
   .profile-content {
-    @apply flex-row h-116;
+    @apply flex-row pt-2;
   }
   .profile-pane-left {
-    @apply justify-end h-116 w-p60 order-1;
-
+    @apply justify-end items-end h-auto w-p60 order-1;
   }
   .profile-pane-right {
-    @apply justify-end h-116 w-p40 order-2;
+    @apply justify-end items-end h-auto w-p40 order-2;
   }
   .profile-text {
-    @apply text-xl;
+    @apply text-xl justify-center w-p90 h-96;
   }
   .profile-button {
     @apply justify-start;
   }
   .profile-image-outer {
-    @apply items-center mr-p15;
+    @apply h-96 mr-p15;
   }
   .profile-image {
     @apply border-2;
@@ -272,10 +274,10 @@
     @apply h-auto w-full;
   }
   .profile-content {
-    @apply flex-row;
+    @apply pt-2 pb-2;
   }
   .profile-text {
-    @apply text-2xl w-p80;
+    @apply text-2xl w-p90 h-116;
   }
   .btn-contact {
     @apply text-2xl;
@@ -290,14 +292,10 @@
     @apply h-44;
   }
   .profile-content {
-    @apply h-124;
+    @apply pb-0;
   }
-  .profile-pane-left {
-    @apply h-124;
-
-  }
-  .profile-pane-right {
-    @apply h-124;
+  .profile-text {
+    @apply w-p85 h-96;
   }
   .banner-content {
     @apply text-hero-lgxl;
@@ -306,7 +304,22 @@
 
 @screen xl {
   .profile-text {
-    @apply text-profile-xl w-p80;
+    @apply text-profile-xl h-128;
+  }
+  .profile-image-outer {
+    @apply mr-p25;
+  }
+}
+
+@screen xxl {
+  .profile-content {
+    @apply pt-0;
+  }
+  .profile-text {
+    @apply h-120;
+  }
+  .profile-text {
+    @apply w-p80;
   }
   .profile-image-outer {
     @apply mr-p30;
@@ -323,7 +336,7 @@
 .project-content {
   @apply flex justify-center items-center 
          box-border w-full h-auto pt-8 pb-4 bg-custom-black-800
-         font-roboto text-custom-black-900 text-5xl;
+         font-roboto text-custom-black-800 text-5xl;
 }
 
 .project-grid-wrapper {
@@ -355,11 +368,17 @@
 }
 
 @screen sm {
+  .project-grid-wrapper {
+    @apply w-p80;
+  }
+}
+
+@screen md {
   .project-content {
-    @apply pt-12
+    @apply pt-16;
   }
   .project-grid-wrapper {
-    @apply h-96;
+    @apply h-120 w-p85;
   }
   .project-grid {
     @apply grid-rows-4 grid-cols-3 row-gap-0 gap-2 h-full;
@@ -375,9 +394,12 @@
   }
 }
 
-@screen md {
+@screen lg {
+  .project-content {
+    @apply pb-12;
+  }
   .project-grid-wrapper {
-    @apply h-112;
+    @apply w-p90 h-128;
   }
 }
 
@@ -385,23 +407,40 @@
   .project-page {
     @apply h-screen;
   }
-  .project-grid-wrapper {
-    @apply h-128;
+  .project-content {
+    @apply pt-20;
   }
   .project-grid-wrapper {
-    @apply w-p80;
+    @apply pb-0;
   }
-  
 }
 
 @screen lgxl {
+  .project-content {
+    @apply pt-12;
+  }
+}
+
+@screen xl {
+  .project-content {
+    @apply pt-20 pb-8;
+  }
   .project-grid-wrapper {
-    @apply h-156;
+    @apply w-p80 h-142;
+  }
+}
+
+@screen xxl {
+  .project-content {
+    @apply pt-20;
+  }
+  .project-grid-wrapper {
+    @apply h-176;
   }
 }
 
 .grid-content {
-  @apply relative w-full h-full rounded-md m-auto overflow-hidden shadow-xl;
+  @apply relative w-full h-full rounded-md m-auto overflow-hidden;
 }
 
 .grid-content-overlay {
@@ -710,12 +749,25 @@
 /* ================================ Contact ================================ */
 
 .contact-footer {
-  @apply flex justify-center w-full h-20 bg-custom-black-800;
+  @apply flex justify-center w-full h-20 pb-8 bg-custom-black-800;
 }
+
+@screen sm {
+  .contact-footer {
+    @apply pb-4;
+  }
+}
+
+@screen md {
+  .contact-footer {
+    @apply pb-2;
+  }
+}
+
 
 @screen lgxl {
   .contact-footer {
-    @apply h-24
+    @apply h-22;
   }
 }
 
@@ -723,9 +775,15 @@
   @apply flex justify-center w-full;
 }
 
-@screen sm {
+@screen md {
   .contact-buttons-wrapper {
     @apply w-p40;
+  }  
+}
+
+@screen xxl {
+  .contact-buttons-wrapper {
+    @apply items-end pb-4;
   }  
 }
 
