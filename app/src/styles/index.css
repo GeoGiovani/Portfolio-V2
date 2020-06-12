@@ -170,8 +170,12 @@
 }
 
 .banner-content {
-  @apply pt-p1 text-center font-fira-sans text-gray-300 text-opacity-95
+  @apply pt-p1 text-center font-roboto text-gray-300 text-opacity-95
          text-hero-sm font-bold pointer-events-none tracking-wide;
+}
+
+.banner-content {
+  font-variant-ligatures: none;
 }
 
 .profile-content {
@@ -395,9 +399,6 @@
 }
 
 @screen lg {
-  .project-content {
-    @apply pb-12;
-  }
   .project-grid-wrapper {
     @apply w-p90 h-128;
   }
@@ -405,13 +406,13 @@
 
 @screen lglg {
   .project-page {
-    @apply h-screen;
+    @apply h-screen pb-0;
   }
   .project-content {
-    @apply pt-20;
+    @apply pt-20 h-p80;
   }
   .project-grid-wrapper {
-    @apply pb-0;
+    @apply h-full;
   }
 }
 
@@ -419,23 +420,23 @@
   .project-content {
     @apply pt-12;
   }
+  .project-grid-wrapper {
+    @apply w-p85 h-p90;
+  }
 }
 
 @screen xl {
   .project-content {
-    @apply pt-20 pb-8;
-  }
-  .project-grid-wrapper {
-    @apply w-p80 h-142;
+    @apply pt-16;
   }
 }
 
 @screen xxl {
   .project-content {
-    @apply pt-20;
+    @apply pt-12;
   }
   .project-grid-wrapper {
-    @apply h-176;
+    @apply w-p80;
   }
 }
 
@@ -771,6 +772,12 @@
   }
 }
 
+@screen xxl {
+  .contact-footer {
+    @apply pb-0;
+  }
+}
+
 .contact-buttons-wrapper {
   @apply flex justify-center w-full;
 }
@@ -778,12 +785,6 @@
 @screen md {
   .contact-buttons-wrapper {
     @apply w-p40;
-  }  
-}
-
-@screen xxl {
-  .contact-buttons-wrapper {
-    @apply items-end pb-4;
   }  
 }
 
@@ -909,9 +910,12 @@
 .browser-mockup {
   border-top: 1.15em solid #323234;
   position: relative;
-  border-radius: 3px 3px 0 0;
+  border-radius: .375rem .375rem .375rem .375rem;
   zIndex: 10;
   height: 100%;
+
+  /* fixes bug that causes canvas to ignore border radius on Mac webkit browsers: */
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 }
 
 .browser-mockup:before {

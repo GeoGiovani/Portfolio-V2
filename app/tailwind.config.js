@@ -49,6 +49,7 @@ module.exports = {
       'p80': '80%',
       'p85': '85%',
       'p90': '90%',
+      'p99': 'calc(100% - 1px)',
     },
     screens: {
       'xsm': '360px',

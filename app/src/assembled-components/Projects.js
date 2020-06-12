@@ -5,7 +5,6 @@ import GridComponent from '../components/GridComponent.js'
 import SplitPaneImage from '../components/SplitPaneImage.js'
 import SpaceCanvasMini from '../components/SpaceCanvasMini.js'
 import LinkButton from '../components/LinkButton.js'
-import Contact from '../assembled-components/Contact.js'
 import '../styles/index.css';
 
 function Projects() {
@@ -34,7 +33,7 @@ function Projects() {
               <GridComponent
                 wrapperStyle="grid-card-swiftCalc"
                 content={ 
-                  <div className="grid-content bg-custom-yellow-300">
+                  <div className="grid-content bg-custom-yellow-300 h-p99">
                     <div className="grid-content-overlay-swiftcalc"></div>
                     <SplitPaneImage 
                       src={require("../media/swiftCalc.png")}
@@ -136,12 +135,12 @@ function Projects() {
               <GridComponent
                 wrapperStyle="grid-card-portfolio"
                 content={ 
-                  <div className="grid-content">
+                  <div className="grid-content overflow-hidden">
                     <div className="grid-content-overlay-portfolio"></div>
                     <div className="browser-mockup">
                       <SpaceCanvasMini
                           bgColor="#0c0c0c"
-                          style={{height: '101%', width: '101%'}}
+                          style={{height: '100%', width: '100%'}}
                         />
                     </div>
                     <div className="grid-content-details grid-thin z-20 slide-up">
@@ -165,7 +164,6 @@ function Projects() {
           }   
         />    {/* End of PortfolioGrid */}
       </div>  {/* End of project-content */}
-      <Contact />
     </div> 
   );
 }
