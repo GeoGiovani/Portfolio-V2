@@ -7,33 +7,33 @@ function NavBar() {
     return (
       <Navigation
         navItems={
-          <ul className="box-border flex justify-end">
+          <ul className="nav-list">
 
             <NavButton
-              buttonStyle="nav-item"
-              linkStyle="nav-button"
+              buttonStyle="nav-item-hero"
+              linkStyle="nav-button-hero"
               activeStyle="active-hero"
               to="Hero"
             />
 
             <NavButton
-              buttonStyle="nav-item"
-              linkStyle="nav-button"
+              buttonStyle="nav-item-profile"
+              linkStyle="nav-button-profile"
               activeStyle="active-profile"
               to="Profile"
             />
 
             <NavButton
-              buttonStyle="nav-item"
-              linkStyle="nav-button"
+              buttonStyle="nav-item-projects"
+              linkStyle="nav-button-projects"
               activeStyle="active-projects"
               to="Projects"
             />
-            
+
           </ul>
         }
         navStyle="navbar"
-        navItemsStyle="box-border fixed nav-spacing-right"
+        navItemsStyle=""
       />
     );
 }

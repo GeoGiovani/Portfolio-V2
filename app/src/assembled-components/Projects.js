@@ -140,7 +140,7 @@ function Projects() {
                     <div className="browser-mockup">
                       <SpaceCanvasMini
                           bgColor="#0c0c0c"
-                          style={{height: '100%', width: '100%'}}
+                          style={{height: '100%', width: '101%'}}
                         />
                     </div>
                     <div className="grid-content-details grid-thin z-20 slide-up">

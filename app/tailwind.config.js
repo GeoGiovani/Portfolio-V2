@@ -4,6 +4,8 @@ module.exports = {
   purge: [],
   theme: {
     spacing: {
+      'n6': '-1.5rem',
+      'n3': '-.75rem',
       '0': '0rem',
       '1': '0.25rem',
       '2': '0.5rem',

@@ -94,33 +94,93 @@
 
 /* ================================ Navbar ================================= */
 
+
 .navbar {
-  @apply box-border flex justify-end;
+  @apply fixed nav-spacing-right;
 }
 
 .nav-spacing-right {
   top: 2rem;
-  right: 2rem;
+  right: 1rem;
+}
+
+.nav-list {
+  @apply h-24 w-16 flex flex-col items-center opacity-0;
+}
+
+@screen lglg {
+  .nav-list {
+    @apply opacity-100;
+  }
 }
 
 .nav-button {
-  @apply h-5 w-5 bg-gray-300 bg-opacity-75 rounded-full flex mx-3;
+  @apply h-4 w-4 bg-gray-300 bg-opacity-75 rounded-full flex
+         transition duration-300 ease-in-out;
 }
 
-.nav-link {
-  @apply hidden my-3;
+.nav-button:hover {
+  @apply transform scale-125;
+}
+
+.nav-button-hero {
+  @apply nav-button opacity-0 mb-0;
+}
+
+.nav-button-hero {
+  transition: margin 300ms, 300ms ease-in-out;
+}
+
+.nav-button-profile {
+  @apply nav-button opacity-0 my-0 my-0;
+}
+
+.nav-button-profile {
+  transition: margin 300ms, 300ms ease-in-out;
+}
+
+.nav-button-projects {
+  @apply nav-button opacity-0 mt-0 mt-0;
+}
+
+.nav-button-projects {
+  transition: margin 300ms, 300ms ease-in-out;
 }
 
 .active-hero {
-  @apply bg-custom-yellow-300 h-6 w-6;
+  @apply bg-custom-yellow-300 h-6 w-6 opacity-100 ;
 }
 
 .active-profile {
-  @apply bg-custom-red-400 h-6 w-6;
+  @apply bg-custom-red-400 h-6 w-6 opacity-100 mt-n3;
 }
 
 .active-projects {
-  @apply bg-custom-green-400 h-6 w-6;
+  @apply bg-custom-green-400 h-6 w-6 opacity-100 mt-n6;
+}
+
+.nav-list:hover .nav-button-hero {
+  @apply opacity-100 mb-3;
+}
+
+.nav-list:hover .nav-button-profile {
+  @apply opacity-100 my-3;
+}
+
+.nav-list:hover .nav-button-projects {
+  @apply opacity-100 mt-3;
+}
+
+.nav-button-hero:hover {
+  @apply transform scale-125 bg-custom-yellow-300;
+}
+
+.nav-button-profile:hover {
+  @apply transform scale-125 bg-custom-red-400;
+}
+
+.nav-button-projects:hover {
+  @apply transform scale-125 bg-custom-green-400;
 }
 
 /* =========================== Component Pieces ============================ */
