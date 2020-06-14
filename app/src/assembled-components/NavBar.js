@@ -10,21 +10,21 @@ function NavBar() {
           <ul className="nav-list">
 
             <NavButton
-              buttonStyle="nav-item-hero"
+              buttonStyle="nav-item"
               linkStyle="nav-button-hero"
               activeStyle="active-hero"
               to="Hero"
             />
 
             <NavButton
-              buttonStyle="nav-item-profile"
+              buttonStyle="nav-item"
               linkStyle="nav-button-profile"
               activeStyle="active-profile"
               to="Profile"
             />
 
             <NavButton
-              buttonStyle="nav-item-projects"
+              buttonStyle="nav-item"
               linkStyle="nav-button-projects"
               activeStyle="active-projects"
               to="Projects"

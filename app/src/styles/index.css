@@ -100,12 +100,12 @@
 }
 
 .nav-spacing-right {
-  top: 2rem;
-  right: 1rem;
+  top: 0rem;
+  right: 0rem;
 }
 
 .nav-list {
-  @apply h-24 w-16 flex flex-col items-center opacity-0;
+  @apply h-32 w-24 flex flex-col justify-start items-center pt-9 opacity-0;
 }
 
 @screen lglg {
@@ -114,13 +114,13 @@
   }
 }
 
+.nav-item {
+  @apply h-auto w-auto z-0;
+}
+
 .nav-button {
   @apply h-4 w-4 bg-gray-300 bg-opacity-75 rounded-full flex
          transition duration-300 ease-in-out;
-}
-
-.nav-button:hover {
-  @apply transform scale-125;
 }
 
 .nav-button-hero {
@@ -132,7 +132,7 @@
 }
 
 .nav-button-profile {
-  @apply nav-button opacity-0 my-0 my-0;
+  @apply nav-button opacity-0 mt-n5;
 }
 
 .nav-button-profile {
@@ -140,7 +140,7 @@
 }
 
 .nav-button-projects {
-  @apply nav-button opacity-0 mt-0 mt-0;
+  @apply nav-button opacity-0 mt-n5;
 }
 
 .nav-button-projects {
@@ -148,15 +148,15 @@
 }
 
 .active-hero {
-  @apply bg-custom-yellow-300 h-6 w-6 opacity-100 ;
+  @apply opacity-100 bg-custom-yellow-300 h-6 w-6;
 }
 
 .active-profile {
-  @apply bg-custom-red-400 h-6 w-6 opacity-100 mt-n3;
+  @apply opacity-100 bg-custom-red-400 h-6 w-6 mt-n4;
 }
 
 .active-projects {
-  @apply bg-custom-green-400 h-6 w-6 opacity-100 mt-n6;
+  @apply opacity-100 bg-custom-green-400 h-6 w-6 mt-n4;
 }
 
 .nav-list:hover .nav-button-hero {

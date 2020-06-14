@@ -59,7 +59,7 @@ function Projects() {
               <GridComponent 
                 wrapperStyle="grid-card-mathBender"
                 content={ 
-                  <div className="grid-content bg-custom-green-400">
+                  <div className="grid-content bg-custom-green-400 h-p99">
                     <div className="grid-content-overlay-mathBender"></div>
                     <SplitPaneImage 
                       src={require("../media/mathBender.gif")}
