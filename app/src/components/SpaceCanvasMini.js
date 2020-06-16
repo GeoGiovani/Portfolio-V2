@@ -5,6 +5,8 @@ import {Line, Create, Group, Pt} from 'pts'
 class ShootingStarsMini extends PtsCanvas {
 
   start (bound, space) {
+    this.height = space.height;
+    this.width = space.width;
     this.center = space.center;
     this.nw = new Pt(0,0);
     this.ne = new Pt(space.width, 0);
@@ -26,6 +28,17 @@ class ShootingStarsMini extends PtsCanvas {
       let lp = this.perpends(p);
       this.form.stroke(this.lnColors[i%3], 1.5).line([p,lp]);
     });
+  }
+
+  resize(size, evt) {
+    if (this.form.ready) {
+      if(Math.abs(this.height-this.space.height) > 25  
+      || Math.abs(this.width-this.space.width) > 25 ) {
+
+        this.space.clear();
+        this.start(this.bound, this.space);
+      }
+    }
   }
 }
 

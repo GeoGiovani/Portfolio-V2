@@ -25,7 +25,11 @@ class ShootingStars extends PtsCanvas {
     this.middleBound = new Bound(this.mnw, this.mse)
     this.lowerBound = new Bound(this.lnw, this.lse)
 
-    this.numPts = Math.floor((35*this.width/this.height))
+    this.numPts = 25;
+    if (this.width > 1100) this.numPts = (35*this.width/this.height);
+    else if (this.width > 1000) this.numPts = 45;
+    else if (this.width > 800) this.numPts = 35;
+    else if (this.width > 500) this.numPts = 30;
 
     this.upperPts = Create.distributeRandom(this.upperBound, this.numPts);
     this.middlePts = Create.distributeRandom(this.middleBound, this.numPts);
@@ -37,7 +41,7 @@ class ShootingStars extends PtsCanvas {
     this.lnColors = ['rgba(255,63,156', 'rgba(129, 230, 217', 'rgba(255,181,85'];
   }
 
-  animate (time, ftime, space) {
+  animate(time, ftime, space) {
 
     // Rotate all points
     this.upperPts.rotate2D( 0.0003, this.center );
@@ -79,7 +83,21 @@ class ShootingStars extends PtsCanvas {
     }
     this.form.stroke(`${this.lnColors[i%3]},${ratio})`, thickness).line([p,lp]);
   }
+  
+  // Override PtsCanvas' resize function, 
+  // Resize only if window changes > 25 px in either domain
+  resize(size, evt) {
+    if (this.form.ready) {
+      if(Math.abs(this.height-this.space.height) > 25  
+      || Math.abs(this.width-this.space.width) > 25 ) {
+
+        this.space.clear();
+        this.start(this.bound, this.space);
+      }
+    }
+  }
 }
+
 
 function SpaceCanvas(props) {
   return (
