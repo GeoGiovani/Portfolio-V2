@@ -6,11 +6,17 @@
 /* ================================= Hero ================================== */
 
 .space-hero {
-  @apply flex w-full h-screen;
+  @apply flex w-full h-screen bg-custom-black-800;
+}
+
+@screen lglg {
+  .space-hero {
+    @apply h-screen-lg;
+  }
 }
 
 .space-hero-canvas {
-  @apply w-full h-auto bg-custom-black-800;
+  @apply w-full h-auto;
 }
 
 .space-hero-name-wrapper {
@@ -466,22 +472,25 @@
 
 @screen lglg {
   .project-page {
-    @apply h-screen pb-0;
+    @apply h-screen min-h-176 pb-0;
   }
   .project-content {
     @apply pt-20 h-p80;
   }
   .project-grid-wrapper {
-    @apply h-full;
+    @apply h-full min-h-124 max-h-176;
   }
 }
 
 @screen lgxl {
+  .project-page {
+    @apply min-h-200;
+  }
   .project-content {
     @apply pt-12;
   }
   .project-grid-wrapper {
-    @apply w-p85 h-p90;
+    @apply w-p85 h-p90 min-h-142;
   }
 }
 

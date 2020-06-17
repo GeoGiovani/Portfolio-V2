@@ -8,7 +8,7 @@ import Contact from './assembled-components/Contact.js'
 
 function App() {
   return (
-    <div>
+    <div id="content">
       <SpaceHero />
       <NavBar />
       <Profile />

@@ -53,6 +53,7 @@ module.exports = {
       'p85': '85%',
       'p90': '90%',
       'p99': 'calc(100% - 1px)',
+      'screen-lg': '102vh',
     },
     screens: {
       'xsm': '360px',
@@ -100,7 +101,6 @@ module.exports = {
       },
       fontFamily: {
         'roboto': ['Roboto'],
-        'fira-sans':['Fira+Sans']
       },
       inset: {
         'p5': '5%',
@@ -123,6 +123,18 @@ module.exports = {
       gridTemplateRows: {
         '7': 'repeat(7, minmax(0, 1fr))',
       },
+      minHeight: {
+        '124': '30.5rem',
+        '142': '35rem',
+        '176': '39rem',
+        '200': '50rem',
+      },
+      maxHeight: {
+        '124': '30.5rem',
+        '142': '35rem',
+        '176': '39rem',
+        '200': '50rem',
+      }
     },
   },
   variants: {

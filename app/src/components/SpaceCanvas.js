@@ -26,13 +26,13 @@ class ShootingStars extends PtsCanvas {
     this.lowerBound = new Bound(this.lnw, this.lse)
 
     this.numPts = 25;
-    if (this.width > 1100) this.numPts = (35*this.width/this.height);
+    if (this.width > 1100) this.numPts = Math.floor((30*this.width/this.height));
     else if (this.width > 1000) this.numPts = 45;
     else if (this.width > 800) this.numPts = 35;
     else if (this.width > 500) this.numPts = 30;
 
     this.upperPts = Create.distributeRandom(this.upperBound, this.numPts);
-    this.middlePts = Create.distributeRandom(this.middleBound, this.numPts);
+    this.middlePts = Create.distributeRandom(this.middleBound, Math.floor(this.numPts*1.5));
     this.lowerPts = Create.distributeRandom(this.lowerBound, this.numPts);
 
     this.perpends = new Group (this.lsw, this.lse).op(Line.perpendicularFromPt);
