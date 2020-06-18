@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SplitPaneImage(props) {
+function Image(props) {
   return (
     <div className={props.outerCardStyle}>
       <div className={props.innerCardStyle}>
@@ -11,4 +11,4 @@ function SplitPaneImage(props) {
   );
 }
 
-export default SplitPaneImage;
+export default Image;

@@ -44,7 +44,10 @@ class ShootingStarsMini extends PtsCanvas {
 
 function SpaceCanvasMini(props) {
   return (
-    <ShootingStarsMini background={props.bgColor} style={props.style}/>
+    <ShootingStarsMini 
+      background="#0c0c0c" 
+      style={{height: '100%', width: '101%'}}
+    />
   );
 }
 

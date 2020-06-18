@@ -5,12 +5,12 @@
 
 /* ================================= Hero ================================== */
 
-.space-hero {
+.hero {
   @apply flex w-full h-screen bg-custom-black-800;
 }
 
 @screen lglg {
-  .space-hero {
+  .hero {
     @apply h-screen-lg;
   }
 }
@@ -19,80 +19,80 @@
   @apply w-full h-auto;
 }
 
-.space-hero-name-wrapper {
+.hero-banner-wrapper {
   @apply box-border w-full h-auto absolute top-p30 left-0 z-10 
          pointer-events-none;
 }
 
-.space-hero-name {
+.hero-banner {
   @apply text-hero-xxsm box-border font-bold flex justify-center w-full 
   font-roboto text-gray-300 text-opacity-85 tracking-wide pointer-events-none;
 }
 
-.space-hero-button-wrapper {
+.hero-button-wrapper {
   @apply z-10 box-border w-p40 absolute bottom-p7-5 left-p30;
 }
 
-.btn-space {
+.btn-hero {
   @apply flex justify-center text-gray-100 text-opacity-75 font-roboto text-lg
          py-2 px-0 border border-gray-100 border-opacity-75 bg-gray-400 
          rounded-sm bg-opacity-25 w-36 transition ease-in duration-300;
 }
 
-.btn-space:hover {
+.btn-hero:hover {
   @apply bg-custom-yellow-300 border-custom-yellow-300 text-custom-black-800;
 }
 
 @screen xsm {
-  .space-hero-name {
+  .hero-banner {
     @apply text-hero-xsm;
   }
 }
 
 @screen sm {
-  .space-hero-name {
+  .hero-banner {
     @apply text-hero-sm;
   }
-  .btn-space {
+  .btn-hero {
     @apply text-xl w-44;
   }
 }
 
 @screen smmd {
-  .space-hero-name {
+  .hero-banner {
     @apply text-hero-smmd;
   }
 }
 
 @screen md {
-  .space-hero-name {
+  .hero-banner {
     @apply text-hero-md;
   }
 }
 
 @screen lg {
-  .space-hero-name {
+  .hero-banner {
     @apply text-hero-lg;
   }
 }
 
 @screen lglg {
-  .space-hero-name {
+  .hero-banner {
     @apply text-hero-lglg;
   }
-  .space-hero-name-wrapper {
+  .hero-banner-wrapper {
     @apply top-p20;
   }
 }
 
 @screen lgxl {
-  .space-hero-name {
+  .hero-banner {
     @apply text-hero-lgxl;
   }
 }
 
 @screen xl {
-  .space-hero-name {
+  .hero-banner {
     @apply text-hero-xl;
   }
 }
@@ -226,12 +226,12 @@
   @apply h-auto w-full bg-custom-black-800;
 }
 
-.profile-banner {
+.banner {
   @apply flex items-center justify-center h-32 w-full pointer-events-none
          bg-custom-black-800;
 }
 
-.profile-banner-header {
+.banner-header {
   @apply flex items-center justify-center h-32;
 }
 
@@ -286,7 +286,7 @@
 }
 
 @screen sm {
-  .profile-banner {
+  .banner {
     @apply h-36;
   }
   .profile-content {
@@ -358,7 +358,7 @@
 }
 
 @screen lgxl {
-  .profile-banner {
+  .banner {
     @apply h-44;
   }
   .profile-content {

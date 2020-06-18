@@ -101,7 +101,19 @@ class ShootingStars extends PtsCanvas {
 
 function SpaceCanvas(props) {
   return (
-    <ShootingStars background={props.bgColor} style={props.style}/>
+    <div className="space-hero-canvas">
+      <ShootingStars 
+        background="#121212"
+        style={{
+          height: '100%',
+          width: '100%', 
+          position: 'absolute', 
+          top: 0, 
+          left: 0,
+          pointerEvents: 'none',
+        }}
+      />
+    </div>
   );
 }
 
