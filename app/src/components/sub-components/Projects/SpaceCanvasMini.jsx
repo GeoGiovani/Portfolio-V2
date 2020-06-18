@@ -6,6 +6,9 @@ import {Line, Create, Group, Pt} from 'pts'
 class ShootingStarsMini extends PtsCanvas {
 
   start (bound, space) {
+    this.motionPref = window.matchMedia(
+      '(prefers-reduced-motion: no-preference)'
+    );
     this.height = space.height;
     this.width = space.width;
     this.center = space.center;
@@ -21,8 +24,10 @@ class ShootingStarsMini extends PtsCanvas {
 
   animate (time, ftime, space) {
 
-    // Rotate all points
-    this.pts.rotate2D(0.0002, this.center);
+    // Rotate all points (disable if user prefers reduced motion)
+    if (this.motionPref.matches) {
+      this.pts.rotate2D(0.0002, this.center);
+    }
 
     // Draw perpendicular lines to each point
     this.pts.forEach( (p, i) => {

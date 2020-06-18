@@ -794,6 +794,12 @@ video {
   right: 0rem;
 }
 
+@media (prefers-reduced-motion) {
+  .navbar {
+    opacity: 0;
+  }
+}
+
 .nav-spacing-right {
   top: 0rem;
   right: 0rem;
@@ -1996,6 +2002,24 @@ video {
 
 .slide-up {
   top: 80%;
+}
+
+@media (prefers-reduced-motion) {
+  .slide-down {
+    top: 50%;
+  }
+
+  .slide-left {
+    left: 50%;
+  }
+
+  .slide-right {
+    left: 50%;
+  }
+
+  .slide-up {
+    top: 50%;
+  }
 }
 
 /* ================================ Contact ================================ */
@@ -23264,6 +23288,18 @@ video {
 .profile-link:focus {
   text-decoration: none;
   background-size: 100% 4px;
+}
+
+@media (prefers-reduced-motion) {
+  .profile-link {
+    text-decoration: underline;
+    transition: none;
+  }
+
+  .profile-link:hover,
+  .profile-link:focus {
+    background-size: 0% 4px;
+  }
 }
 
 .browser-mockup {

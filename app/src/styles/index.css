@@ -99,6 +99,13 @@
   @apply fixed nav-spacing-right;
 }
 
+@media (prefers-reduced-motion) {
+  .navbar {
+    opacity: 0;
+  }
+} 
+
+
 .nav-spacing-right {
   top: 0rem;
   right: 0rem;
@@ -810,6 +817,21 @@
   @apply top-p80;
 }
 
+@media (prefers-reduced-motion) {
+  .slide-down {
+    @apply top-p50;
+  }
+  .slide-left {
+    @apply left-p50;
+  }
+  .slide-right {
+    @apply left-p50;
+  }
+  .slide-up {
+    @apply top-p50;
+  }
+}
+
 
 /* ================================ Contact ================================ */
 
@@ -969,6 +991,19 @@
   text-decoration: none;
   background-size: 100% 4px;
 }
+
+@media (prefers-reduced-motion) {
+  .profile-link {
+    text-decoration: underline;
+    transition: none;
+  }
+  .profile-link:hover,
+  .profile-link:focus {
+    background-size: 0% 4px;
+  }
+}
+
+
 
 .browser-mockup {
   border-top: 1.15em solid #323234;

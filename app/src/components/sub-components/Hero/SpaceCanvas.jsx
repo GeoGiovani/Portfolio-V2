@@ -7,6 +7,10 @@ class ShootingStars extends PtsCanvas {
 
   start (bound, space) {
 
+    this.motionPref = window.matchMedia(
+      '(prefers-reduced-motion: no-preference)'
+    );
+
     this.height   = space.height;
     this.width    = space.width;
     this.center   = space.center;
@@ -45,10 +49,12 @@ class ShootingStars extends PtsCanvas {
 
   animate(time, ftime, space) {
 
-    // Rotate all points
-    this.upperPts.rotate2D(0.0003, this.center);
-    this.middlePts.rotate2D(0.0003, this.center);
-    this.lowerPts.rotate2D(0.0003, this.center);
+    // Rotate all points (disable if user prefers reduced motion)
+    if (this.motionPref.matches) {
+      this.upperPts.rotate2D(0.0003, this.center);
+      this.middlePts.rotate2D(0.0003, this.center);
+      this.lowerPts.rotate2D(0.0003, this.center);
+    }
 
     // Draw perpendicular lines to each point
     this.upperPts.forEach ( (p, i) => {
