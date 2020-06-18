@@ -14,13 +14,14 @@
 }
 
 .hero-banner-wrapper {
-  @apply box-border w-full h-auto absolute top-p30 left-0 z-10 
+  @apply box-border w-full h-auto absolute top-p20 left-0 z-10 
          pointer-events-none;
 }
 
 .hero-banner {
-  @apply text-hero-xxsm box-border font-bold flex justify-center w-full 
-  font-roboto text-gray-300 text-opacity-85 tracking-wide pointer-events-none;
+  @apply text-hero-usm box-border font-bold flex justify-center w-full text-center
+  font-roboto text-gray-300 text-opacity-90 tracking-wide pointer-events-none
+  leading-tight;
 }
 
 .hero-button-wrapper {
@@ -28,7 +29,7 @@
 }
 
 .btn-hero {
-  @apply flex justify-center text-gray-100 text-opacity-75 font-roboto text-lg
+  @apply flex justify-center text-gray-100 text-opacity-75 font-roboto text-base
          py-2 px-0 border border-gray-100 border-opacity-75 bg-gray-400 
          rounded-sm bg-opacity-25 w-36 transition ease-in duration-300;
 }
@@ -39,22 +40,25 @@
 
 @screen xsm {
   .hero-banner {
-    @apply text-hero-xsm;
+    @apply text-hero-sm;
+  }
+  .btn-hero {
+    @apply text-lg
   }
 }
 
 @screen sm {
-  .hero-banner {
-    @apply text-hero-sm;
+  .hero-banner-wrapper {
+    @apply top-p30;
   }
   .btn-hero {
-    @apply text-xl w-44;
+    @apply text-xl w-40;
   }
 }
 
 @screen smmd {
   .hero-banner {
-    @apply text-hero-smmd;
+    @apply text-hero-smmd leading-normal;
   }
 }
 
@@ -237,8 +241,8 @@
 }
 
 .banner-content {
-  @apply pt-p1 text-center font-roboto text-gray-300 text-opacity-95
-         text-hero-sm font-bold pointer-events-none tracking-wide;
+  @apply pt-p1 text-center font-roboto text-gray-300 text-opacity-90
+         text-hero-usm font-bold pointer-events-none tracking-wide;
 }
 
 .banner-content {
@@ -285,6 +289,12 @@
 
 .btn-contact:hover {
   @apply text-white bg-custom-black-800 text-gray-300;
+}
+
+@screen xsm {
+  .banner-content {
+    @apply text-hero-sm
+  }
 }
 
 @screen sm {
@@ -928,7 +938,7 @@
   height: 4px;
   width: 40%;
   position: absolute;
-  background: #d9dee5;
+  background: #cfd3d9;
   left: 30%;
   bottom: 15%;
 }
@@ -957,7 +967,7 @@
   height: 4px;
   width: 40%;
   position: absolute;
-  background: #d9dee5;
+  background: #cfd3d9;
   
   left: 30%;
   bottom: 5%;

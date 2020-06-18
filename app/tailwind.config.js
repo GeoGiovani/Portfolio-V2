@@ -84,6 +84,7 @@ module.exports = {
       },
       opacity: {
         '85': '.85',
+        '90': '.90',
         '95': '.95',
       },
       fontSize: {
@@ -91,6 +92,7 @@ module.exports = {
         'hero-xxsm': '24pt',
         'hero-xsm': '2.5rem',
         'hero-vsm': '3rem',
+        'hero-usm': '3.5rem',
         'hero-sm': '4.5rem',
         'hero-smmd': '5rem',
         'hero-md': '6rem',
