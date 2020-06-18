@@ -2,13 +2,14 @@ import React from 'react'
 import {PtsCanvas} from 'react-pts-canvas'
 import {Line, Create, Group, Pt, Bound} from 'pts'
 
+
 class ShootingStars extends PtsCanvas {
 
   start (bound, space) {
 
-    this.height = space.height;
-    this.width = space.width;
-    this.center = space.center;
+    this.height   = space.height;
+    this.width    = space.width;
+    this.center   = space.center;
     this.pxlRatio = window.devicePixelRatio;
 
     this.unw = new Pt(0,0);
@@ -21,32 +22,33 @@ class ShootingStars extends PtsCanvas {
     this.lse = new Pt(this.width, this.height)
     this.lsw = new Pt(0, this.height)
 
-    this.upperBound = new Bound(this.unw, this.use)
+    this.upperBound  = new Bound(this.unw, this.use)
     this.middleBound = new Bound(this.mnw, this.mse)
-    this.lowerBound = new Bound(this.lnw, this.lse)
+    this.lowerBound  = new Bound(this.lnw, this.lse)
 
     this.numPts = 25;
     if (this.width > 1100) this.numPts = Math.floor((30*this.width/this.height));
     else if (this.width > 1000) this.numPts = 45;
-    else if (this.width > 800) this.numPts = 35;
-    else if (this.width > 500) this.numPts = 30;
+    else if (this.width > 800) this.numPts  = 35;
+    else if (this.width > 500) this.numPts  = 30;
+    if (this.numPts > 80) this.numPts = 80;
 
-    this.upperPts = Create.distributeRandom(this.upperBound, this.numPts);
+    this.upperPts  = Create.distributeRandom(this.upperBound, this.numPts);
     this.middlePts = Create.distributeRandom(this.middleBound, Math.floor(this.numPts*1.5));
-    this.lowerPts = Create.distributeRandom(this.lowerBound, this.numPts);
+    this.lowerPts  = Create.distributeRandom(this.lowerBound, this.numPts);
 
     this.perpends = new Group (this.lsw, this.lse).op(Line.perpendicularFromPt);
     
     this.ptColors = ["#ff3f8e", "#81e6d9", "#ffbb55"];
-    this.lnColors = ['rgba(255,63,156', 'rgba(129, 230, 217', 'rgba(255,181,85'];
+    this.lnColors = ['rgba(255,63,156', 'rgba(129,230,217', 'rgba(255,181,85'];
   }
 
   animate(time, ftime, space) {
 
     // Rotate all points
-    this.upperPts.rotate2D( 0.0003, this.center );
-    this.middlePts.rotate2D( 0.0003, this.center );
-    this.lowerPts.rotate2D( 0.0003, this.center );
+    this.upperPts.rotate2D(0.0003, this.center);
+    this.middlePts.rotate2D(0.0003, this.center);
+    this.lowerPts.rotate2D(0.0003, this.center);
 
     // Draw perpendicular lines to each point
     this.upperPts.forEach ( (p, i) => {
@@ -105,7 +107,7 @@ function SpaceCanvas(props) {
       <ShootingStars 
         background="#121212"
         style={{
-          height: '100%',
+          height: '100vh',
           width: '100%', 
           position: 'absolute', 
           top: 0, 

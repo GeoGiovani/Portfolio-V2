@@ -1,6 +1,7 @@
 import React from 'react'
 import EmailSVG from './SVGs/EmailSVG.jsx'
 
+
 function EmailButton() {
   return (
     <li className="btn-email">

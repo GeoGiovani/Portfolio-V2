@@ -3,6 +3,7 @@ import GridComponent from '../GridComponent.jsx'
 import LinkButton from '../LinkButton.jsx'
 import SpaceCanvasMini from '../SpaceCanvasMini.jsx'
 
+
 function PortfolioV2() {
   return (
     <GridComponent
@@ -33,3 +34,4 @@ function PortfolioV2() {
   }
 
   export default PortfolioV2;
+  

@@ -3,6 +3,7 @@ import GridComponent from '../GridComponent.jsx'
 import LinkButton from '../LinkButton.jsx'
 import Image from '../../Image.jsx'
 
+
 function TransitionDetector() {
   return (
     <GridComponent
@@ -13,7 +14,7 @@ function TransitionDetector() {
           <Image 
             src={require("../../../media/STImg.png")}
             alt="Transition Detector"
-            outerCardStyle="box-border h-full"
+            imageWrapperStyle="box-border h-full"
             imageStyle="img-detector h-40"
           />
           <div className="grid-content-details slide-right">

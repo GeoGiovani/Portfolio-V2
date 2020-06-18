@@ -6,13 +6,7 @@
 /* ================================= Hero ================================== */
 
 .hero {
-  @apply flex w-full h-screen bg-custom-black-800;
-}
-
-@screen lglg {
-  .hero {
-    @apply h-screen-lg;
-  }
+  @apply flex w-full h-screen-lg bg-custom-black-800;
 }
 
 .space-hero-canvas {
@@ -263,11 +257,12 @@
 }
 
 .profile-image-outer {
-  @apply flex items-center h-full w-auto pb-4;
+  @apply flex items-center h-full w-auto pb-4 pointer-events-none;
 }
 
 .profile-image {
-  @apply h-56 border-2 border-custom-yellow-200 rounded-full shadow-inner;
+  @apply h-56 border-2 border-custom-yellow-200 rounded-full shadow-inner
+         pointer-events-none;
 }
 
 .profile-button {
@@ -897,6 +892,10 @@
 
 @tailwind utilities;
 
+.body {
+  background-color: #121212;
+}
+
 .underline-small {
   display: inline-block;
   position: relative;
@@ -908,9 +907,6 @@
   width: 40%;
   position: absolute;
   background: #d9dee5;
-  /* background: #1A202C; */
-  /* background: #ffbb55; */
-  /* background: #101010; */
   left: 30%;
   bottom: 15%;
 }
@@ -940,8 +936,6 @@
   width: 40%;
   position: absolute;
   background: #d9dee5;
-  /* background: #0c0c0c; */
-  /* opacity: 75%; */
   
   left: 30%;
   bottom: 5%;

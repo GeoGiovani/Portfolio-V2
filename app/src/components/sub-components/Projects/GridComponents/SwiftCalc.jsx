@@ -3,6 +3,7 @@ import GridComponent from '../GridComponent.jsx'
 import LinkButton from '../LinkButton.jsx'
 import Image from '../../Image.jsx'
 
+
 function SwiftCalc() {
   return (
     <GridComponent
@@ -13,7 +14,7 @@ function SwiftCalc() {
           <Image 
             src={require("../../../media/swiftCalc.png")}
             alt="SwiftCalc"
-            outerCardStyle="box-border h-full w-auto overflow-hidden"
+            imageWrapperStyle="box-border h-full w-auto overflow-hidden"
             imageStyle="img-swiftcalc"
           />
           <div className="grid-content-details slide-down">

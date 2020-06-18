@@ -1,6 +1,7 @@
 import React from 'react';
 import data from '../../content/contentDict.jsx'
 
+
 function ProfileText() {
   return (
     <div className="profile-text">

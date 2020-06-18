@@ -1,6 +1,7 @@
 import React from 'react';
 import NavButton from './NavButton.jsx'
 
+
 function NavButtons() {
   return (
     <ul className="nav-list">

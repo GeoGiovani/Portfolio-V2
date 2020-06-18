@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function EmailSVG() {
   return (
     <svg className="icon" viewBox="0 0 51 51" xmlns="http://www.w3.org/2000/svg">

@@ -2,6 +2,7 @@ import React from 'react'
 import {PtsCanvas} from 'react-pts-canvas'
 import {Line, Create, Group, Pt} from 'pts'
 
+
 class ShootingStarsMini extends PtsCanvas {
 
   start (bound, space) {
@@ -41,6 +42,7 @@ class ShootingStarsMini extends PtsCanvas {
     }
   }
 }
+
 
 function SpaceCanvasMini(props) {
   return (

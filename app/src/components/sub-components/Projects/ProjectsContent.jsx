@@ -5,6 +5,7 @@ import SFUnit from './GridComponents/SFUnit.jsx'
 import TransitionDetector from './GridComponents/TransitionDetector.jsx'
 import PortfolioV2 from './GridComponents/PortfolioV2.jsx'
 
+
 function ProjectsContent() {
   return (
     <div className="project-content">

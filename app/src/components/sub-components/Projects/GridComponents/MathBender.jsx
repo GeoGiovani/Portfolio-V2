@@ -3,6 +3,7 @@ import GridComponent from '../GridComponent.jsx'
 import LinkButton from '../LinkButton.jsx'
 import Image from '../../Image.jsx'
 
+
 function MathBender() {
   return (
     <GridComponent 
@@ -13,7 +14,7 @@ function MathBender() {
           <Image 
             src={require("../../../media/mathBender.gif")}
             alt="MathBender"
-            outerCardStyle="box-border h-full flex items-end"
+            imageWrapperStyle="box-border h-full flex items-end"
             imageStyle="img-mathBender w-full"
           />
           <div className="grid-content-details slide-left">
