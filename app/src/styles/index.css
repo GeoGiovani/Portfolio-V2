@@ -19,9 +19,9 @@
 }
 
 .hero-banner {
-  @apply text-hero-usm box-border font-bold flex justify-center w-full text-center
-  font-roboto text-gray-300 text-opacity-90 tracking-wide pointer-events-none
-  leading-tight;
+  @apply text-hero-usm box-border font-bold flex justify-center w-full 
+         text-center font-roboto text-gray-300 text-opacity-90 tracking-wide 
+         pointer-events-none leading-tight;
 }
 
 .hero-button-wrapper {
@@ -29,9 +29,10 @@
 }
 
 .btn-hero {
-  @apply flex justify-center text-gray-100 text-opacity-75 font-roboto text-base
-         py-2 px-0 border border-gray-100 border-opacity-75 bg-gray-400 
-         rounded-sm bg-opacity-25 w-36 transition ease-in duration-300;
+  @apply flex justify-center text-gray-100 text-opacity-75 font-roboto 
+         text-base py-2 px-0 border border-gray-100 border-opacity-75 
+         bg-gray-400 rounded-sm bg-opacity-25 w-36 transition ease-in 
+         duration-300;
 }
 
 .btn-hero:hover {
@@ -43,7 +44,7 @@
     @apply text-hero-sm;
   }
   .btn-hero {
-    @apply text-lg
+    @apply text-lg;
   }
 }
 
@@ -89,7 +90,7 @@
   }
 }
 
-@screen xl {
+@screen xxl {
   .hero-banner {
     @apply text-hero-xl;
   }
@@ -98,17 +99,9 @@
 
 /* ================================ Navbar ================================= */
 
-
 .navbar {
   @apply fixed nav-spacing-right;
 }
-
-@media (prefers-reduced-motion) {
-  .navbar {
-    opacity: 0;
-  }
-} 
-
 
 .nav-spacing-right {
   top: 0rem;
@@ -119,23 +112,16 @@
   @apply h-32 w-24 flex flex-col justify-start items-center pt-9 opacity-0;
 }
 
-@screen lglg {
-  .nav-list {
-    @apply opacity-100;
-  }
-}
-
 .nav-item {
   @apply h-auto w-auto z-0;
 }
 
 .nav-button {
-  @apply h-4 w-4 bg-gray-300 bg-opacity-75 rounded-full flex
-         transition duration-300 ease-in-out;
+  @apply h-4 w-4 rounded-full flex transition duration-300 ease-in-out;
 }
 
 .nav-button-hero {
-  @apply nav-button opacity-0 mb-0;
+  @apply nav-button opacity-0 mb-0 bg-custom-yellow-300 bg-opacity-75;
 }
 
 .nav-button-hero {
@@ -143,7 +129,7 @@
 }
 
 .nav-button-profile {
-  @apply nav-button opacity-0 mt-n5;
+  @apply nav-button opacity-0 mt-n5 bg-custom-red-400 bg-opacity-75;
 }
 
 .nav-button-profile {
@@ -151,7 +137,7 @@
 }
 
 .nav-button-projects {
-  @apply nav-button opacity-0 mt-n5;
+  @apply nav-button opacity-0 mt-n5 bg-custom-green-400 bg-opacity-75;
 }
 
 .nav-button-projects {
@@ -183,53 +169,31 @@
 }
 
 .nav-button-hero:hover {
-  @apply transform scale-125 bg-custom-yellow-300;
+  @apply border-0 transform scale-125 bg-custom-yellow-300;
 }
 
 .nav-button-profile:hover {
-  @apply transform scale-125 bg-custom-red-400;
+  @apply border-0 transform scale-125 bg-custom-red-400;
 }
 
 .nav-button-projects:hover {
-  @apply transform scale-125 bg-custom-green-400;
+  @apply border-0 transform scale-125 bg-custom-green-400;
 }
+
+@screen lglg {
+  .nav-list {
+    @apply opacity-100;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .navbar {
+    opacity: 0;
+  }
+} 
+
 
 /* =========================== Component Pieces ============================ */
-
-.pane-left {
-  @apply flex items-center justify-center text-center pt-6;
-}
-
-.pane-right {
-  @apply flex items-center justify-center text-center pt-16 pb-6;
-}
-
-@screen sm {
-  .pane-left {
-    @apply pt-12;
-  }
-
-  .pane-right {
-    @apply pt-0;
-  }
-}
-
-@screen md {
-  .pane-left {
-    @apply flex-1 justify-end text-left p-8;
-  }
-
-  .pane-right {
-    @apply flex-1 justify-start text-right p-8;
-  }
-}
-
-
-/* ================================ PROFILE ================================ */
-
-.profile-page {
-  @apply h-auto w-full bg-custom-black-800;
-}
 
 .banner {
   @apply flex items-center justify-center h-32 w-full pointer-events-none
@@ -241,12 +205,55 @@
 }
 
 .banner-content {
-  @apply pt-p1 text-center font-roboto text-gray-300 text-opacity-90
+  @apply text-center font-roboto text-gray-300 text-opacity-90
          text-hero-usm font-bold pointer-events-none tracking-wide;
 }
 
 .banner-content {
   font-variant-ligatures: none;
+}
+
+@screen xsm {
+  .banner-content {
+    @apply text-hero-sm;
+  }
+}
+
+@screen sm {
+  .banner {
+    @apply h-36;
+  }
+  .banner-content {
+    @apply text-hero-md;
+  }
+}
+
+@screen md {
+  .banner-content {
+    @apply text-hero-lg;
+  }
+}
+
+@screen lglg {
+  .banner-content {
+    @apply text-hero-lglg;
+  }
+}
+
+@screen lgxl {
+  .banner {
+    @apply h-44;
+  }
+  .banner-content {
+    @apply text-hero-lgxl;
+  }
+}
+
+
+/* ================================ PROFILE ================================ */
+
+.profile-page {
+  @apply h-auto w-full bg-custom-black-800;
 }
 
 .profile-content {
@@ -291,16 +298,7 @@
   @apply text-white bg-custom-black-800 text-gray-300;
 }
 
-@screen xsm {
-  .banner-content {
-    @apply text-hero-sm
-  }
-}
-
 @screen sm {
-  .banner {
-    @apply h-36;
-  }
   .profile-content {
     @apply pb-4;
   }
@@ -309,9 +307,6 @@
   }
   .profile-text {
     @apply text-2xl w-p80;
-  }
-  .banner-content {
-    @apply text-hero-md;
   }
   .profile-image-outer {
     @apply pb-0;
@@ -322,9 +317,6 @@
 }
 
 @screen md {
-  .banner-content {
-    @apply text-hero-lg;
-  }
   .profile-content {
     @apply flex-row pt-2;
   }
@@ -349,9 +341,6 @@
 }
 
 @screen lglg {
-  .banner-content {
-    @apply text-hero-lglg;
-  }
   .profile-page {
     @apply h-auto w-full;
   }
@@ -370,17 +359,11 @@
 }
 
 @screen lgxl {
-  .banner {
-    @apply h-44;
-  }
   .profile-content {
     @apply pb-0;
   }
   .profile-text {
     @apply w-p85 h-96;
-  }
-  .banner-content {
-    @apply text-hero-lgxl;
   }
 }
 
@@ -447,78 +430,6 @@
 
 .grid-card-sfunit {
   @apply row-span-1 col-span-1;
-}
-
-@screen sm {
-  .project-grid-wrapper {
-    @apply w-p80;
-  }
-}
-
-@screen md {
-  .project-content {
-    @apply pt-16;
-  }
-  .project-grid-wrapper {
-    @apply h-120 w-p85;
-  }
-  .project-grid {
-    @apply grid-rows-4 grid-cols-3 row-gap-0 gap-2 h-full;
-  }
-  .grid-card-swiftCalc {
-    @apply row-span-4 col-span-1;
-  } 
-  .grid-card-portfolio {
-    @apply row-span-2 col-span-2;
-  }
-  .grid-card-mathBender {
-    @apply row-span-2 col-span-1;
-  }
-}
-
-@screen lg {
-  .project-grid-wrapper {
-    @apply w-p90 h-128;
-  }
-}
-
-@screen lglg {
-  .project-page {
-    @apply h-screen min-h-176 pb-0;
-  }
-  .project-content {
-    @apply pt-20 h-p80;
-  }
-  .project-grid-wrapper {
-    @apply h-full min-h-124 max-h-176;
-  }
-}
-
-@screen lgxl {
-  .project-page {
-    @apply min-h-200;
-  }
-  .project-content {
-    @apply pt-12;
-  }
-  .project-grid-wrapper {
-    @apply w-p85 h-p90 min-h-142;
-  }
-}
-
-@screen xl {
-  .project-content {
-    @apply pt-16;
-  }
-}
-
-@screen xxl {
-  .project-content {
-    @apply pt-12;
-  }
-  .project-grid-wrapper {
-    @apply w-p80;
-  }
 }
 
 .grid-content {
@@ -592,7 +503,7 @@
 }
 
 .grid-content-inner {
-  @apply  flex flex-col w-full justify-center items-center;
+  @apply flex flex-col w-full justify-center items-center;
 }
 
 .grid-content-inner-swiftCalc {
@@ -635,75 +546,6 @@
   @apply mb-6;
 }
 
-@screen sm {
-  .grid-content-inner-swiftCalc span {
-    @apply mb-6;
-  }
-  .grid-content-inner-portfolio span {
-    @apply mb-6;
-  }
-  .grid-content-inner-thin span {
-    @apply mb-0 mr-2;
-  }
-  .grid-content-inner-thin {
-    @apply flex-row;
-  }
-  .grid-content-inner-sfunit h3 {
-    @apply leading-none;
-  }
-  .grid-content-inner-detector h3 {
-    @apply leading-none;
-  }  
-}
-
-@screen smmd {
-  .grid-content-inner-thin span {
-    @apply mr-4;
-  }
-}
-
-@screen md {
-  .grid-content-inner-swiftCalc span {
-    @apply mb-8;
-  }
-  .grid-content-inner-mathBender span {
-    @apply mb-8;
-  }
-  .grid-content-inner-portfolio span {
-    @apply mb-6;
-  }
-  .grid-content-inner-sfunit h3 {
-    @apply leading-snug;
-  }
-  .grid-content-inner-detector h3 {
-    @apply leading-snug;
-  }  
-}
-
-@screen lg {
-  .grid-content-inner-sfunit h3 {
-    @apply leading-snug;
-  }
-  .grid-content-inner-detector h3 {
-    @apply leading-snug;
-  }  
-}
-
-@screen lglg {
-  .grid-content-inner-sfunit h3 {
-    @apply mb-1;
-  }
-  .grid-content-inner-detector h3 {
-    @apply mb-1;
-  }  
-  .grid-content-inner-swiftCalc span {
-    @apply mb-12;
-  }
-  .grid-content-inner-portfolio span {
-    @apply mb-8;
-  }
-}
-
 .grid-thin {
   -webkit-transform: translate(-50%, -40%) translateZ(0);
   transform: translate(-50%, -40%);
@@ -725,92 +567,6 @@
   @apply absolute top-p6;
 }
 
-@screen xsm {
-  .grid-content-details span {
-    @apply text-xl;
-  }
-  .btn-project {
-    @apply text-xl w-32;
-  } 
-}
-
-@screen sm {
-  .grid-content-details h3 {
-    @apply text-hero-xxxsm;
-  } 
-  .grid-content-details span {
-    @apply text-sm;
-  }
-  .btn-project {
-    @apply text-sm w-22;
-  } 
-}
-
-@screen smmd {
-  .grid-content-details h3 {
-    @apply text-hero-xxsm;
-  } 
-  .btn-project {
-    @apply text-sm w-28;
-  } 
-}
-
-@screen sm {
-  .img-swiftcalc {
-    @apply top-p15;
-  }
-}
-
-@screen smmd {
-  .img-swiftcalc {
-    @apply top-p20;
-  }
-}
-
-@screen md {
-  .grid-content-details h3 {
-    @apply text-hero-xxsm;
-  } 
-  .grid-content-details span {
-    @apply text-base;
-  }
-  .btn-project {
-    @apply text-base;
-  } 
-}
-
-@screen lg {
-  .img-swiftcalc {
-    @apply top-p12-5;
-  }
-  .grid-content-details span {
-    @apply text-lg;
-  }
-  .btn-project {
-    @apply text-lg;
-  } 
-}
-
-@screen lglg {
-  .grid-content-details h3 {
-    @apply text-hero-xsm;
-  } 
-  .btn-project {
-    @apply w-32;
-  } 
-}
-@screen lgxl {
-  .grid-content-details h3 {
-    @apply text-hero-vsm;
-  } 
-  .grid-content-details span {
-    @apply text-2xl;
-  }
-  .btn-project {
-    @apply text-xl;
-  } 
-}
-
 .slide-down {
   @apply top-p20;
 }
@@ -825,6 +581,198 @@
 
 .slide-up {
   @apply top-p80;
+}
+
+@screen xsm {
+  .grid-content-details span {
+    @apply text-xl;
+  }
+  .btn-project {
+    @apply text-xl w-32;
+  } 
+}
+
+@screen sm {
+  .project-grid-wrapper {
+    @apply w-p80;
+  }
+  .grid-content-inner-swiftCalc span {
+    @apply mb-6;
+  }
+  .grid-content-inner-portfolio span {
+    @apply mb-6;
+  }
+  .grid-content-inner-thin span {
+    @apply mb-0 mr-2;
+  }
+  .grid-content-inner-thin {
+    @apply flex-row;
+  }
+  .grid-content-inner-sfunit h3 {
+    @apply leading-none;
+  }
+  .grid-content-inner-detector h3 {
+    @apply leading-none;
+  } 
+  .grid-content-details h3 {
+    @apply text-hero-xxxsm;
+  } 
+  .grid-content-details span {
+    @apply text-sm;
+  }
+  .btn-project {
+    @apply text-sm w-22;
+  }
+  .img-swiftcalc {
+    @apply top-p15;
+  }  
+}
+
+@screen smmd {
+  .grid-content-inner-thin span {
+    @apply mr-4;
+  }
+  .grid-content-details h3 {
+    @apply text-hero-xxsm;
+  } 
+  .btn-project {
+    @apply text-sm w-28;
+  } 
+  .img-swiftcalc {
+    @apply top-p20;
+  }
+}
+
+@screen md {
+  .project-content {
+    @apply pt-16;
+  }
+  .project-grid-wrapper {
+    @apply h-120 w-p85;
+  }
+  .project-grid {
+    @apply grid-rows-4 grid-cols-3 row-gap-0 gap-2 h-full;
+  }
+  .grid-card-swiftCalc {
+    @apply row-span-4 col-span-1;
+  } 
+  .grid-card-portfolio {
+    @apply row-span-2 col-span-2;
+  }
+  .grid-card-mathBender {
+    @apply row-span-2 col-span-1;
+  }
+  .grid-content-inner-swiftCalc span {
+    @apply mb-8;
+  }
+  .grid-content-inner-mathBender span {
+    @apply mb-8;
+  }
+  .grid-content-inner-portfolio span {
+    @apply mb-6;
+  }
+  .grid-content-inner-sfunit h3 {
+    @apply leading-snug;
+  }
+  .grid-content-inner-detector h3 {
+    @apply leading-snug;
+  } 
+  .grid-content-details h3 {
+    @apply text-hero-xxsm;
+  } 
+  .grid-content-details span {
+    @apply text-base;
+  }
+  .btn-project {
+    @apply text-base;
+  }  
+}
+
+@screen lg {
+  .project-grid-wrapper {
+    @apply w-p90 h-128;
+  }
+  .grid-content-inner-sfunit h3 {
+    @apply leading-snug;
+  }
+  .grid-content-inner-detector h3 {
+    @apply leading-snug;
+  }
+  .img-swiftcalc {
+    @apply top-p12-5;
+  }
+  .grid-content-details span {
+    @apply text-lg;
+  }
+  .btn-project {
+    @apply text-lg;
+  }   
+}
+
+@screen lglg {
+  .project-page {
+    @apply h-screen min-h-176 pb-0;
+  }
+  .project-content {
+    @apply pt-20 h-p80;
+  }
+  .project-grid-wrapper {
+    @apply h-full min-h-124 max-h-176;
+  }
+  .grid-content-inner-sfunit h3 {
+    @apply mb-1;
+  }
+  .grid-content-inner-detector h3 {
+    @apply mb-1;
+  }  
+  .grid-content-inner-swiftCalc span {
+    @apply mb-12;
+  }
+  .grid-content-inner-portfolio span {
+    @apply mb-8;
+  }
+  .grid-content-details h3 {
+    @apply text-hero-xsm;
+  } 
+  .btn-project {
+    @apply w-32;
+  } 
+}
+
+@screen lgxl {
+  .project-page {
+    @apply min-h-200;
+  }
+  .project-content {
+    @apply pt-12;
+  }
+  .project-grid-wrapper {
+    @apply w-p85 h-p90 min-h-142;
+  }
+  .grid-content-details h3 {
+    @apply text-hero-vsm;
+  } 
+  .grid-content-details span {
+    @apply text-2xl;
+  }
+  .btn-project {
+    @apply text-xl;
+  } 
+}
+
+@screen xl {
+  .project-content {
+    @apply pt-16;
+  }
+}
+
+@screen xxl {
+  .project-content {
+    @apply pt-12;
+  }
+  .project-grid-wrapper {
+    @apply w-p80;
+  }
 }
 
 @media (prefers-reduced-motion) {
@@ -849,39 +797,8 @@
   @apply flex justify-center w-full h-20 pb-8 bg-custom-black-800;
 }
 
-@screen sm {
-  .contact-footer {
-    @apply pb-4;
-  }
-}
-
-@screen md {
-  .contact-footer {
-    @apply pb-2;
-  }
-}
-
-
-@screen lgxl {
-  .contact-footer {
-    @apply h-22;
-  }
-}
-
-@screen xxl {
-  .contact-footer {
-    @apply pb-0;
-  }
-}
-
 .contact-buttons-wrapper {
   @apply flex justify-center w-full;
-}
-
-@screen md {
-  .contact-buttons-wrapper {
-    @apply w-p40;
-  }  
 }
 
 .contact-buttons {
@@ -919,6 +836,33 @@
          ease-in duration-200;
 }
 
+@screen sm {
+  .contact-footer {
+    @apply pb-4;
+  }
+}
+
+@screen md {
+  .contact-footer {
+    @apply pb-2;
+  }
+  .contact-buttons-wrapper {
+    @apply w-p40;
+  }  
+}
+
+@screen lgxl {
+  .contact-footer {
+    @apply h-22;
+  }
+}
+
+@screen xxl {
+  .contact-footer {
+    @apply pb-0;
+  }
+}
+
 
 /* ============================== CUSTOM CSS =============================== */
 
@@ -943,20 +887,6 @@
   bottom: 15%;
 }
 
-@media only screen and (min-width: 640px) {
-  .underline-small::after {
-    height: 6px;
-    bottom: 10%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .underline-small::after {
-    height: 8px;
-    bottom: 15%;
-  }
-}
-
 .underline-small-projects {
   display: inline-block;
   position: relative;
@@ -971,20 +901,6 @@
   
   left: 30%;
   bottom: 5%;
-}
-
-@media only screen and (min-width: 640px) {
-  .underline-small-projects::after {
-    height: 6px;
-    bottom: 5%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .underline-small-projects::after {
-    height: 8px;
-    bottom: 5%;
-  }
 }
 
 .profile-link {
@@ -1002,19 +918,6 @@
   background-size: 100% 4px;
 }
 
-@media (prefers-reduced-motion) {
-  .profile-link {
-    text-decoration: underline;
-    transition: none;
-  }
-  .profile-link:hover,
-  .profile-link:focus {
-    background-size: 0% 4px;
-  }
-}
-
-
-
 .browser-mockup {
   border-top: 1.15em solid #323234;
   position: relative;
@@ -1022,7 +925,7 @@
   zIndex: 10;
   height: 100%;
 
-  /* fixes bug that causes canvas to ignore border radius on Mac webkit browsers: */
+  /* fix bug that causes canvas to ignore border radius on webkit browsers: */
   -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 }
 
@@ -1082,6 +985,17 @@
   }
 }
 
+@media only screen and (min-width: 640px) {
+  .underline-small::after {
+    height: 6px;
+    bottom: 10%;
+  }
+  .underline-small-projects::after {
+    height: 6px;
+    bottom: 5%;
+  }
+}
+
 @media only screen and (min-width: 720px) {
   .browser-mockup {
     border-top: 1em solid #323234;
@@ -1117,6 +1031,14 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .underline-small::after {
+    height: 8px;
+    bottom: 15%;
+  }
+  .underline-small-projects::after {
+    height: 8px;
+    bottom: 5%;
+  }
   .browser-mockup:before {
     left: .5em;
   }
@@ -1133,5 +1055,16 @@
   .browser-mockup:after {
     left: 20%;
     width: 65%;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .profile-link {
+    text-decoration: underline;
+    transition: none;
+  }
+  .profile-link:hover,
+  .profile-link:focus {
+    background-size: 0% 4px;
   }
 }

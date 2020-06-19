@@ -98,7 +98,7 @@ module.exports = {
         'hero-md': '6rem',
         'hero-lg': '7rem',
         'hero-lglg': '8rem',
-        'hero-lgxl': '9rem',
+        'hero-lgxl': '8.5rem',
         'hero-xl': '10rem',
         'profile-xl': '1.75rem',
       },
