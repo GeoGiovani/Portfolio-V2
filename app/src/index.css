@@ -1129,8 +1129,9 @@ video {
   --text-opacity: 1;
   color: #e2e8f0;
   color: rgba(226, 232, 240, var(--text-opacity));
+  --text-opacity: .90;
+  font-weight: 300;
   font-family: Roboto;
-  font-weight: 200;
   font-size: 1.25rem;
 }
 
@@ -1552,13 +1553,13 @@ video {
 
 .grid-content-details p {
   font-size: 1.25rem;
-  font-weight: 200;
+  font-weight: 300;
   display: inline-block;
 }
 
 .grid-content-details span {
   font-family: Roboto;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1rem;
   display: inline-block;
   width: auto;
@@ -1721,12 +1722,7 @@ video {
   }
 
   .grid-content-inner-thin span {
-    margin-bottom: 0rem;
     margin-right: 0.5rem;
-  }
-
-  .grid-content-inner-thin {
-    flex-direction: row;
   }
 
   .grid-content-inner-sfunit h3 {
@@ -1756,10 +1752,6 @@ video {
 }
 
 @media (min-width: 720px) {
-  .grid-content-inner-thin span {
-    margin-right: 1rem;
-  }
-
   .grid-content-details h3 {
     font-size: 24pt;
   }
@@ -1792,6 +1784,15 @@ video {
     grid-gap: 0.5rem;
     gap: 0.5rem;
     height: 100%;
+  }
+
+  .grid-content-inner-thin {
+    flex-direction: row;
+  }
+
+  .grid-content-inner-thin span {
+    margin-right: 1rem;
+    margin-bottom: 0rem;
   }
 
   .grid-card-swiftCalc {

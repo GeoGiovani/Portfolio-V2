@@ -271,7 +271,7 @@
 
 .profile-text {
   @apply flex flex-col justify-center w-p90 h-auto 
-         text-left text-gray-300 font-roboto font-thin text-xl;
+         text-left text-gray-300 text-opacity-90 font-light font-roboto text-xl;
 }
 
 .profile-image-outer {
@@ -495,11 +495,11 @@
 }
 
 .grid-content-details p {
-  @apply text-xl font-thin inline-block;
+  @apply text-xl font-light inline-block;
 }
 
 .grid-content-details span {
-  @apply font-roboto font-thin text-base inline-block w-auto;
+  @apply font-roboto font-light text-base inline-block w-auto;
 }
 
 .grid-content-inner {
@@ -602,12 +602,6 @@
   .grid-content-inner-portfolio span {
     @apply mb-6;
   }
-  .grid-content-inner-thin span {
-    @apply mb-0 mr-2;
-  }
-  .grid-content-inner-thin {
-    @apply flex-row;
-  }
   .grid-content-inner-sfunit h3 {
     @apply leading-none;
   }
@@ -629,9 +623,6 @@
 }
 
 @screen smmd {
-  .grid-content-inner-thin span {
-    @apply mr-4;
-  }
   .grid-content-details h3 {
     @apply text-hero-xxsm;
   } 
@@ -652,6 +643,12 @@
   }
   .project-grid {
     @apply grid-rows-4 grid-cols-3 row-gap-0 gap-2 h-full;
+  }
+  .grid-content-inner-thin {
+    @apply flex-row;
+  }
+  .grid-content-inner-thin span {
+    @apply mr-4 mb-0;
   }
   .grid-card-swiftCalc {
     @apply row-span-4 col-span-1;
