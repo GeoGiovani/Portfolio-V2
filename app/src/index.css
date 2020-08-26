@@ -1184,9 +1184,6 @@ video {
 }
 
 .btn-contact:hover {
-  --text-opacity: 1;
-  color: #fff;
-  color: rgba(255, 255, 255, var(--text-opacity));
   --bg-opacity: 1;
   background-color: #121212;
   background-color: rgba(18, 18, 18, var(--bg-opacity));
@@ -1418,7 +1415,6 @@ video {
   bottom: 0;
   right: 0;
   opacity: 0;
-  z-index: 10;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
   transition-duration: 400ms;
 }
@@ -1436,7 +1432,6 @@ video {
   bottom: 0;
   right: 0;
   opacity: 0;
-  z-index: 10;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
   transition-duration: 400ms;
   --bg-opacity: 1;
@@ -1454,7 +1449,6 @@ video {
   bottom: 0;
   right: 0;
   opacity: 0;
-  z-index: 10;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
   transition-duration: 400ms;
   --bg-opacity: 1;
@@ -1472,7 +1466,6 @@ video {
   bottom: 0;
   right: 0;
   opacity: 0;
-  z-index: 10;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
   transition-duration: 400ms;
   --bg-opacity: 1;
@@ -1490,7 +1483,6 @@ video {
   bottom: 0;
   right: 0;
   opacity: 0;
-  z-index: 10;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
   transition-duration: 400ms;
   z-index: 10;
@@ -1594,7 +1586,7 @@ video {
 }
 
 .grid-content-inner-mathBender span {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .grid-content-inner-sfunit {
@@ -1719,10 +1711,6 @@ video {
 
   .grid-content-inner-portfolio span {
     margin-bottom: 1.5rem;
-  }
-
-  .grid-content-inner-thin span {
-    margin-right: 0.5rem;
   }
 
   .grid-content-inner-sfunit h3 {
@@ -1997,7 +1985,6 @@ video {
 .contact-buttons {
   display: flex;
   width: 80%;
-  justify-content: center;
   justify-content: space-between;
   align-items: center;
 }

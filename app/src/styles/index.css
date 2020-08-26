@@ -295,7 +295,7 @@
 }
 
 .btn-contact:hover {
-  @apply text-white bg-custom-black-800 text-gray-300;
+  @apply bg-custom-black-800 text-gray-300;
 }
 
 @screen sm {
@@ -438,7 +438,7 @@
 
 .grid-content-overlay {
   @apply absolute h-full w-full
-         left-0 top-0 bottom-0 right-0 opacity-0 z-10
+         left-0 top-0 bottom-0 right-0 opacity-0
          ease-in duration-400; 
 }
 
@@ -519,7 +519,7 @@
 }
 
 .grid-content-inner-mathBender span {
-  @apply mb-6;
+  @apply mb-4;
 }
 
 .grid-content-inner-sfunit {
@@ -799,7 +799,7 @@
 }
 
 .contact-buttons {
-  @apply flex w-p80 justify-center justify-between items-center;
+  @apply flex w-p80 justify-between items-center;
 }
 
 .icon {
