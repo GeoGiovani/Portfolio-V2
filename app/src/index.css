@@ -673,8 +673,8 @@ video {
   text-align: center;
   font-family: Roboto;
   --text-opacity: 1;
-  color: #edf2f7;
-  color: rgba(237, 242, 247, var(--text-opacity));
+  color: #f7fafc;
+  color: rgba(247, 250, 252, var(--text-opacity));
   --text-opacity: .90;
   letter-spacing: 0.025em;
   pointer-events: none;
@@ -1026,8 +1026,8 @@ video {
   text-align: center;
   font-family: Roboto;
   --text-opacity: 1;
-  color: #edf2f7;
-  color: rgba(237, 242, 247, var(--text-opacity));
+  color: #f7fafc;
+  color: rgba(247, 250, 252, var(--text-opacity));
   --text-opacity: .90;
   font-size: 3.5rem;
   font-weight: 700;
@@ -23231,7 +23231,7 @@ video {
   height: 4px;
   width: 40%;
   position: absolute;
-  background: #d9dce0;
+  background: #e1e3e5;
   left: 30%;
   bottom: 15%;
 }
@@ -23246,7 +23246,7 @@ video {
   height: 4px;
   width: 40%;
   position: absolute;
-  background: #d9dce0;
+  background: #e1e3e5;
   left: 30%;
   bottom: 5%;
 }

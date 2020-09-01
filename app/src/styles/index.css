@@ -20,7 +20,7 @@
 
 .hero-banner {
   @apply text-hero-usm box-border font-bold flex justify-center w-full 
-         text-center font-roboto text-gray-200 text-opacity-90 tracking-wide 
+         text-center font-roboto text-gray-100 text-opacity-90 tracking-wide 
          pointer-events-none leading-tight;
 }
 
@@ -205,7 +205,7 @@
 }
 
 .banner-content {
-  @apply text-center font-roboto text-gray-200 text-opacity-90
+  @apply text-center font-roboto text-gray-100 text-opacity-90
          text-hero-usm font-bold pointer-events-none tracking-wide;
 }
 
@@ -880,7 +880,7 @@
   height: 4px;
   width: 40%;
   position: absolute;
-  background: #d9dce0;
+  background: #e1e3e5;
   left: 30%;
   bottom: 15%;
 }
@@ -895,7 +895,7 @@
   height: 4px;
   width: 40%;
   position: absolute;
-  background: #d9dce0;
+  background: #e1e3e5;
   
   left: 30%;
   bottom: 5%;
