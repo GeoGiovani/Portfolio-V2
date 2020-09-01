@@ -23,7 +23,7 @@ function TransitionDetector() {
               <div className="grid-content-inner-thin">
                 <span>React.js / Flask</span>
                 <LinkButton
-                  link=""
+                  link="https://github.com/GeoGiovani/Video-Transition-Detector"
                   content="View More"
                   buttonStyle="btn-project"
                 />

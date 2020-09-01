@@ -22,7 +22,7 @@ function SwiftCalc() {
               <h3>SwiftCalc</h3>
               <span>Swift / Flutter</span>
               <LinkButton
-                link=""
+                link="https://gitlab.com/incrementle/swiftcalc-ios/-/tree/dev"
                 content="View More"
                 buttonStyle="btn-project"
               />

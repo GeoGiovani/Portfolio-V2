@@ -69,7 +69,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        'custom-black-800': '#121212',
+        'custom-black-800': '#141414',
         'custom-black-900': '#101010',
         'custom-black-1000': '#0c0c0c',
         'custom-grey-800': '#343233',

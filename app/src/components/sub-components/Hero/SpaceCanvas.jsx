@@ -111,7 +111,7 @@ function SpaceCanvas(props) {
   return (
     <div className="space-hero-canvas">
       <ShootingStars 
-        background="#121212"
+        background="#141414"
         style={{
           height: '100vh',
           width: '100%', 

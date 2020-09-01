@@ -20,7 +20,7 @@ function PortfolioV2() {
               <span>React.js / JavaScript / Tailwind CSS</span>
               <div className="flex w-full justify-center">
                 <LinkButton
-                  link=""
+                  link="https://github.com/GeoGiovani/Portfolio-V2"
                   content="View More"
                   buttonStyle="btn-project"
                 />

@@ -16,7 +16,7 @@ function SFUnit() {
               <div className="grid-content-inner-thin">
                 <span>JavaScript / HTML</span>
                 <LinkButton
-                  link=""
+                  link="https://github.com/GeoGiovani/SFU-Special-Fortification-Unit"
                   content="View More"
                   buttonStyle="btn-project"
                 />

@@ -20,7 +20,7 @@
 
 .hero-banner {
   @apply text-hero-usm box-border font-bold flex justify-center w-full 
-         text-center font-roboto text-gray-300 text-opacity-90 tracking-wide 
+         text-center font-roboto text-gray-200 text-opacity-90 tracking-wide 
          pointer-events-none leading-tight;
 }
 
@@ -205,7 +205,7 @@
 }
 
 .banner-content {
-  @apply text-center font-roboto text-gray-300 text-opacity-90
+  @apply text-center font-roboto text-gray-200 text-opacity-90
          text-hero-usm font-bold pointer-events-none tracking-wide;
 }
 
@@ -271,7 +271,7 @@
 
 .profile-text {
   @apply flex flex-col justify-center w-p90 h-auto 
-         text-left text-gray-300 text-opacity-90 font-light font-roboto text-xl;
+         text-left text-gray-100 text-opacity-90 font-light font-roboto text-xl;
 }
 
 .profile-image-outer {
@@ -451,7 +451,7 @@
 }
 
 .grid-content-overlay-mathBender {
-  @apply grid-content-overlay bg-custom-green-400 bg-opacity-50;
+  @apply grid-content-overlay z-10 bg-custom-green-400 bg-opacity-50;
 }
 
 .grid-content-overlay-sfunit {
@@ -468,6 +468,7 @@
 
 .grid-content:hover .img-mathBender {
   filter: blur(5px); 
+  @apply shadow-xl
 }
 
 .grid-content:hover .img-detector {
@@ -879,7 +880,7 @@
   height: 4px;
   width: 40%;
   position: absolute;
-  background: #cfd3d9;
+  background: #d9dce0;
   left: 30%;
   bottom: 15%;
 }
@@ -894,7 +895,7 @@
   height: 4px;
   width: 40%;
   position: absolute;
-  background: #cfd3d9;
+  background: #d9dce0;
   
   left: 30%;
   bottom: 5%;
@@ -943,7 +944,7 @@
 .browser-mockup:after {
   display: block;
   position: absolute;
-  content: "https://geogiovani.github.io/";
+  content: "https://georgio.io/";
   
   top:  -2.5em;
   left: 4%;

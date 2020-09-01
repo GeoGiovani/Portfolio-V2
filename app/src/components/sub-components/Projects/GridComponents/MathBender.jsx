@@ -22,7 +22,7 @@ function MathBender() {
               <h3>MathBender</h3>
               <span>JavaScript / Node.js</span>
               <LinkButton
-                link=""
+                link="https://github.com/GeoGiovani/mathBender"
                 content="View More"
                 buttonStyle="btn-project"
               />

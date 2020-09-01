@@ -1,7 +1,7 @@
 let contentDict = {
   "Hero": {
     "name": "George Giovanis",
-    "btn": "View My Work"
+    "btn": "View More"
   },
   "Profile": {
     "banner": "Profile",
@@ -17,8 +17,8 @@ let contentDict = {
     "paragraph-2": `I love creating intuitive web and mobile applications. My 
                     goal is to provide users with fast, enjoyable, and reliable 
                     software. To do this, I develop using modern 
-                    software-engineering methods.`,
-    "paragraph-3": `I am currently seeking a software engineering or full-stack
+                    software engineering methods.`,
+    "paragraph-3": `I am currently seeking a software engineering or full stack
                     developer co-op/internship.`,
     "link-3": "mailto:georgedgiovani.dev@gmail.com/",
     "link-3-text": "Let's get in touch.",  
