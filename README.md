@@ -1,4 +1,4 @@
-# Portfolio-V2-Dev
+# Portfolio V2 Dev
 
 The second iteration of my personal portfolio website:  
 https://georgio.io
