@@ -21,7 +21,7 @@ function ProfileText() {
 
       <p className="mb-0">
         {data["Profile"]["paragraph-3"]}&nbsp;
-        <a className="profile-link text-custom-red-400 font-bold"
+        <a className="profile-link text-custom-teal-400 font-bold"
         href={data["Profile"]["link-3"]}>{data["Profile"]["link-3-text"]}</a>
       </p>
       

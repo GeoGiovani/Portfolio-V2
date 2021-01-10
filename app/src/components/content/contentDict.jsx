@@ -18,10 +18,10 @@ let contentDict = {
                     goal is to provide users with fast, enjoyable, and reliable 
                     software. To do this, I develop using modern 
                     software engineering methods.`,
-    "paragraph-3": `I am currently seeking a software engineering or full stack
-                    developer co-op/internship.`,
-    "link-3": "mailto:georgedgiovani.dev@gmail.com/",
-    "link-3-text": "Let's get in touch.",  
+    "paragraph-3": `I am currently working as a Software Engineering Intern
+                    for Team Carrot at`,
+    "link-3": "https://www.procurify.com",
+    "link-3-text": "Procurify.",  
   },
   "Projects": {
     "banner": "Projects",

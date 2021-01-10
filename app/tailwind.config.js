@@ -76,6 +76,7 @@ module.exports = {
         'custom-grey-900': '#262425',
         'custom-red-300': '#ec528d',
         'custom-red-400': '#ff3f8e',
+        'custom-teal-400': '#6bf178',
         'custom-yellow-200': '#ffd699',
         'custom-yellow-300': '#ffbb55',
         'custom-yellow-400': '#f5bd67',
