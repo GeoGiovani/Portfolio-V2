@@ -7,21 +7,20 @@ let contentDict = {
     "banner": "Profile",
     "pic-link": require('../media/me.jpg'),
     "pic-alt": "Catch you next time!",
-    "paragraph-1-1": `Hello! I'm a third-year Computer Science student based in 
-                      Vancouver, BC. I currently study at`,
-    "paragraph-1-2": "and volunteer in the",
+    "paragraph-1": `Hello! I'm a Software Engineer in Vancouver BC,
+                    and am currently finishing my last semester at`,
     "link-1": "https://www.sfu.ca/",
-    "link-1-text": "Simon Fraser University",
-    "link-2": "https://sfumars.com/people/george-giovanis/",
-    "link-2-text": "MARS Laboratory.",
-    "paragraph-2": `I love creating intuitive web and mobile applications. My 
-                    goal is to provide users with fast, enjoyable, and reliable 
-                    software. To do this, I develop using modern 
-                    software engineering methods.`,
-    "paragraph-3": `I am currently working as a Software Engineering Intern
-                    for Team Carrot at`,
-    "link-3": "https://www.procurify.com",
-    "link-3-text": "Procurify.",  
+    "link-1-text": "Simon Fraser University.",
+    "paragraph-2-1": `I have experience in full stack web development from an 
+                      internship with`,
+    "paragraph-2-2": `and multiple self-led projects. I also have research
+                      experience from a position in the`,
+    "link-2": "https://www.procurify.com",
+    "link-2-text": "Procurify",
+    "link-3": "https://sfumars.com/people/george-giovanis/",
+    "link-3-text": "MARS Laboratory.",
+    "paragraph-3": `I am looking for a full-time Software Engineering 
+                    position.`,  
   },
   "Projects": {
     "banner": "Projects",
